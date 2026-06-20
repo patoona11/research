@@ -3,7 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>การพัฒนาตู้เลี้ยงจิ้งหรีดอัตโนมัติด้วยเทคโนโลยี IoT - มหาวิทยาลัยราชภัฏบุรีรัมย์</title>
+    <title class="lang-th">การพัฒนาตู้เลี้ยงจิ้งหรีดอัตโนมัติด้วยเทคโนโลยี IoT - มหาวิทยาลัยราชภัฏบุรีรัมย์</title>
+    <title class="lang-en hidden">Development of an Automatic Cricket Breeding Cabinet using IoT Technology - Buriram Rajabhat University</title>
+    <title class="lang-ja hidden">IoT技術を用いた自動コオロギ飼育温室の開発 - ブリラム・ラチャパット大学</title>
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -68,12 +70,12 @@
             border: 1px solid rgba(255, 255, 255, 0.6);
         }
         .text-gradient {
-            background: linear-gradient(135deg, #0f766e 0%, #0891b2 100%);
+            background: linear-gradient(135deg, #0f766e 0%, #0284c7 100%);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
         }
         .hero-gradient {
-            background: linear-gradient(135deg, #042f2e 0%, #083344 100%);
+            background: linear-gradient(135deg, #042f2e 0%, #082f49 100%);
         }
         .section-gradient-light {
             background: linear-gradient(180deg, #f0fdfa 0%, #ffffff 100%);
@@ -113,28 +115,73 @@
                     </div>
                     <div>
                         <span class="font-heading font-bold text-lg leading-tight block text-slate-800">BRU IoT Smart Farm</span>
-                        <span class="text-xs text-slate-500 block -mt-0.5">มหาวิทยาลัยราชภัฏบุรีรัมย์</span>
+                        <span class="text-xs text-slate-500 block -mt-0.5 lang-th">มหาวิทยาลัยราชภัฏบุรีรัมย์</span>
+                        <span class="text-xs text-slate-500 block -mt-0.5 lang-en hidden">Buriram Rajabhat University</span>
+                        <span class="text-xs text-slate-500 block -mt-0.5 lang-ja hidden">ブリラム・ラチャパット大学</span>
                     </div>
                 </div>
 
                 <!-- Desktop Menu -->
                 <nav class="hidden md:flex items-center space-x-8 font-heading text-sm font-medium">
-                    <a href="#about" class="text-slate-600 hover:text-agritech-600 transition-colors">ที่มางานวิจัย</a>
-                    <a href="#objectives" class="text-slate-600 hover:text-agritech-600 transition-colors">วัตถุประสงค์</a>
-                    <a href="#methodology" class="text-slate-600 hover:text-agritech-600 transition-colors">วิธีการดำเนินงาน</a>
-                    <a href="#results" class="text-slate-600 hover:text-agritech-600 transition-colors">ผลการทดลอง</a>
-                    <a href="#researchers" class="text-slate-600 hover:text-agritech-600 transition-colors">คณะผู้วิจัย</a>
+                    <a href="#about" class="text-slate-600 hover:text-agritech-600 transition-colors">
+                        <span class="lang-th">ที่มางานวิจัย</span>
+                        <span class="lang-en hidden">Background</span>
+                        <span class="lang-ja hidden">研究の背景</span>
+                    </a>
+                    <a href="#objectives" class="text-slate-600 hover:text-agritech-600 transition-colors">
+                        <span class="lang-th">วัตถุประสงค์</span>
+                        <span class="lang-en hidden">Objectives</span>
+                        <span class="lang-ja hidden">研究目的</span>
+                    </a>
+                    <a href="#methodology" class="text-slate-600 hover:text-agritech-600 transition-colors">
+                        <span class="lang-th">วิธีการดำเนินงาน</span>
+                        <span class="lang-en hidden">Methodology</span>
+                        <span class="lang-ja hidden">研究方法</span>
+                    </a>
+                    <a href="#results" class="text-slate-600 hover:text-agritech-600 transition-colors">
+                        <span class="lang-th">ผลการทดลอง</span>
+                        <span class="lang-en hidden">Results</span>
+                        <span class="lang-ja hidden">研究成果</span>
+                    </a>
+                    <a href="#researchers" class="text-slate-600 hover:text-agritech-600 transition-colors">
+                        <span class="lang-th">คณะผู้วิจัย</span>
+                        <span class="lang-en hidden">Researchers</span>
+                        <span class="lang-ja hidden">研究チーム</span>
+                    </a>
                 </nav>
 
-                <!-- Action Button -->
-                <div class="hidden md:flex items-center">
+                <!-- Action Button & Language Switcher -->
+                <div class="hidden md:flex items-center space-x-4">
+                    <!-- Language Selector Dropdown -->
+                    <div class="relative inline-block text-left" id="langSwitcher">
+                        <button onclick="toggleLangDropdown()" class="flex items-center space-x-2 bg-slate-100 hover:bg-slate-200 text-slate-700 px-3.5 py-2.5 rounded-full text-xs font-semibold font-heading transition-colors border border-slate-200 focus:outline-none">
+                            <span id="currentLangIcon">🇹🇭</span>
+                            <span id="currentLangLabel">ไทย</span>
+                            <i class="fas fa-chevron-down text-[10px]"></i>
+                        </button>
+                        <div id="langDropdown" class="hidden absolute right-0 mt-2 w-32 bg-white border border-slate-100 rounded-xl shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none z-50 py-1.5 font-heading text-xs font-medium text-slate-700">
+                            <button onclick="changeLang('th')" class="w-full text-left px-4 py-2 hover:bg-slate-50 flex items-center space-x-2">
+                                <span>🇹🇭</span> <span>ไทย</span>
+                            </button>
+                            <button onclick="changeLang('en')" class="w-full text-left px-4 py-2 hover:bg-slate-50 flex items-center space-x-2">
+                                <span>🇬🇧</span> <span>English</span>
+                            </button>
+                            <button onclick="changeLang('ja')" class="w-full text-left px-4 py-2 hover:bg-slate-50 flex items-center space-x-2">
+                                <span>🇯🇵</span> <span>日本語</span>
+                            </button>
+                        </div>
+                    </div>
+
                     <button onclick="openModal()" class="font-heading text-sm bg-gradient-to-r from-teal-600 to-cyan-600 hover:from-teal-700 hover:to-cyan-700 text-white px-5.5 py-2.5 rounded-full font-medium shadow-md transition-all duration-300 hover:shadow-lg transform hover:-translate-y-0.5">
-                        <i class="fas fa-file-alt mr-2"></i>อ่านวิจัยฉบับเต็ม
+                        <i class="fas fa-file-alt mr-2"></i>
+                        <span class="lang-th">อ่านวิจัยฉบับเต็ม</span>
+                        <span class="lang-en hidden">Read Full Research</span>
+                        <span class="lang-ja hidden">論文全文を読む</span>
                     </button>
                 </div>
 
                 <!-- Mobile Menu Button -->
-                <div class="md:hidden">
+                <div class="md:hidden flex items-center space-x-2">
                     <button id="mobileMenuBtn" class="text-slate-600 hover:text-agritech-600 focus:outline-none p-2 rounded-lg">
                         <i class="fas fa-bars text-2xl"></i>
                     </button>
@@ -145,13 +192,55 @@
         <!-- Mobile Nav Menu (Drawer) -->
         <div id="mobileMenu" class="hidden md:hidden bg-white border-t border-slate-100 py-4 px-6 shadow-xl transition-all duration-300">
             <nav class="flex flex-col space-y-4 font-heading text-sm font-medium">
-                <a href="#about" onclick="toggleMobileMenu()" class="text-slate-600 hover:text-agritech-600 py-2">ที่มางานวิจัย</a>
-                <a href="#objectives" onclick="toggleMobileMenu()" class="text-slate-600 hover:text-agritech-600 py-2">วัตถุประสงค์</a>
-                <a href="#methodology" onclick="toggleMobileMenu()" class="text-slate-600 hover:text-agritech-600 py-2">วิธีการดำเนินงาน</a>
-                <a href="#results" onclick="toggleMobileMenu()" class="text-slate-600 hover:text-agritech-600 py-2">ผลการทดลอง</a>
-                <a href="#researchers" onclick="toggleMobileMenu()" class="text-slate-600 hover:text-agritech-600 py-2">คณะผู้วิจัย</a>
+                <a href="#about" onclick="toggleMobileMenu()" class="text-slate-600 hover:text-agritech-600 py-2">
+                    <span class="lang-th">ที่มางานวิจัย</span>
+                    <span class="lang-en hidden">Background</span>
+                    <span class="lang-ja hidden">研究の背景</span>
+                </a>
+                <a href="#objectives" onclick="toggleMobileMenu()" class="text-slate-600 hover:text-agritech-600 py-2">
+                    <span class="lang-th">วัตถุประสงค์</span>
+                    <span class="lang-en hidden">Objectives</span>
+                    <span class="lang-ja hidden">研究目的</span>
+                </a>
+                <a href="#methodology" onclick="toggleMobileMenu()" class="text-slate-600 hover:text-agritech-600 py-2">
+                    <span class="lang-th">วิธีการดำเนินงาน</span>
+                    <span class="lang-en hidden">Methodology</span>
+                    <span class="lang-ja hidden">研究方法</span>
+                </a>
+                <a href="#results" onclick="toggleMobileMenu()" class="text-slate-600 hover:text-agritech-600 py-2">
+                    <span class="lang-th">ผลการทดลอง</span>
+                    <span class="lang-en hidden">Results</span>
+                    <span class="lang-ja hidden">研究成果</span>
+                </a>
+                <a href="#researchers" onclick="toggleMobileMenu()" class="text-slate-600 hover:text-agritech-600 py-2">
+                    <span class="lang-th">คณะผู้วิจัย</span>
+                    <span class="lang-en hidden">Researchers</span>
+                    <span class="lang-ja hidden">研究チーム</span>
+                </a>
+                
+                <!-- Language Switcher inside Mobile Drawer -->
+                <div class="flex items-center space-x-2 py-2 border-t border-slate-100">
+                    <span class="text-xs text-slate-500 font-heading">
+                        <span class="lang-th">ภาษา:</span>
+                        <span class="lang-en hidden">Language:</span>
+                        <span class="lang-ja hidden">言語:</span>
+                    </span>
+                    <button onclick="changeLang('th')" class="px-2.5 py-1.5 rounded-lg border border-slate-200 text-xs hover:bg-slate-50 flex items-center space-x-1">
+                        <span>🇹🇭</span> <span>TH</span>
+                    </button>
+                    <button onclick="changeLang('en')" class="px-2.5 py-1.5 rounded-lg border border-slate-200 text-xs hover:bg-slate-50 flex items-center space-x-1">
+                        <span>🇬🇧</span> <span>EN</span>
+                    </button>
+                    <button onclick="changeLang('ja')" class="px-2.5 py-1.5 rounded-lg border border-slate-200 text-xs hover:bg-slate-50 flex items-center space-x-1">
+                        <span>🇯🇵</span> <span>JP</span>
+                    </button>
+                </div>
+
                 <button onclick="openModal(); toggleMobileMenu();" class="text-center font-heading text-sm bg-gradient-to-r from-teal-600 to-cyan-600 hover:from-teal-700 hover:to-cyan-700 text-white py-3 rounded-full font-medium shadow-md">
-                    <i class="fas fa-file-alt mr-2"></i>อ่านวิจัยฉบับเต็ม
+                    <i class="fas fa-file-alt mr-2"></i>
+                    <span class="lang-th">อ่านวิจัยฉบับเต็ม</span>
+                    <span class="lang-en hidden">Read Full Research</span>
+                    <span class="lang-ja hidden">論文全文を読む</span>
                 </button>
             </nav>
         </div>
@@ -169,23 +258,45 @@
                 <!-- Text Area (7 cols) -->
                 <div class="lg:col-span-7 space-y-6 text-center lg:text-left">
                     <span class="inline-flex items-center px-4 py-1.5 rounded-full bg-teal-500/10 border border-teal-500/25 text-teal-400 text-xs sm:text-sm font-heading font-medium tracking-wide">
-                        <i class="fas fa-microchip mr-2"></i>เทคโนโลยีเกษตรอัจฉริยะ (Smart Agriculture IoT)
+                        <i class="fas fa-microchip mr-2"></i>
+                        <span class="lang-th">เทคโนโลยีเกษตรอัจฉริยะ (Smart Agriculture IoT)</span>
+                        <span class="lang-en hidden">Smart Agriculture IoT Technology</span>
+                        <span class="lang-ja hidden">スマート農業 IoT技術</span>
                     </span>
                     <h1 class="font-heading text-3xl sm:text-4xl lg:text-5xl font-bold leading-tight tracking-tight">
-                        การประยุกต์ใช้เทคโนโลยีอินเทอร์เน็ตของสรรพสิ่ง<br class="hidden sm:inline">
-                        <span class="text-transparent bg-clip-text bg-gradient-to-r from-teal-400 to-cyan-400">
-                            ในการพัฒนาตู้เลี้ยงจิ้งหรีดอัตโนมัติ
+                        <span class="lang-th">การประยุกต์ใช้เทคโนโลยีอินเทอร์เน็ตของสรรพสิ่ง<br class="hidden sm:inline">
+                            <span class="text-transparent bg-clip-text bg-gradient-to-r from-teal-400 to-cyan-400">
+                                ในการพัฒนาตู้เลี้ยงจิ้งหรีดอัตโนมัติ
+                            </span>
+                        </span>
+                        <span class="lang-en hidden">Applying Internet of Things Technology<br class="hidden sm:inline">
+                            <span class="text-transparent bg-clip-text bg-gradient-to-r from-teal-400 to-cyan-400">
+                                to the Development of an Automatic Cricket Breeding Cabinet
+                            </span>
+                        </span>
+                        <span class="lang-ja hidden">IoT技術を応用した<br class="hidden sm:inline">
+                            <span class="text-transparent bg-clip-text bg-gradient-to-r from-teal-400 to-cyan-400">
+                                自動コオロギ飼育温室の開発
+                            </span>
                         </span>
                     </h1>
                     <p class="text-slate-300 text-base sm:text-lg max-w-2xl mx-auto lg:mx-0 font-light leading-relaxed">
-                        ยกระดับประสิทธิภาพการเพาะเลี้ยงจิ้งหรีดเชิงพาณิชย์ ด้วยการควบคุมอุณหภูมิและความชื้นสัมพัทธ์ในตู้ปิดแบบเรียลไทม์ 24 ชั่วโมง ลดอัตรารอดตายและประหยัดอาหาร พัฒนาจริงเพื่อกลุ่มเกษตรกรบ้านหนองกับ จังหวัดบุรีรัมย์
+                        <span class="lang-th">ยกระดับประสิทธิภาพการเพาะเลี้ยงจิ้งหรีดเชิงพาณิชย์ ด้วยการควบคุมอุณหภูมิและความชื้นสัมพัทธ์ในตู้ปิดแบบเรียลไทม์ 24 ชั่วโมง ลดอัตรารอดตายและประหยัดอาหาร พัฒนาจริงเพื่อกลุ่มเกษตรกรบ้านหนองกับ จังหวัดบุรีรัมย์</span>
+                        <span class="lang-en hidden">Elevating the efficiency of commercial cricket farming with real-time closed-loop temperature and relative humidity control 24/7. Successfully minimized mortality rates and optimized feed. Field-tested for Ban Nong Kap farmers in Buriram.</span>
+                        <span class="lang-ja hidden">24時間リアルタイムのクローズドループ温度・相対湿度管理により、商業用コオロギ飼育の効率を向上。生存率を高め、飼料を最適化。ブリラム県バーンノーンカップの農家で実証試験済み。</span>
                     </p>
                     <div class="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4 pt-4">
                         <button onclick="openModal()" class="w-full sm:w-auto font-heading bg-gradient-to-r from-teal-500 to-cyan-500 hover:from-teal-600 hover:to-cyan-600 text-white font-semibold px-8 py-4 rounded-full shadow-lg shadow-teal-950/30 hover:shadow-xl hover:shadow-teal-900/40 transition-all duration-300 transform hover:-translate-y-0.5">
-                            <i class="fas fa-book-open mr-2"></i>อ่านงานวิจัยฉบับเต็ม
+                            <i class="fas fa-book-open mr-2"></i>
+                            <span class="lang-th">อ่านงานวิจัยฉบับเต็ม</span>
+                            <span class="lang-en hidden">Read Full Research</span>
+                            <span class="lang-ja hidden">論文全文を読む</span>
                         </button>
                         <a href="#results" class="w-full sm:w-auto text-center font-heading border border-slate-500 hover:border-teal-400 text-slate-300 hover:text-teal-400 font-semibold px-8 py-4 rounded-full transition-all duration-300">
-                            <i class="fas fa-chart-line mr-2"></i>ดูผลการทดลองจริง
+                            <i class="fas fa-chart-line mr-2"></i>
+                            <span class="lang-th">ดูผลการทดลองจริง</span>
+                            <span class="lang-en hidden">View Real Results</span>
+                            <span class="lang-ja hidden">実験結果を見る</span>
                         </a>
                     </div>
                 </div>
@@ -204,7 +315,11 @@
                                     <i class="fas fa-temperature-high"></i>
                                 </div>
                                 <div>
-                                    <span class="text-[10px] text-slate-400 block uppercase font-heading">อุณหภูมิในตู้</span>
+                                    <span class="text-[10px] text-slate-400 block uppercase font-heading">
+                                        <span class="lang-th">อุณหภูมิในตู้</span>
+                                        <span class="lang-en hidden">Cabinet Temp</span>
+                                        <span class="lang-ja hidden">温室内温度</span>
+                                    </span>
                                     <span class="text-sm font-bold text-white block">25 - 35 °C</span>
                                 </div>
                             </div>
@@ -215,7 +330,11 @@
                                     <i class="fas fa-tint"></i>
                                 </div>
                                 <div>
-                                    <span class="text-[10px] text-slate-400 block uppercase font-heading">ความชื้นสัมพัทธ์</span>
+                                    <span class="text-[10px] text-slate-400 block uppercase font-heading">
+                                        <span class="lang-th">ความชื้นสัมพัทธ์</span>
+                                        <span class="lang-en hidden">Rel. Humidity</span>
+                                        <span class="lang-ja hidden">相対湿度</span>
+                                    </span>
                                     <span class="text-sm font-bold text-white block">60 - 80% RH</span>
                                 </div>
                             </div>
@@ -230,9 +349,15 @@
     <section id="about" class="py-20 bg-white relative">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center max-w-3xl mx-auto mb-16">
-                <span class="text-sm font-heading font-semibold text-agritech-600 uppercase tracking-widest block mb-2">บทคัดย่อ / สภาพปัญหา</span>
+                <span class="text-sm font-heading font-semibold text-agritech-600 uppercase tracking-widest block mb-2">
+                    <span class="lang-th">บทคัดย่อ / สภาพปัญหา</span>
+                    <span class="lang-en hidden">Abstract & Context</span>
+                    <span class="lang-ja hidden">概要と課題</span>
+                </span>
                 <h2 class="font-heading text-3xl sm:text-4xl font-bold text-slate-800 leading-tight">
-                    เบื้องหลังนวัตกรรมตู้เลี้ยงจิ้งหรีดอัจฉริยะ
+                    <span class="lang-th">เบื้องหลังนวัตกรรมตู้เลี้ยงจิ้งหรีดอัจฉริยะ</span>
+                    <span class="lang-en hidden">Behind the Smart Cricket Cabinet Innovation</span>
+                    <span class="lang-ja hidden">スマートコオロギ温室開発の背景</span>
                 </h2>
                 <div class="w-16 h-1 bg-gradient-to-r from-teal-500 to-cyan-500 mx-auto mt-4"></div>
             </div>
@@ -242,43 +367,73 @@
                 <!-- Text Content (7 cols) -->
                 <div class="lg:col-span-7 space-y-6">
                     <h3 class="font-heading text-2xl font-bold text-slate-800">
-                        วิกฤตของฟาร์มจิ้งหรีดแบบดั้งเดิม สู่ทางออกอัจฉริยะ
+                        <span class="lang-th">วิกฤตของฟาร์มจิ้งหรีดแบบดั้งเดิม สู่ทางออกอัจฉริยะ</span>
+                        <span class="lang-en hidden">Traditional Cricket Farming Crisis to Smart Solution</span>
+                        <span class="lang-ja hidden">従来のコอロギ養殖の危機からスマートな解決策へ</span>
                     </h3>
                     <p class="text-slate-600 text-base leading-relaxed text-justify">
-                        จิ้งหรีดเป็นอาหารโภชนาการสูงที่มีโปรตีนทดแทนที่น่าจับตา แต่การเพาะเลี้ยงในชุมชนบ้านหนองกับ อำเภอสตึก จังหวัดบุรีรัมย์ ประสบปัญหาใหญ่จากสภาพอากาศที่ผันผวน ส่งผลให้ช่วงอากาศหนาวจิ้งหรีดโตช้าและหยุดกินอาหาร และช่วงร้อนจัดเกิดอัตราการตายสูง เกษตรกรตั้งเป้าหมายผลผลิตไว้ที่ 20 กิโลกรัมต่อตู้ แต่สภาพจริงได้เฉลี่ยเพียง 10 กิโลกรัมต่อตู้ ซึ่งหากได้ต่ำกว่า 7-8 กิโลกรัม เกษตรกรจะประสบภาวะขาดทุนทันที เนื่องจากต้นทุนอาหารกระสอบละ 560 บาท
+                        <span class="lang-th">จิ้งหรีดเป็นอาหารโภชนาการสูงที่มีโปรตีนทดแทนที่น่าจับตา แต่การเพาะเลี้ยงในชุมชนบ้านหนองกับ อำเภอสตึก จังหวัดบุรีรัมย์ ประสบปัญหาใหญ่จากสภาพอากาศที่ผันผวน ส่งผลให้ช่วงอากาศหนาวจิ้งหรีดโตช้าและหยุดกินอาหาร และช่วงร้อนจัดเกิดอัตราการตายสูง เกษตรกรตั้งเป้าหมายผลผลิตไว้ที่ 20 กิโลกรัมต่อตู้ แต่สภาพจริงได้เฉลี่ยเพียง 10 กิโลกรัมต่อตู้ ซึ่งหากได้ต่ำกว่า 7-8 กิโลกรัม เกษตรกรจะประสบภาวะขาดทุนทันที เนื่องจากต้นทุนอาหารกระสอบละ 560 บาท</span>
+                        <span class="lang-en hidden">Crickets are a highly nutritious alternative protein source. However, traditional farming in the Ban Nong Kap community, Satuek District, Buriram Province, faces major challenges from fluctuating climates. Cold weather slows growth and halts feeding, while extreme heat leads to high mortality. While farmers targeted a yield of 20 kg per cabinet, the actual average was only 10 kg. Yields below 7-8 kg per cabinet result in immediate financial losses, due to high feed costs of 560 THB per bag.</span>
+                        <span class="lang-ja hidden">コオロギは栄養価の高い代替タンパク質源として期待されていますが、ブリラム県サトゥック郡の伝統的なコオロギ養殖は、気候の変動により深刻な課題に直面しています。寒冷期は成長が鈍化し給餌が停止し、酷暑期は高い死亡率を招きます。農家は1箱あたり20kgの収穫を目標としていましたが、従来の平均はわずか10kgで、飼料費（1袋560バーツ）のため7-8kgを下回ると赤字になってしまいます。</span>
                     </p>
                     <p class="text-slate-600 text-base leading-relaxed text-justify">
-                        เพื่อแก้ไขปัญหาดังกล่าว คณะผู้วิจัยจึงได้ร่วมกับชุมชนออกแบบและพัฒนา <strong>"ตู้เลี้ยงจิ้งหรีดอัตโนมัติด้วยเทคโนโลยี IoT"</strong> ที่ติดตั้งเซนเซอร์ DHT11 สองจุดเพื่อวัดค่าอุณหภูมิและความชื้น คอยประมวลผลผ่านบอร์ด NodeMCU ESP8266 โดยหากมีสภาพอากาศภายนอกแปรปรวน ระบบจะปรับสั่งงานพัดลมระบายอากาศเพื่อระบายความร้อน หรือเปิดหลอดไฟอินฟราเรดเพื่อเพิ่มความอบอุ่นแบบปิดวงจรโดยอัตโนมัติ ส่งผลให้จิ้งหรีดเติบโตอย่างมั่นคงและอัตรารอดตายสูงขึ้น
+                        <span class="lang-th">เพื่อแก้ไขปัญหาดังกล่าว คณะผู้วิจัยจึงได้ร่วมกับชุมชนออกแบบและพัฒนา <strong>"ตู้เลี้ยงจิ้งหรีดอัตโนมัติด้วยเทคโนโลยี IoT"</strong> ที่ติดตั้งเซนเซอร์ DHT11 สองจุดเพื่อวัดค่าอุณหภูมิและความชื้น คอยประมวลผลผ่านบอร์ด NodeMCU ESP8266 โดยหากมีสภาพอากาศภายนอกแปรปรวน ระบบจะปรับสั่งงานพัดลมระบายอากาศเพื่อระบายความร้อน หรือเปิดหลอดไฟอินฟราเรดเพื่อเพิ่มความอบอุ่นแบบปิดวงจรโดยอัตโนมัติ ส่งผลให้จิ้งหรีดเติบโตอย่างมั่นคงและอัตรารอดตายสูงขึ้น</span>
+                        <span class="lang-en hidden">To address this, the research team collaborated with the community to design and develop the <strong>"Automatic Cricket Breeding Cabinet using IoT."</strong> Fitted with two DHT11 sensors, it monitors temperature and humidity via a NodeMCU ESP8266 board. When the microclimate fluctuates, the system automatically activates ventilation fans to cool down or infrared lamps to heat up the cabinet, resulting in stable growth and significantly higher survival rates.</span>
+                        <span class="lang-ja hidden">この課題を解決するため、研究チームは地域と協力して「IoTを用いた自動コオロギ飼育温室」を開発しました。前後に配置されたデュアルDHT11センサーが、NodeMCU ESP8266コントローラを介してリアルタイムで温湿度を監視します。気候変動に応じて換気扇やインフラレッド加熱ランプを自動制御し、安定した成長と生存率の向上を実現します。</span>
                     </p>
 
                     <!-- Problem Statistics Grid -->
                     <div class="grid grid-cols-3 gap-4 pt-4">
                         <div class="bg-rose-50 border-l-4 border-rose-500 p-4 rounded-r-xl">
                             <span class="text-2xl font-bold text-rose-600 block">-50%</span>
-                            <span class="text-xs text-rose-800 font-heading">ผลผลิตหายจากระบบเดิม</span>
+                            <span class="text-xs text-rose-800 font-heading">
+                                <span class="lang-th">ผลผลิตหายจากระบบเดิม</span>
+                                <span class="lang-en hidden">Yield Loss (Old System)</span>
+                                <span class="lang-ja hidden">従来方式での減産率</span>
+                            </span>
                         </div>
                         <div class="bg-amber-50 border-l-4 border-amber-500 p-4 rounded-r-xl">
                             <span class="text-2xl font-bold text-amber-600 block">7-8 kg</span>
-                            <span class="text-xs text-amber-800 font-heading">จุดคุ้มทุนต่อหนึ่งตู้เลี้ยง</span>
+                            <span class="text-xs text-amber-800 font-heading">
+                                <span class="lang-th">จุดคุ้มทุนต่อตู้เลี้ยง</span>
+                                <span class="lang-en hidden">Break-even Point/Cabinet</span>
+                                <span class="lang-ja hidden">1箱の損益分岐点</span>
+                            </span>
                         </div>
                         <div class="bg-teal-50 border-l-4 border-teal-500 p-4 rounded-r-xl">
                             <span class="text-2xl font-bold text-teal-600 block">25-35°C</span>
-                            <span class="text-xs text-teal-800 font-heading">ช่วงอุณหภูมิโตดีที่สุด</span>
+                            <span class="text-xs text-teal-800 font-heading">
+                                <span class="lang-th">ช่วงอุณหภูมิโตดีที่สุด</span>
+                                <span class="lang-en hidden">Optimal Growth Temp</span>
+                                <span class="lang-ja hidden">最適成長温度範囲</span>
+                            </span>
                         </div>
                     </div>
                 </div>
 
                 <!-- Objectives Cards (5 cols) -->
                 <div id="objectives" class="lg:col-span-5 space-y-4">
-                    <h4 class="font-heading text-lg font-bold text-slate-800 uppercase tracking-wider mb-2">วัตถุประสงค์งานวิจัย</h4>
+                    <h4 class="font-heading text-lg font-bold text-slate-800 uppercase tracking-wider mb-2">
+                        <span class="lang-th">วัตถุประสงค์งานวิจัย</span>
+                        <span class="lang-en hidden">Research Objectives</span>
+                        <span class="lang-ja hidden">研究目的</span>
+                    </h4>
                     
                     <div class="flex items-start space-x-4 bg-slate-50 hover:bg-slate-100/80 p-4 rounded-xl transition-all duration-300 border border-slate-100 hover:shadow-sm">
                         <div class="bg-teal-500/10 text-teal-600 p-3 rounded-lg mt-0.5">
                             <i class="fas fa-brain text-lg"></i>
                         </div>
                         <div>
-                            <span class="font-heading font-semibold text-slate-800 text-sm block">1. สร้างองค์ความรู้</span>
-                            <span class="text-xs text-slate-500 block mt-0.5">การนำเทคโนโลยีอินเทอร์เน็ตของสรรพสิ่ง (IoT) มาประยุกต์ใช้ในการปรับสภาวะโรงเลี้ยงจิ้งหรีด</span>
+                            <span class="font-heading font-semibold text-slate-800 text-sm block">
+                                <span class="lang-th">1. สร้างองค์ความรู้</span>
+                                <span class="lang-en hidden">1. Establish Knowledge</span>
+                                <span class="lang-ja hidden">1. 知見の確立</span>
+                            </span>
+                            <span class="text-xs text-slate-500 block mt-0.5">
+                                <span class="lang-th">การนำเทคโนโลยีอินเทอร์เน็ตของสรรพสิ่ง (IoT) มาประยุกต์ใช้ในการปรับสภาวะโรงเลี้ยงจิ้งหรีด</span>
+                                <span class="lang-en hidden">Applying IoT technology to optimize microclimates within cricket breeding houses.</span>
+                                <span class="lang-ja hidden">コオロギ飼育環境を最適化するためのIoT技術の応用。</span>
+                            </span>
                         </div>
                     </div>
 
@@ -287,8 +442,16 @@
                             <i class="fas fa-pencil-ruler text-lg"></i>
                         </div>
                         <div>
-                            <span class="font-heading font-semibold text-slate-800 text-sm block">2. ออกแบบและพัฒนา</span>
-                            <span class="text-xs text-slate-500 block mt-0.5">ระบบควบคุมสภาพแวดล้อมอัตโนมัติภายในตู้เลี้ยง ด้วยไมโครคอนโทรลเลอร์และเซนเซอร์</span>
+                            <span class="font-heading font-semibold text-slate-800 text-sm block">
+                                <span class="lang-th">2. ออกแบบและพัฒนา</span>
+                                <span class="lang-en hidden">2. Design & Develop</span>
+                                <span class="lang-ja hidden">2. 設計と開発</span>
+                            </span>
+                            <span class="text-xs text-slate-500 block mt-0.5">
+                                <span class="lang-th">ระบบควบคุมสภาพแวดล้อมอัตโนมัติภายในตู้เลี้ยง ด้วยไมโครคอนโทรลเลอร์และเซนเซอร์</span>
+                                <span class="lang-en hidden">Developing automatic environment control systems inside cabinets using microcontrollers and sensors.</span>
+                                <span class="lang-ja hidden">マイクロコントローラとセンサーを用いた自動温湿度制御温室の開発。</span>
+                            </span>
                         </div>
                     </div>
 
@@ -297,8 +460,16 @@
                             <i class="fas fa-hands-helping text-lg"></i>
                         </div>
                         <div>
-                            <span class="font-heading font-semibold text-slate-800 text-sm block">3. ถ่ายทอดเทคโนโลยี</span>
-                            <span class="text-xs text-slate-500 block mt-0.5">จัดอบรมเชิงปฏิบัติการและติดตั้งชุดตู้เลี้ยงจิ้งหรีดอัจฉริยะให้กับกลุ่มเกษตรกรใช้งานจริง</span>
+                            <span class="font-heading font-semibold text-slate-800 text-sm block">
+                                <span class="lang-th">3. ถ่ายทอดเทคโนโลยี</span>
+                                <span class="lang-en hidden">3. Tech Transfer</span>
+                                <span class="lang-ja hidden">3. 技術移転</span>
+                            </span>
+                            <span class="text-xs text-slate-500 block mt-0.5">
+                                <span class="lang-th">จัดอบรมเชิงปฏิบัติการและติดตั้งชุดตู้เลี้ยงจิ้งหรีดอัจฉริยะให้กับกลุ่มเกษตรกรใช้งานจริง</span>
+                                <span class="lang-en hidden">Organizing workshops and deploying smart cabinets for practical local farmer groups.</span>
+                                <span class="lang-ja hidden">実践的なワークショップの開催と、農家へのスマート温室の導入・設置。</span>
+                            </span>
                         </div>
                     </div>
 
@@ -307,8 +478,16 @@
                             <i class="fas fa-smile text-lg"></i>
                         </div>
                         <div>
-                            <span class="font-heading font-semibold text-slate-800 text-sm block">4. ประเมินและติดตาม</span>
-                            <span class="text-xs text-slate-500 block mt-0.5">ศึกษาประสิทธิภาพและการประเมินความพึงพอใจของกลุ่มเกษตรกรที่มีต่อระบบที่พัฒนาขึ้น</span>
+                            <span class="font-heading font-semibold text-slate-800 text-sm block">
+                                <span class="lang-th">4. ประเมินและติดตาม</span>
+                                <span class="lang-en hidden">4. Evaluate & Monitor</span>
+                                <span class="lang-ja hidden">4. 評価と追跡</span>
+                            </span>
+                            <span class="text-xs text-slate-500 block mt-0.5">
+                                <span class="lang-th">ศึกษาประสิทธิภาพและการประเมินความพึงพอใจของกลุ่มเกษตรกรที่มีต่อระบบที่พัฒนาขึ้น</span>
+                                <span class="lang-en hidden">Studying system efficiency and assessing farmer satisfaction with the developed technology.</span>
+                                <span class="lang-ja hidden">開発されたシステムの効率性の検証と、農家の満足度評価の実施。</span>
+                            </span>
                         </div>
                     </div>
                 </div>
@@ -322,52 +501,118 @@
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
             
             <div class="text-center max-w-3xl mx-auto mb-16">
-                <span class="text-sm font-heading font-semibold text-cyan-400 uppercase tracking-widest block mb-2">ระเบียบวิธีวิจัยและอุปกรณ์</span>
+                <span class="text-sm font-heading font-semibold text-cyan-400 uppercase tracking-widest block mb-2">
+                    <span class="lang-th">ระเบียบวิธีวิจัยและอุปกรณ์</span>
+                    <span class="lang-en hidden">Research Methodology & Equipment</span>
+                    <span class="lang-ja hidden">研究方法と機器</span>
+                </span>
                 <h2 class="font-heading text-3xl sm:text-4xl font-bold leading-tight">
-                    กระบวนการพัฒนาระบบและสถาปัตยกรรม IoT
+                    <span class="lang-th">กระบวนการพัฒนาระบบและสถาปัตยกรรม IoT</span>
+                    <span class="lang-en hidden">Development Process & IoT Architecture</span>
+                    <span class="lang-ja hidden">システム開発プロセスとIoTアーキテクチャ</span>
                 </h2>
                 <div class="w-16 h-1 bg-gradient-to-r from-teal-400 to-cyan-400 mx-auto mt-4"></div>
             </div>
 
             <!-- R&D Process Timeline -->
             <div class="mb-20">
-                <h3 class="font-heading text-xl font-bold mb-10 text-center text-slate-200">7 ขั้นตอนตามวงจรพัฒนาระบบ (SDLC)</h3>
+                <h3 class="font-heading text-xl font-bold mb-10 text-center text-slate-200">
+                    <span class="lang-th">7 ขั้นตอนตามวงจรพัฒนาระบบ (SDLC)</span>
+                    <span class="lang-en hidden">7 Steps of System Development Life Cycle (SDLC)</span>
+                    <span class="lang-ja hidden">システム開発ライフサイクル（SDLC）の7段階</span>
+                </h3>
                 
                 <div class="grid grid-cols-1 md:grid-cols-7 gap-4">
                     <div class="bg-slate-800/80 border border-slate-700/50 p-5 rounded-2xl text-center relative group hover:border-teal-500 transition-colors duration-300">
                         <div class="w-10 h-10 bg-teal-500/20 text-teal-400 rounded-full flex items-center justify-center mx-auto mb-3 font-heading font-bold text-sm">1</div>
-                        <span class="font-heading font-semibold text-sm block mb-1 text-slate-100">กำหนดปัญหา</span>
-                        <span class="text-[11px] text-slate-400 block">สำรวจบริบทและความเจ็บปวดในฟาร์มจริง</span>
+                        <span class="font-heading font-semibold text-sm block mb-1 text-slate-100">
+                            <span class="lang-th">กำหนดปัญหา</span>
+                            <span class="lang-en hidden">Definition</span>
+                            <span class="lang-ja hidden">課題の定義</span>
+                        </span>
+                        <span class="text-[11px] text-slate-400 block">
+                            <span class="lang-th">สำรวจบริบทและความเจ็บปวดในฟาร์มจริง</span>
+                            <span class="lang-en hidden">Surveying real farm contexts and pain points.</span>
+                            <span class="lang-ja hidden">実際の農場の現状と問題点の調査。</span>
+                        </span>
                     </div>
                     <div class="bg-slate-800/80 border border-slate-700/50 p-5 rounded-2xl text-center relative group hover:border-teal-500 transition-colors duration-300">
                         <div class="w-10 h-10 bg-teal-500/20 text-teal-400 rounded-full flex items-center justify-center mx-auto mb-3 font-heading font-bold text-sm">2</div>
-                        <span class="font-heading font-semibold text-sm block mb-1 text-slate-100">การวิเคราะห์</span>
-                        <span class="text-[11px] text-slate-400 block">วิเคราะห์ความต้องการและการตั้งระดับอุณหภูมิ</span>
+                        <span class="font-heading font-semibold text-sm block mb-1 text-slate-100">
+                            <span class="lang-th">การวิเคราะห์</span>
+                            <span class="lang-en hidden">Analysis</span>
+                            <span class="lang-ja hidden">分析</span>
+                        </span>
+                        <span class="text-[11px] text-slate-400 block">
+                            <span class="lang-th">วิเคราะห์ความต้องการและการตั้งระดับอุณหภูมิ</span>
+                            <span class="lang-en hidden">Analyzing requirements and setting temperature thresholds.</span>
+                            <span class="lang-ja hidden">要件分析と温度閾値の設定。</span>
+                        </span>
                     </div>
                     <div class="bg-slate-800/80 border border-slate-700/50 p-5 rounded-2xl text-center relative group hover:border-teal-500 transition-colors duration-300">
                         <div class="w-10 h-10 bg-teal-500/20 text-teal-400 rounded-full flex items-center justify-center mx-auto mb-3 font-heading font-bold text-sm">3</div>
-                        <span class="font-heading font-semibold text-sm block mb-1 text-slate-100">การออกแบบ</span>
-                        <span class="text-[11px] text-slate-400 block">ออกแบบตู้ ขนาด 60x120x60 ซม. และผังวงจร</span>
+                        <span class="font-heading font-semibold text-sm block mb-1 text-slate-100">
+                            <span class="lang-th">การออกแบบ</span>
+                            <span class="lang-en hidden">Design</span>
+                            <span class="lang-ja hidden">設計</span>
+                        </span>
+                        <span class="text-[11px] text-slate-400 block">
+                            <span class="lang-th">ออกแบบตู้ ขนาด 60x120x60 ซม. และผังวงจร</span>
+                            <span class="lang-en hidden">Designing the 60x120x60 cm cabinet & circuits.</span>
+                            <span class="lang-ja hidden">60x120x60 cmの温室と回路図の設計。</span>
+                        </span>
                     </div>
                     <div class="bg-slate-800/80 border border-slate-700/50 p-5 rounded-2xl text-center relative group hover:border-teal-500 transition-colors duration-300">
                         <div class="w-10 h-10 bg-teal-500/20 text-teal-400 rounded-full flex items-center justify-center mx-auto mb-3 font-heading font-bold text-sm">4</div>
-                        <span class="font-heading font-semibold text-sm block mb-1 text-slate-100">การพัฒนา</span>
-                        <span class="text-[11px] text-slate-400 block">เขียนโค้ดด้วยภาษา C บน Arduino IDE & Blynk</span>
+                        <span class="font-heading font-semibold text-sm block mb-1 text-slate-100">
+                            <span class="lang-th">การพัฒนา</span>
+                            <span class="lang-en hidden">Development</span>
+                            <span class="lang-ja hidden">開発</span>
+                        </span>
+                        <span class="text-[11px] text-slate-400 block">
+                            <span class="lang-th">เขียนโค้ดด้วยภาษา C บน Arduino IDE & Blynk</span>
+                            <span class="lang-en hidden">Writing C code on Arduino IDE and setting up Blynk.</span>
+                            <span class="lang-ja hidden">Arduino IDEとBlynkを使用したC言語開発。</span>
+                        </span>
                     </div>
                     <div class="bg-slate-800/80 border border-slate-700/50 p-5 rounded-2xl text-center relative group hover:border-teal-500 transition-colors duration-300">
                         <div class="w-10 h-10 bg-teal-500/20 text-teal-400 rounded-full flex items-center justify-center mx-auto mb-3 font-heading font-bold text-sm">5</div>
-                        <span class="font-heading font-semibold text-sm block mb-1 text-slate-100">การทดสอบ</span>
-                        <span class="text-[11px] text-slate-400 block">ทดสอบระบบอัตโนมัติผ่าน Blynk ในสถานการณ์จริง</span>
+                        <span class="font-heading font-semibold text-sm block mb-1 text-slate-100">
+                            <span class="lang-th">การทดสอบ</span>
+                            <span class="lang-en hidden">Testing</span>
+                            <span class="lang-ja hidden">テスト</span>
+                        </span>
+                        <span class="text-[11px] text-slate-400 block">
+                            <span class="lang-th">ทดสอบระบบอัตโนมัติผ่าน Blynk ในสถานการณ์จริง</span>
+                            <span class="lang-en hidden">Testing automatic system via Blynk in real scenarios.</span>
+                            <span class="lang-ja hidden">実環境におけるBlynkを介した動作検証。</span>
+                        </span>
                     </div>
                     <div class="bg-slate-800/80 border border-slate-700/50 p-5 rounded-2xl text-center relative group hover:border-teal-500 transition-colors duration-300">
                         <div class="w-10 h-10 bg-teal-500/20 text-teal-400 rounded-full flex items-center justify-center mx-auto mb-3 font-heading font-bold text-sm">6</div>
-                        <span class="font-heading font-semibold text-sm block mb-1 text-slate-100">การติดตั้ง</span>
-                        <span class="text-[11px] text-slate-400 block">ติดตั้งอุปกรณ์ในฟาร์มต้นแบบบ้านคุณสำรวย</span>
+                        <span class="font-heading font-semibold text-sm block mb-1 text-slate-100">
+                            <span class="lang-th">การติดตั้ง</span>
+                            <span class="lang-en hidden">Deployment</span>
+                            <span class="lang-ja hidden">導入</span>
+                        </span>
+                        <span class="text-[11px] text-slate-400 block">
+                            <span class="lang-th">ติดตั้งอุปกรณ์ในฟาร์มต้นแบบบ้านคุณสำรวย</span>
+                            <span class="lang-en hidden">Deploying equipment at the pilot farm of Mr. Samruay.</span>
+                            <span class="lang-ja hidden">サムルアイ氏のモデル農場への機器設置。</span>
+                        </span>
                     </div>
                     <div class="bg-slate-800/80 border border-slate-700/50 p-5 rounded-2xl text-center relative group hover:border-teal-500 transition-colors duration-300">
                         <div class="w-10 h-10 bg-teal-500/20 text-teal-400 rounded-full flex items-center justify-center mx-auto mb-3 font-heading font-bold text-sm">7</div>
-                        <span class="font-heading font-semibold text-sm block mb-1 text-slate-100">บำรุงรักษา</span>
-                        <span class="text-[11px] text-slate-400 block">ตรวจสภาพอุปกรณ์ไฟฟ้าและสายต่อทุกๆ 3 เดือน</span>
+                        <span class="font-heading font-semibold text-sm block mb-1 text-slate-100">
+                            <span class="lang-th">บำรุงรักษา</span>
+                            <span class="lang-en hidden">Maintenance</span>
+                            <span class="lang-ja hidden">保守</span>
+                        </span>
+                        <span class="text-[11px] text-slate-400 block">
+                            <span class="lang-th">ตรวจสภาพอุปกรณ์ไฟฟ้าและสายต่อทุกๆ 3 เดือน</span>
+                            <span class="lang-en hidden">Checking electrical connections & wiring every 3 months.</span>
+                            <span class="lang-ja hidden">3ヶ月ごとの電気機器と配線の点検。</span>
+                        </span>
                     </div>
                 </div>
             </div>
@@ -377,27 +622,39 @@
                 <!-- Design Text (5 cols) -->
                 <div class="lg:col-span-5 space-y-6">
                     <h3 class="font-heading text-2xl font-bold text-slate-100">
-                        การออกแบบตู้และโครงสร้างวงจรแบบปิด
+                        <span class="lang-th">การออกแบบตู้และโครงสร้างวงจรแบบปิด</span>
+                        <span class="lang-en hidden">Cabinet Design & Closed-Loop Circuit</span>
+                        <span class="lang-ja hidden">温室設計とクローズドループ回路</span>
                     </h3>
                     <p class="text-slate-400 text-sm leading-relaxed">
-                        ตู้เลี้ยงจิ้งหรีดได้รับการติดตั้งและจำลองสภาวะแวดล้อมโดยใช้เซนเซอร์ DHT11 สองจุด ติดตั้งไว้ที่ส่วนหัวและส่วนท้ายตู้เพื่อวัดการกระจายตัวของความร้อน โดยการต่อระบบมีดังนี้:
+                        <span class="lang-th">ตู้เลี้ยงจิ้งหรีดได้รับการติดตั้งและจำลองสภาวะแวดล้อมโดยใช้เซนเซอร์ DHT11 สองจุด ติดตั้งไว้ที่ส่วนหัวและส่วนท้ายตู้เพื่อวัดการกระจายตัวของความร้อน โดยการต่อระบบมีดังนี้:</span>
+                        <span class="lang-en hidden">The cabinet is fitted with two DHT11 sensors (front and back) to monitor heat distribution. The hardware configuration includes:</span>
+                        <span class="lang-ja hidden">コオロギ温室には、前後2箇所にDHT11センサーが配置され、熱分布をリアルタイムで監視します。構成機器は以下の通りです。</span>
                     </p>
                     <ul class="space-y-3 text-slate-300 text-sm">
                         <li class="flex items-center">
                             <i class="fas fa-check text-teal-400 mr-3"></i>
-                            <span>บอร์ดหลัก NodeMCU ESP8266 ทำการส่งข้อมูลผ่าน WiFi</span>
+                            <span class="lang-th">บอร์ดหลัก NodeMCU ESP8266 ทำการส่งข้อมูลผ่าน WiFi</span>
+                            <span class="lang-en hidden">NodeMCU ESP8266 main board handles Wi-Fi data transmission</span>
+                            <span class="lang-ja hidden">NodeMCU ESP8266メインボードがWi-Fi経由でデータを送信</span>
                         </li>
                         <li class="flex items-center">
                             <i class="fas fa-check text-teal-400 mr-3"></i>
-                            <span>รีเลย์ (Relay) ช่อง 1-2 คอยเปิด-ปิด พัดลม 10 นิ้วระบายอากาศ</span>
+                            <span class="lang-th">รีเลย์ (Relay) ช่อง 1-2 คอยเปิด-ปิด พัดลม 10 นิ้วระบายอากาศ</span>
+                            <span class="lang-en hidden">Relay channels 1-2 control a 10-inch ventilation fan for cooling</span>
+                            <span class="lang-ja hidden">リレーの1-2チャンネルが10インチ換気扇をON/OFFして温室内を冷却</span>
                         </li>
                         <li class="flex items-center">
                             <i class="fas fa-check text-teal-400 mr-3"></i>
-                            <span>รีเลย์ (Relay) ช่อง 3-4 คอยเปิด-ปิด หลอดไฟอินฟราเรดแผ่ความร้อน</span>
+                            <span class="lang-th">รีเลย์ (Relay) ช่อง 3-4 คอยเปิด-ปิด หลอดไฟอินฟราเรดแผ่ความร้อน</span>
+                            <span class="lang-en hidden">Relay channels 3-4 control infrared lamps for heating</span>
+                            <span class="lang-ja hidden">リレーの3-4チャンネルが加熱用インフラレッドランプをON/OFF制御</span>
                         </li>
                         <li class="flex items-center">
                             <i class="fas fa-check text-teal-400 mr-3"></i>
-                            <span>จอ LCD หน้าตู้แสดงค่าอุณหภูมิและความชื้นแบบเรียลไทม์</span>
+                            <span class="lang-th">จอ LCD หน้าตู้แสดงค่าอุณหภูมิและความชื้นแบบเรียลไทม์</span>
+                            <span class="lang-en hidden">Front LCD displays live temperature and humidity locally</span>
+                            <span class="lang-ja hidden">フロントのLCDが温度と湿度をその場でリアルタイム表示</span>
                         </li>
                     </ul>
                 </div>
@@ -405,11 +662,21 @@
                 <!-- Diagrams Showcase (7 cols) -->
                 <div class="lg:col-span-7 grid grid-cols-1 sm:grid-cols-2 gap-6">
                     <div class="bg-slate-800 border border-slate-700 rounded-2xl p-4 shadow-xl">
-                        <span class="font-heading font-semibold text-xs text-cyan-400 block mb-2 uppercase text-center"><i class="fas fa-project-diagram mr-2"></i>แผนภาพสถาปัตยกรรมระบบ</span>
+                        <span class="font-heading font-semibold text-xs text-cyan-400 block mb-2 uppercase text-center">
+                            <i class="fas fa-project-diagram mr-2"></i>
+                            <span class="lang-th">แผนภาพสถาปัตยกรรมระบบ</span>
+                            <span class="lang-en hidden">System Architecture Diagram</span>
+                            <span class="lang-ja hidden">システムアーキテクチャ図</span>
+                        </span>
                         <img src="assets/system_architecture.png" alt="สถาปัตยกรรมระบบ" class="rounded-xl w-full h-[220px] object-contain bg-slate-900/50 p-2">
                     </div>
                     <div class="bg-slate-800 border border-slate-700 rounded-2xl p-4 shadow-xl">
-                        <span class="font-heading font-semibold text-xs text-cyan-400 block mb-2 uppercase text-center"><i class="fas fa-drafting-compass mr-2"></i>การออกแบบตู้และจุดติดตั้ง IOT</span>
+                        <span class="font-heading font-semibold text-xs text-cyan-400 block mb-2 uppercase text-center">
+                            <i class="fas fa-drafting-compass mr-2"></i>
+                            <span class="lang-th">การออกแบบตู้และจุดติดตั้ง IOT</span>
+                            <span class="lang-en hidden">Cabinet Design & IoT Placement</span>
+                            <span class="lang-ja hidden">温室設計とIoT配置</span>
+                        </span>
                         <img src="assets/cabinet_design.png" alt="แบบการออกแบบตู้" class="rounded-xl w-full h-[220px] object-contain bg-slate-900/50 p-2">
                     </div>
                 </div>
@@ -417,30 +684,62 @@
 
             <!-- Hardware Component Spec Grid -->
             <div>
-                <h3 class="font-heading text-xl font-bold mb-8 text-center text-slate-200">สเปกฮาร์ดแวร์จริงของระบบ</h3>
+                <h3 class="font-heading text-xl font-bold mb-8 text-center text-slate-200">
+                    <span class="lang-th">สเปกฮาร์ดแวร์จริงของระบบ</span>
+                    <span class="lang-en hidden">Physical Hardware Specifications</span>
+                    <span class="lang-ja hidden">物理ハードウェア仕様</span>
+                </h3>
                 <div class="grid grid-cols-2 lg:grid-cols-4 gap-6">
                     <div class="bg-slate-800/60 border border-slate-700/50 rounded-2xl p-4 flex flex-col items-center text-center">
                         <img src="assets/nodemcu_board.jpg" alt="NodeMCU ESP8266" class="w-20 h-20 rounded-xl object-cover mb-4 border border-slate-700">
                         <span class="font-heading font-bold text-sm text-slate-100">NodeMCU ESP8266</span>
-                        <span class="text-[11px] text-slate-400 mt-1">บอร์ดประมวลผลหลักที่มีโมดูล WiFi ในตัว ส่งข้อมูล Blynk Real-time</span>
+                        <span class="text-[11px] text-slate-400 mt-1">
+                            <span class="lang-th">บอร์ดประมวลผลหลักที่มีโมดูล WiFi ในตัว ส่งข้อมูล Blynk Real-time</span>
+                            <span class="lang-en hidden">Main CPU board with built-in Wi-Fi for real-time Blynk cloud transmission.</span>
+                            <span class="lang-ja hidden">Blynk経โดยตรงでクラウドにデータを送信するWi-Fi内蔵メイン基板。</span>
+                        </span>
                     </div>
 
                     <div class="bg-slate-800/60 border border-slate-700/50 rounded-2xl p-4 flex flex-col items-center text-center">
                         <img src="assets/sensor_dht11.jpg" alt="DHT11 Sensor" class="w-20 h-20 rounded-xl object-cover mb-4 border border-slate-700">
-                        <span class="font-heading font-bold text-sm text-slate-100">โมดูล DHT11</span>
-                        <span class="text-[11px] text-slate-400 mt-1">เซนเซอร์วัดค่าอุณหภูมิและความชื้นสัมพัทธ์ในอากาศ ความคลาดเคลื่อนต่ำ</span>
+                        <span class="font-heading font-bold text-sm text-slate-100">
+                            <span class="lang-th">โมดูล DHT11</span>
+                            <span class="lang-en hidden">DHT11 Sensor</span>
+                            <span class="lang-ja hidden">DHT11温湿度センサー</span>
+                        </span>
+                        <span class="text-[11px] text-slate-400 mt-1">
+                            <span class="lang-th">เซนเซอร์วัดค่าอุณหภูมิและความชื้นสัมพัทธ์ในอากาศ ความคลาดเคลื่อนต่ำ</span>
+                            <span class="lang-en hidden">Low-error sensor measuring ambient temperature and relative humidity.</span>
+                            <span class="lang-ja hidden">周囲の温度と相対湿度を高精度で測定する低誤差センサー。</span>
+                        </span>
                     </div>
 
                     <div class="bg-slate-800/60 border border-slate-700/50 rounded-2xl p-4 flex flex-col items-center text-center">
                         <img src="assets/relay_module.jpg" alt="Relay Module" class="w-20 h-20 rounded-xl object-cover mb-4 border border-slate-700">
-                        <span class="font-heading font-bold text-sm text-slate-100">โมดูลรีเลย์ 4 ช่อง</span>
-                        <span class="text-[11px] text-slate-400 mt-1">ทำหน้าที่เป็นสวิตช์เปิด-ปิดพัดลมระบายอากาศและหลอดไฟความร้อนอัตโนมัติ</span>
+                        <span class="font-heading font-bold text-sm text-slate-100">
+                            <span class="lang-th">โมดูลรีเลย์ 4 ช่อง</span>
+                            <span class="lang-en hidden">4-Channel Relay</span>
+                            <span class="lang-ja hidden">4チャンネルリレー</span>
+                        </span>
+                        <span class="text-[11px] text-slate-400 mt-1">
+                            <span class="lang-th">ทำหน้าที่เป็นสวิตช์เปิด-ปิดพัดลมระบายอากาศและหลอดไฟความร้อนอัตโนมัติ</span>
+                            <span class="lang-en hidden">Acts as automatic switch for ventilation fans & heating lamps.</span>
+                            <span class="lang-ja hidden">換気ファンと加熱用赤外線ランプを切り替えるスイッチ。</span>
+                        </span>
                     </div>
 
                     <div class="bg-slate-800/60 border border-slate-700/50 rounded-2xl p-4 flex flex-col items-center text-center">
                         <img src="assets/lcd_display.jpg" alt="LCD Display I2C" class="w-20 h-20 rounded-xl object-cover mb-4 border border-slate-700">
-                        <span class="font-heading font-bold text-sm text-slate-100">จอ LCD 16x2 I2C</span>
-                        <span class="text-[11px] text-slate-400 mt-1">ติดตั้งด้านหน้าตู้ แสดงอุณหภูมิและความชื้นหน้าเครื่องได้ทันทีไม่ต้องพึ่งมือถือ</span>
+                        <span class="font-heading font-bold text-sm text-slate-100">
+                            <span class="lang-th">จอ LCD 16x2 I2C</span>
+                            <span class="lang-en hidden">LCD 16x2 I2C</span>
+                            <span class="lang-ja hidden">LCD 16x2 I2Cจอ</span>
+                        </span>
+                        <span class="text-[11px] text-slate-400 mt-1">
+                            <span class="lang-th">ติดตั้งด้านหน้าตู้ แสดงอุณหภูมิและความชื้นหน้าเครื่องได้ทันทีไม่ต้องพึ่งมือถือ</span>
+                            <span class="lang-en hidden">Mounted on front; displays live values without needing a smartphone.</span>
+                            <span class="lang-ja hidden">フロントパネルに搭載され、スマホ不要で測定値を表示可能。</span>
+                        </span>
                     </div>
                 </div>
             </div>
@@ -452,9 +751,15 @@
     <section id="results" class="py-20 bg-white relative">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center max-w-3xl mx-auto mb-16">
-                <span class="text-sm font-heading font-semibold text-agritech-600 uppercase tracking-widest block mb-2">ผลการทดลองและการทำงานจริง</span>
+                <span class="text-sm font-heading font-semibold text-agritech-600 uppercase tracking-widest block mb-2">
+                    <span class="lang-th">ผลการทดลองและการทำงานจริง</span>
+                    <span class="lang-en hidden">Results & Real Deployment</span>
+                    <span class="lang-ja hidden">実験結果と実地導入</span>
+                </span>
                 <h2 class="font-heading text-3xl sm:text-4xl font-bold text-slate-800 leading-tight">
-                    ประสิทธิภาพและการยอมรับจากชุมชน
+                    <span class="lang-th">ประสิทธิภาพและการยอมรับจากชุมชน</span>
+                    <span class="lang-en hidden">Performance & Community Acceptance</span>
+                    <span class="lang-ja hidden">システム性能と地域社会の受容</span>
                 </h2>
                 <div class="w-16 h-1 bg-gradient-to-r from-teal-500 to-cyan-500 mx-auto mt-4"></div>
             </div>
@@ -463,8 +768,16 @@
             <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mb-16">
                 <div class="bg-slate-50 border border-slate-100 p-6 rounded-2xl hover:shadow-lg transition-shadow duration-300">
                     <span class="text-4xl font-bold text-teal-600 block mb-1">4.60 <span class="text-sm text-slate-400 font-normal">/ 5.00</span></span>
-                    <span class="font-heading font-semibold text-slate-800 text-sm block">ประสิทธิภาพ IoT ฮาร์ดแวร์</span>
-                    <span class="text-xs text-slate-500 block mt-1">ประเมินโดยผู้เชี่ยวชาญด้าน IT/IoT: คะแนนในระดับดีมาก</span>
+                    <span class="font-heading font-semibold text-slate-800 text-sm block">
+                        <span class="lang-th">ประสิทธิภาพ IoT ฮาร์ดแวร์</span>
+                        <span class="lang-en hidden">IoT Hardware Performance</span>
+                        <span class="lang-ja hidden">IoTハードウェア性能</span>
+                    </span>
+                    <span class="text-xs text-slate-500 block mt-1">
+                        <span class="lang-th">ประเมินโดยผู้เชี่ยวชาญด้าน IT/IoT: ดีมาก</span>
+                        <span class="lang-en hidden">Assessed by IT/IoT experts: Rated Excellent</span>
+                        <span class="lang-ja hidden">IT/IoT専門家による評価：極めて優秀</span>
+                    </span>
                     <div class="w-full bg-slate-200 h-1.5 rounded-full mt-3">
                         <div class="bg-teal-500 h-1.5 rounded-full" style="width: 92%"></div>
                     </div>
@@ -472,8 +785,16 @@
 
                 <div class="bg-slate-50 border border-slate-100 p-6 rounded-2xl hover:shadow-lg transition-shadow duration-300">
                     <span class="text-4xl font-bold text-teal-600 block mb-1">4.47 <span class="text-sm text-slate-400 font-normal">/ 5.00</span></span>
-                    <span class="font-heading font-semibold text-slate-800 text-sm block">ส่วนต่อประสานและการใช้งาน</span>
-                    <span class="text-xs text-slate-500 block mt-1">การออกแบบ Interface Blynk และความชัดเจนของฟอนต์: ดี</span>
+                    <span class="font-heading font-semibold text-slate-800 text-sm block">
+                        <span class="lang-th">ส่วนต่อประสานและการใช้งาน</span>
+                        <span class="lang-en hidden">UI Design & Usability</span>
+                        <span class="lang-ja hidden">UI設計とユーザビリティ</span>
+                    </span>
+                    <span class="text-xs text-slate-500 block mt-1">
+                        <span class="lang-th">การออกแบบ Interface Blynk และตัวอักษร: ดี</span>
+                        <span class="lang-en hidden">Blynk dashboard interface & readability: Good</span>
+                        <span class="lang-ja hidden">Blynkダッシュボードと可読性：良好</span>
+                    </span>
                     <div class="w-full bg-slate-200 h-1.5 rounded-full mt-3">
                         <div class="bg-teal-500 h-1.5 rounded-full" style="width: 89.4%"></div>
                     </div>
@@ -481,8 +802,16 @@
 
                 <div class="bg-slate-50 border border-slate-100 p-6 rounded-2xl hover:shadow-lg transition-shadow duration-300">
                     <span class="text-4xl font-bold text-teal-600 block mb-1">4.58 <span class="text-sm text-slate-400 font-normal">/ 5.00</span></span>
-                    <span class="font-heading font-semibold text-slate-800 text-sm block">ด้านการลดเวลาและภาระงาน</span>
-                    <span class="text-xs text-slate-500 block mt-1">ประเมินความพึงพอใจของเกษตรกรในการเฝ้าฟาร์ม: ดีมาก</span>
+                    <span class="font-heading font-semibold text-slate-800 text-sm block">
+                        <span class="lang-th">ด้านการลดเวลาและภาระงาน</span>
+                        <span class="lang-en hidden">Time & Labor Reduction</span>
+                        <span class="lang-ja hidden">作業時間と労力の削減</span>
+                    </span>
+                    <span class="text-xs text-slate-500 block mt-1">
+                        <span class="lang-th">ประเมินการลดเวลาในการดูแลฟาร์ม: ดีมาก</span>
+                        <span class="lang-en hidden">Farmer satisfaction in reducing monitor time: Excellent</span>
+                        <span class="lang-ja hidden">監視作業の大幅な削減に関する評価：極めて優秀</span>
+                    </span>
                     <div class="w-full bg-slate-200 h-1.5 rounded-full mt-3">
                         <div class="bg-teal-500 h-1.5 rounded-full" style="width: 91.6%"></div>
                     </div>
@@ -490,8 +819,16 @@
 
                 <div class="bg-slate-50 border border-slate-100 p-6 rounded-2xl hover:shadow-lg transition-shadow duration-300">
                     <span class="text-4xl font-bold text-teal-600 block mb-1">4.49 <span class="text-sm text-slate-400 font-normal">/ 5.00</span></span>
-                    <span class="font-heading font-semibold text-slate-800 text-sm block">ความพึงพอใจโดยรวม</span>
-                    <span class="text-xs text-slate-500 block mt-1">จากการประเมินของเกษตรกรกลุ่มตัวอย่าง 50 คน: ดี</span>
+                    <span class="font-heading font-semibold text-slate-800 text-sm block">
+                        <span class="lang-th">ความพึงพอใจโดยรวม</span>
+                        <span class="lang-en hidden">Overall Satisfaction</span>
+                        <span class="lang-ja hidden">全体的な満足度</span>
+                    </span>
+                    <span class="text-xs text-slate-500 block mt-1">
+                        <span class="lang-th">จากการประเมินของเกษตรกรตัวอย่าง 50 คน: ดี</span>
+                        <span class="lang-en hidden">Evaluated by 50 local farmers: Rated Good</span>
+                        <span class="lang-ja hidden">サンプルとなった地域農家50人による評価：良好</span>
+                    </span>
                     <div class="w-full bg-slate-200 h-1.5 rounded-full mt-3">
                         <div class="bg-teal-500 h-1.5 rounded-full" style="width: 89.8%"></div>
                     </div>
@@ -501,48 +838,140 @@
             <!-- Comparison Table -->
             <div class="mb-20 overflow-hidden border border-slate-200 rounded-2xl shadow-sm">
                 <div class="bg-slate-50 px-6 py-4 border-b border-slate-200">
-                    <h3 class="font-heading font-bold text-slate-800 text-lg"><i class="fas fa-balance-scale mr-2 text-agritech-600"></i>ตารางเปรียบเทียบประสิทธิภาพระบบเลี้ยงจิ้งหรีด</h3>
+                    <h3 class="font-heading font-bold text-slate-800 text-lg">
+                        <i class="fas fa-balance-scale mr-2 text-agritech-600"></i>
+                        <span class="lang-th">ตารางเปรียบเทียบประสิทธิภาพระบบเลี้ยงจิ้งหรีด</span>
+                        <span class="lang-en hidden">Cricket Breeding System Comparison Table</span>
+                        <span class="lang-ja hidden">コオロギ飼育システム比較表</span>
+                    </h3>
                 </div>
                 <div class="overflow-x-auto">
                     <table class="w-full text-left border-collapse text-sm">
                         <thead>
                             <tr class="bg-slate-100 text-slate-700 font-heading font-bold border-b border-slate-200">
-                                <th class="p-4">ประเด็นเปรียบเทียบ</th>
-                                <th class="p-4 bg-teal-50/55 text-teal-800">ระบบของคณะผู้วิจัย (BRU)</th>
-                                <th class="p-4">ระบบของเกียรติสิน (2563)</th>
-                                <th class="p-4">ระบบของพีระยุทธ (2568)</th>
+                                <th class="p-4">
+                                    <span class="lang-th">ประเด็นเปรียบเทียบ</span>
+                                    <span class="lang-en hidden">Aspects</span>
+                                    <span class="lang-ja hidden">比較項目</span>
+                                </th>
+                                <th class="p-4 bg-teal-50/55 text-teal-800">
+                                    <span class="lang-th">ระบบของคณะผู้วิจัย (BRU)</span>
+                                    <span class="lang-en hidden">BRU Research System</span>
+                                    <span class="lang-ja hidden">BRU開発システム</span>
+                                </th>
+                                <th class="p-4">
+                                    <span class="lang-th">ระบบของเกียรติสิน (2563)</span>
+                                    <span class="lang-en hidden">Kiatsin et al. (2020)</span>
+                                    <span class="lang-ja hidden">Kiatsin他 (2563)</span>
+                                </th>
+                                <th class="p-4">
+                                    <span class="lang-th">ระบบของพีระยุทธ (2568)</span>
+                                    <span class="lang-en hidden">Peerayuth et al. (2025)</span>
+                                    <span class="lang-ja hidden">Peerayuth他 (2568)</span>
+                                </th>
                             </tr>
                         </thead>
                         <tbody class="divide-y divide-slate-100 text-slate-600">
                             <tr>
-                                <td class="p-4 font-semibold text-slate-800">วัตถุประสงค์หลัก</td>
-                                <td class="p-4 bg-teal-50/20 text-slate-800">ควบคุมอุณหภูมิความชื้นปิดวงจร เพิ่มผลผลิตและลดแรงงาน</td>
-                                <td class="p-4">ควบคุมการให้อาหารและน้ำอัตโนมัติ ลดแรงงาน</td>
-                                <td class="p-4">ตรวจวัดและส่งข้อความแจ้งเตือนผ่าน Line</td>
+                                <td class="p-4 font-semibold text-slate-800">
+                                    <span class="lang-th">วัตถุประสงค์หลัก</span>
+                                    <span class="lang-en hidden">Primary Objective</span>
+                                    <span class="lang-ja hidden">主な目的</span>
+                                </td>
+                                <td class="p-4 bg-teal-50/20 text-slate-800 font-semibold">
+                                    <span class="lang-th">ควบคุมอุณหภูมิความชื้นปิดวงจร เพิ่มผลผลิตและลดแรงงาน</span>
+                                    <span class="lang-en hidden">Closed-loop temp/humidity control, boosting yield & reducing labor</span>
+                                    <span class="lang-ja hidden">温湿度のクローズドループ制御、収量の増加、労力の削減</span>
+                                </td>
+                                <td class="p-4">
+                                    <span class="lang-th">ควบคุมการให้อาหารและน้ำอัตโนมัติ ลดแรงงาน</span>
+                                    <span class="lang-en hidden">Automatic feed and water control, reducing labor</span>
+                                    <span class="lang-ja hidden">給餌・給水の自動制御による労力削減</span>
+                                </td>
+                                <td class="p-4">
+                                    <span class="lang-th">ตรวจวัดและส่งข้อความแจ้งเตือนผ่าน Line</span>
+                                    <span class="lang-en hidden">Monitoring and alerting via Line notifications</span>
+                                    <span class="lang-ja hidden">Line APIを介した監視と通知送信</span>
+                                </td>
                             </tr>
                             <tr>
-                                <td class="p-4 font-semibold text-slate-800">เทคโนโลยีที่ใช้</td>
+                                <td class="p-4 font-semibold text-slate-800">
+                                    <span class="lang-th">เทคโนโลยีที่ใช้</span>
+                                    <span class="lang-en hidden">Technology Used</span>
+                                    <span class="lang-ja hidden">使用技術</span>
+                                </td>
                                 <td class="p-4 bg-teal-50/20 text-slate-800 font-mono text-xs">ESP8266, DHT11, พัดลม, หลอดไฟอินฟราเรด, Blynk</td>
-                                <td class="p-4 font-mono text-xs">RH Sensor, ท่อหมุนให้อาหาร, NETPIE IOT</td>
+                                <td class="p-4 font-mono text-xs">RH Sensor, Rotary Feeder, NETPIE IoT</td>
                                 <td class="p-4 font-mono text-xs">ESP32, DHT11, PM2.5 Sensor, Line Notify</td>
                             </tr>
                             <tr>
-                                <td class="p-4 font-semibold text-slate-800">การควบคุมสิ่งแวดล้อม</td>
-                                <td class="p-4 bg-teal-50/20 text-teal-700 font-bold"><i class="fas fa-check-circle mr-1.5"></i>ควบคุมอุณหภูมิคงที่แบบ Real-time</td>
-                                <td class="p-4 text-rose-500"><i class="fas fa-times-circle mr-1.5"></i>ตรวจวัดได้อย่างเดียว ไม่มีพัดลม/ไฟตู้</td>
-                                <td class="p-4 text-rose-500"><i class="fas fa-times-circle mr-1.5"></i>ไม่มีระบบควบคุมอุปกรณ์อัตโนมัติ</td>
+                                <td class="p-4 font-semibold text-slate-800">
+                                    <span class="lang-th">การควบคุมสิ่งแวดล้อม</span>
+                                    <span class="lang-en hidden">Env. Control</span>
+                                    <span class="lang-ja hidden">環境制御</span>
+                                </td>
+                                <td class="p-4 bg-teal-50/20 text-teal-700 font-bold">
+                                    <i class="fas fa-check-circle mr-1.5"></i>
+                                    <span class="lang-th">ควบคุมอุณหภูมิคงที่แบบ Real-time</span>
+                                    <span class="lang-en hidden">Active real-time closed-loop control</span>
+                                    <span class="lang-ja hidden">アクティブ自動温湿度制御</span>
+                                </td>
+                                <td class="p-4 text-rose-500">
+                                    <i class="fas fa-times-circle mr-1.5"></i>
+                                    <span class="lang-th">ตรวจวัดได้อย่างเดียว ไม่มีพัดลม/ไฟตู้</span>
+                                    <span class="lang-en hidden">Monitoring only; no actuators</span>
+                                    <span class="lang-ja hidden">監視のみ。ファンやランプ制御なし</span>
+                                </td>
+                                <td class="p-4 text-rose-500">
+                                    <i class="fas fa-times-circle mr-1.5"></i>
+                                    <span class="lang-th">ไม่มีระบบควบคุมอุปกรณ์อัตโนมัติ</span>
+                                    <span class="lang-en hidden">No automatic control loops</span>
+                                    <span class="lang-ja hidden">自動制御ループなし</span>
+                                </td>
                             </tr>
                             <tr>
-                                <td class="p-4 font-semibold text-slate-800">ผลลัพธ์ประสิทธิภาพ</td>
-                                <td class="p-4 bg-teal-50/20 text-slate-800 font-semibold">อัตรารอดเพิ่มขึ้น ลดเวลาเลี้ยง อุณหภูมินิ่งกว่าปกติ</td>
-                                <td class="p-4">อัตรารอดของจิ้งหรีดขยับจาก 450 เป็น 530 ตัว</td>
-                                <td class="p-4">อัตรารอด 94.56% ประสิทธิภาพ 4.76/5.00</td>
+                                <td class="p-4 font-semibold text-slate-800">
+                                    <span class="lang-th">ผลลัพธ์ประสิทธิภาพ</span>
+                                    <span class="lang-en hidden">Performance Result</span>
+                                    <span class="lang-ja hidden">成果</span>
+                                </td>
+                                <td class="p-4 bg-teal-50/20 text-slate-800 font-semibold">
+                                    <span class="lang-th">อัตรารอดเพิ่มขึ้น ลดเวลาเลี้ยง อุณหภูมินิ่งกว่าปกติ</span>
+                                    <span class="lang-en hidden">Higher survival rate, shorter cycle, stable climate</span>
+                                    <span class="lang-ja hidden">生存率の向上、飼育サイクルの短縮、温度の恒常維持</span>
+                                </td>
+                                <td class="p-4">
+                                    <span class="lang-th">อัตรารอดของจิ้งหรีดขยับจาก 450 เป็น 530 ตัว</span>
+                                    <span class="lang-en hidden">Survival count increased from 450 to 530 crickets</span>
+                                    <span class="lang-ja hidden">生存個体数が450から530へ増加</span>
+                                </td>
+                                <td class="p-4">
+                                    <span class="lang-th">อัตรารอด 94.56% ประสิทธิภาพ 4.76/5.00</span>
+                                    <span class="lang-en hidden">94.56% survival, efficiency score 4.76/5.00</span>
+                                    <span class="lang-ja hidden">生存率 94.56%、システム効率 4.76/5.00</span>
+                                </td>
                             </tr>
                             <tr class="bg-slate-50/50">
-                                <td class="p-4 font-semibold text-slate-800">ข้อดีเด่น</td>
-                                <td class="p-4 bg-teal-50/30 text-teal-800 font-semibold">ควบคุมสภาวะนิ่งเสถียร ส่งผลผลผลิตตรงที่สุด</td>
-                                <td class="p-4">เด่นในระบบให้อาหาร/น้ำแบบท่อหมุน</td>
-                                <td class="p-4">เด่นในส่วนแจ้งเตือนฝุ่นละออง PM2.5</td>
+                                <td class="p-4 font-semibold text-slate-800">
+                                    <span class="lang-th">ข้อดีเด่น</span>
+                                    <span class="lang-en hidden">Key Strengths</span>
+                                    <span class="lang-ja hidden">主な強み</span>
+                                </td>
+                                <td class="p-4 bg-teal-50/30 text-teal-800 font-semibold">
+                                    <span class="lang-th">ควบคุมสภาวะนิ่งเสถียร ส่งผลผลผลิตตรงที่สุด</span>
+                                    <span class="lang-en hidden">Maintains microclimate stability, yielding predictable output</span>
+                                    <span class="lang-ja hidden">微気候の恒常的安定化により収量の予測可能性を高める</span>
+                                </td>
+                                <td class="p-4">
+                                    <span class="lang-th">เด่นในระบบให้อาหาร/น้ำแบบท่อหมุน</span>
+                                    <span class="lang-en hidden">Focuses on automatic pipe-feeding & watering</span>
+                                    <span class="lang-ja hidden">回転式チューブによる自動給餌に特化</span>
+                                </td>
+                                <td class="p-4">
+                                    <span class="lang-th">เด่นในส่วนแจ้งเตือนฝุ่นละออง PM2.5</span>
+                                    <span class="lang-en hidden">Features PM2.5 dust monitoring & alerts</span>
+                                    <span class="lang-ja hidden">PM2.5粉塵測定および警告通知機能を搭載</span>
+                                </td>
                             </tr>
                         </tbody>
                     </table>
@@ -554,21 +983,32 @@
                 <div class="absolute inset-0 opacity-5 bg-[radial-gradient(#ffffff_1px,transparent_1px)] [background-size:20px_20px] pointer-events-none"></div>
                 
                 <div class="lg:col-span-5 space-y-6">
-                    <span class="inline-block px-3 py-1 rounded-full bg-cyan-500/10 border border-cyan-500/30 text-cyan-400 text-xs font-heading font-medium"><i class="fas fa-desktop mr-1.5"></i>Blynk IoT Platform Interface</span>
+                    <span class="inline-block px-3 py-1 rounded-full bg-cyan-500/10 border border-cyan-500/30 text-cyan-400 text-xs font-heading font-medium">
+                        <i class="fas fa-desktop mr-1.5"></i>
+                        <span>Blynk IoT Platform Interface</span>
+                    </span>
                     <h3 class="font-heading text-2xl font-bold text-slate-100">
-                        ติดตามและสั่งการระยะไกล ผ่านเว็บและสมาร์ทโฟน
+                        <span class="lang-th">ติดตามและสั่งการระยะไกล ผ่านเว็บและสมาร์ทโฟน</span>
+                        <span class="lang-en hidden">Remote Monitoring & Control via Web and Mobile</span>
+                        <span class="lang-ja hidden">Webとスマホによる遠隔監視・制御</span>
                     </h3>
                     <p class="text-slate-400 text-sm leading-relaxed">
-                        ระบบใช้ Blynk Server ในการเชื่อมต่อข้อมูล โดยดึงอุณหภูมิส่วนหัวของตู้, ส่วนท้ายของตู้ และแสดงค่าเฉลี่ย โดยมีเมนูที่เกษตรกรสามารถคลิกเลือกระบบตู้เลี้ยงสำหรับ <strong>"ตัวอ่อน" (27-32°C)</strong> หรือ <strong>"ตัวเต็มวัย" (25-35°C)</strong> ได้ทันที
+                        <span class="lang-th">ระบบใช้ Blynk Server ในการเชื่อมต่อข้อมูล โดยดึงอุณหภูมิส่วนหัวของตู้, ส่วนท้ายของตู้ และแสดงค่าเฉลี่ย โดยมีเมนูที่เกษตรกรสามารถคลิกเลือกระบบตู้เลี้ยงสำหรับ <strong>"ตัวอ่อน" (27-32°C)</strong> หรือ <strong>"ตัวเต็มวัย" (25-35°C)</strong> ได้ทันที</span>
+                        <span class="lang-en hidden">The system utilizes Blynk Server for data sync, logging front/back temperatures to display averages. Farmers can select presets for <strong>"Nymph" (27-32°C)</strong> or <strong>"Adult" (25-35°C)</strong> stages with one tap.</span>
+                        <span class="lang-ja hidden">システムはBlynkサーバーを使用し、温室前後の温度を測定して平均値を表示。農家はタップ一つで<strong>「幼虫期」(27-32°C)</strong>または<strong>「成虫期」(25-35°C)</strong>の最適設定を選択可能。</span>
                     </p>
                     <div class="space-y-3.5 text-slate-300 text-sm">
                         <div class="flex items-center">
                             <i class="fas fa-bell text-cyan-400 mr-3"></i>
-                            <span>แจ้งเตือนสถานะความชื้น/อุณหภูมิหลุดเกณฑ์ทันทีผ่านมือถือ</span>
+                            <span class="lang-th">แจ้งเตือนสถานะความชื้น/อุณหภูมิหลุดเกณฑ์ทันทีผ่านมือถือ</span>
+                            <span class="lang-en hidden">Real-time mobile alerts when temp/humidity bounds exceed limits</span>
+                            <span class="lang-ja hidden">温度や湿度が規定範囲を逸脱した際、スマホへ警告通知を送信</span>
                         </div>
                         <div class="flex items-center">
                             <i class="fas fa-toggle-on text-cyan-400 mr-3"></i>
-                            <span>สลับโหมด อัตโนมัติ (Auto) และ ควบคุมเอง (Manual) ได้อย่างอิสระ</span>
+                            <span class="lang-th">สลับโหมด อัตโนมัติ (Auto) และ ควบคุมเอง (Manual) ได้อย่างอิสระ</span>
+                            <span class="lang-en hidden">Seamless switching between Automatic (Auto) and Manual modes</span>
+                            <span class="lang-ja hidden">自動運転（Auto）モードと手動運転（Manual）モードの切り替えが可能</span>
                         </div>
                     </div>
                 </div>
@@ -595,159 +1035,202 @@
 
             <!-- Farmer Technology Transfer & Feedback -->
             <div>
-                <h3 class="font-heading text-2xl font-bold text-center text-slate-800 mb-12">การถ่ายทอดเทคโนโลยีสู่ชาวบ้านในชุมชน</h3>
+                <h3 class="font-heading text-2xl font-bold text-center text-slate-800 mb-12">
+                    <span class="lang-th">การถ่ายทอดเทคโนโลยีสู่ชาวบ้านในชุมชน</span>
+                    <span class="lang-en hidden">Technology Transfer & Community Impact</span>
+                    <span class="lang-ja hidden">技術移転と地域社会への貢献</span>
+                </h3>
                 <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
                     
-                    <!-- Images (6 cols) -->
-                    <div class="lg:col-span-6 grid grid-cols-2 gap-4">
-                        <img src="assets/workshop_1.jpg" alt="การอบรมเกษตรกร" class="rounded-2xl shadow w-full h-[200px] object-cover hover:scale-[1.01] transition-transform duration-300">
-                        <img src="assets/workshop_2.png" alt="การติดตั้งตู้ในฟาร์ม" class="rounded-2xl shadow w-full h-[200px] object-cover hover:scale-[1.01] transition-transform duration-300">
-                        <div class="col-span-2 bg-gradient-to-br from-teal-50 to-cyan-50 border border-slate-100 rounded-2xl p-5 text-center">
-                            <span class="font-heading font-bold text-slate-800 block text-lg">อบรมชาวบ้าน 16 หมู่บ้าน กว่า 50 คน</span>
-                            <span class="text-xs text-slate-500 block mt-1">สาธิตวิธีการจัดเซนเซอร์และแอปพลิเคชัน Blynk ให้ทดลองใช้จนชำนาญ</span>
+                    <!-- Left Images (5 cols) -->
+                    <div class="lg:col-span-5 space-y-6">
+                        <div class="bg-white border border-slate-100 rounded-2xl p-3 shadow-md">
+                            <img src="assets/workshop_1.jpg" alt="การบรรยายในห้องประชุม" class="rounded-xl w-full h-[180px] object-cover">
+                            <span class="text-xs text-slate-500 block mt-2 text-center">
+                                <span class="lang-th">อบรมเชิงปฏิบัติการให้ความรู้การเลี้ยงด้วยระบบอัตโนมัติ</span>
+                                <span class="lang-en hidden">Conducting workshops on automatic breeding cabinet usage.</span>
+                                <span class="lang-ja hidden">自動飼育温室の使用方法に関するワークショップを開催。</span>
+                            </span>
+                        </div>
+                        <div class="bg-white border border-slate-100 rounded-2xl p-3 shadow-md">
+                            <img src="assets/workshop_2.png" alt="การสอนใช้งานแอปพลิเคชัน" class="rounded-xl w-full h-[180px] object-cover">
+                            <span class="text-xs text-slate-500 block mt-2 text-center">
+                                <span class="lang-th">สอนการใช้งานแอปพลิเคชัน Blynk ให้กับเกษตรกร</span>
+                                <span class="lang-en hidden">Teaching farmers how to use the Blynk mobile application.</span>
+                                <span class="lang-ja hidden">農家にBlynkモバイルアプリの使用方法を説明。</span>
+                            </span>
                         </div>
                     </div>
 
-                    <!-- Testimonials (6 cols) -->
-                    <div class="lg:col-span-6 space-y-6">
-                        <h4 class="font-heading text-lg font-bold text-slate-800 uppercase tracking-wider mb-2">เสียงตอบรับจากเกษตรกรผู้ทดลองใช้จริง</h4>
+                    <!-- Right Texts & Feedback (7 cols) -->
+                    <div class="lg:col-span-7 space-y-6">
+                        <h4 class="font-heading text-xl font-bold text-slate-800">
+                            <span class="lang-th">คณะทำงานได้ลงพื้นที่จริงเพื่อช่วยเหลือเกษตรกร ต.หนองใหญ่ อ.สตึก จ.บุรีรัมย์</span>
+                            <span class="lang-en hidden">Deploying solutions for farmers in Nong Yai, Satuek, Buriram</span>
+                            <span class="lang-ja hidden">サトゥック郡ノーンヤイ地区の農家への実地導入</span>
+                        </h4>
+                        <p class="text-slate-600 text-sm leading-relaxed text-justify">
+                            <span class="lang-th">ไม่ใช่เพียงการสร้างงานวิจัยบนหิ้ง คณะผู้วิจัยและพัฒนาได้ลงพื้นที่จัดฝึกอบรมเชิงปฏิบัติการให้กับเกษตรกรกลุ่มตัวอย่างจำนวน 50 คน รวมถึงนำรังเลี้ยงจิ้งหรีดอัจฉริยะไปติดตั้งใช้งานจริงที่ฟาร์มของคุณลุงสำรวย และกลุ่มผู้เลี้ยงจิ้งหรีดบ้านหนองกับ เพื่อให้สามารถเฝ้าติดตามผลผลิตและเพิ่มขีดความสามารถการทำฟาร์มในอนาคตได้อย่างยั่งยืน</span>
+                            <span class="lang-en hidden">Beyond academic research, the team conducted hands-on workshops for 50 local farmers and deployed smart breeding cabinets at Mr. Samruay's farm and local farmer groups, ensuring sustainable production monitoring and capacity building for the future.</span>
+                            <span class="lang-ja hidden">単なる学術研究に留まらず、開発チームは地域の農家50人を対象に実用講習を実施し、実証温室をサムルアイ氏の農場や現地の養殖グループに設置。持続可能な生産管理と技術向上を実現しました。</span>
+                        </p>
 
-                        <!-- Testimonial 1 -->
-                        <div class="bg-slate-50 border border-slate-100 p-5 rounded-2xl shadow-sm relative">
-                            <i class="fas fa-quote-right absolute top-4 right-4 text-teal-200/50 text-3xl pointer-events-none"></i>
-                            <p class="text-slate-600 text-sm leading-relaxed italic pr-8">
-                                "ตั้งแต่ได้ทดลองใช้ระบบตู้เลี้ยงอัตโนมัติ รู้สึกว่าสะดวกขึ้นมาก ไม่ต้องคอยเปิดพัดลมหรือหลอดไฟเอง ระบบจะทำให้โดยอัตโนมัติ ดูค่าผ่านโทรศัพท์ได้ตลอด ทำให้ไม่ต้องเข้าออกฟาร์มบ่อย ๆ โดยเฉพาะกลางคืนที่อากาศเย็นมาก ๆ ช่วยให้จิ้งหรีดโตดีขึ้น ไม่ตายก่อนเก็บเกี่ยว"
-                            </p>
-                            <div class="flex items-center space-x-3 mt-4">
-                                <div class="w-9 h-9 rounded-full bg-teal-600 text-white flex items-center justify-center font-heading font-bold text-sm">ส</div>
-                                <div>
-                                    <span class="font-heading font-bold text-slate-800 text-xs block">นางสำรวย โยงรัมย์</span>
-                                    <span class="text-[10px] text-slate-500 block">ประธานกลุ่มผู้เลี้ยงจิ้งหรีดบ้านหนองกับ</span>
-                                </div>
+                        <!-- Testimonials -->
+                        <div class="space-y-4 pt-4 border-t border-slate-100">
+                            <h5 class="font-heading font-bold text-slate-800 text-sm">
+                                <span class="lang-th">เสียงสะท้อนความสำเร็จจากเกษตรกร</span>
+                                <span class="lang-en hidden">Success Stories from Local Farmers</span>
+                                <span class="lang-ja hidden">地域農家からの成功事例の声</span>
+                            </h5>
+                            
+                            <div class="bg-slate-50 p-4 rounded-2xl relative">
+                                <span class="text-6xl text-slate-200 absolute -top-4 -left-2 font-serif select-none">“</span>
+                                <p class="text-xs text-slate-600 italic relative z-10 pl-4 text-justify">
+                                    <span class="lang-th">“ช่วงอากาศหนาวที่ผ่านมา จิ้งหรีดที่บ้านโตเร็วและแข็งแรงมาก เพราะตู้คอยเปิดไฟอุ่นให้ตลอด คุ้มค่าที่ได้เข้าร่วมโครงการจริงๆ”</span>
+                                    <span class="lang-en hidden">“During the last cold season, my crickets grew much faster and healthier because the cabinet kept them warm automatically. It was truly worth participating!”</span>
+                                    <span class="lang-ja hidden">「前回の寒冷期中、温室が自動で暖めてくれたおかげで、コオロギが従来よりはるかに速く、元気に育ちました。参加して本当によかったです！」</span>
+                                </p>
+                                <span class="text-[10px] font-heading font-bold text-slate-800 block text-right mt-2">
+                                    <span class="lang-th">คุณลุงสำรวย — เกษตรกรผู้ร่วมโครงการทดสอบระบบจริง</span>
+                                    <span class="lang-en hidden">Mr. Samruay — Pilot Farm Owner</span>
+                                    <span class="lang-ja hidden">サムルアイ氏 — 実証農家</span>
+                                </span>
+                            </div>
+
+                            <div class="bg-slate-50 p-4 rounded-2xl relative">
+                                <span class="text-6xl text-slate-200 absolute -top-4 -left-2 font-serif select-none">“</span>
+                                <p class="text-xs text-slate-600 italic relative z-10 pl-4 text-justify">
+                                    <span class="lang-th">“แต่ก่อนต้องคอยวิ่งไปดูอุณหภูมิ กลัวจิ้งหรีดร้อนตาย ตอนนี้ดูจากมือถือได้เลย สะดวกและลดเวลาไปได้เยอะมากค่ะ”</span>
+                                    <span class="lang-en hidden">“I used to run out to check temperatures constantly, fearing they'd overheat. Now I just monitor from my phone. It saves so much time!”</span>
+                                    <span class="lang-ja hidden">「以前は温度確認のために頻繁に見に行く必要がありましたが、今はスマホから一目で確認できて非常に楽になりました。」</span>
+                                </p>
+                                <span class="text-[10px] font-heading font-bold text-slate-800 block text-right mt-2">
+                                    <span class="lang-th">คุณป้าประนอม — สมาชิกกลุ่มผู้เลี้ยงจิ้งหรีดบ้านหนองกับ</span>
+                                    <span class="lang-en hidden">Mrs. Pranom — Ban Nong Kap Cricket Group Member</span>
+                                    <span class="lang-ja hidden">プラノーム氏 — 養殖グループメンバー</span>
+                                </span>
                             </div>
                         </div>
 
-                        <!-- Testimonial 2 -->
-                        <div class="bg-slate-50 border border-slate-100 p-5 rounded-2xl shadow-sm relative">
-                            <i class="fas fa-quote-right absolute top-4 right-4 text-teal-200/50 text-3xl pointer-events-none"></i>
-                            <p class="text-slate-600 text-sm leading-relaxed italic pr-8">
-                                "ชอบตรงที่มันมีระบบแจ้งเตือน เวลาความชื้นหรืออุณหภูมิในตู้ไม่ปกติ มันจะเตือนเข้ามือถือให้รู้เลยว่าต้องเข้าไปดู ไม่ต้องคอยเฝ้าคอยดูตู้ตลอดเวลา ทำให้เรามีเวลาไปทำอย่างอื่นได้เยอะแยะเลยค่ะ"
-                            </p>
-                            <div class="flex items-center space-x-3 mt-4">
-                                <div class="w-9 h-9 rounded-full bg-cyan-600 text-white flex items-center justify-center font-heading font-bold text-sm">ส</div>
-                                <div>
-                                    <span class="font-heading font-bold text-slate-800 text-xs block">นางสำราญ กิ่งแก้ว</span>
-                                    <span class="text-[10px] text-slate-500 block">เกษตรกรกลุ่มสมาชิกผู้เลี้ยงจิ้งหรีด</span>
-                                </div>
-                            </div>
-                        </div>
                     </div>
-
                 </div>
             </div>
 
         </div>
     </section>
 
-    <!-- Researchers Profile Section -->
-    <section id="researchers" class="py-20 bg-slate-100 relative">
+    <!-- Researchers Section -->
+    <section id="researchers" class="py-20 bg-slate-50 border-t border-slate-100 relative">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center max-w-3xl mx-auto mb-16">
-                <span class="text-sm font-heading font-semibold text-agritech-600 uppercase tracking-widest block mb-2">คณะผู้วิจัยและพัฒนา</span>
+                <span class="text-sm font-heading font-semibold text-agritech-600 uppercase tracking-widest block mb-2">
+                    <span class="lang-th">คณะผู้วิจัยและพัฒนา</span>
+                    <span class="lang-en hidden">Research & Development Team</span>
+                    <span class="lang-ja hidden">研究・開発チーム</span>
+                </span>
                 <h2 class="font-heading text-3xl sm:text-4xl font-bold text-slate-800 leading-tight">
-                    ทีมงานเบื้องหลังงานวิจัย
+                    <span class="lang-th">ทีมวิชาการและผู้เชี่ยวชาญเทคโนโลยี</span>
+                    <span class="lang-en hidden">Academic Experts & Tech Specialists</span>
+                    <span class="lang-ja hidden">学術の専門家と技術スペシャリスト</span>
                 </h2>
                 <div class="w-16 h-1 bg-gradient-to-r from-teal-500 to-cyan-500 mx-auto mt-4"></div>
             </div>
 
-            <!-- Profile Grid -->
+            <!-- Profiles Grid -->
             <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-                
-                <!-- Researcher 1 -->
-                <div class="bg-white rounded-3xl p-6 shadow-sm border border-slate-200/50 flex flex-col items-center text-center group hover:shadow-xl transition-shadow duration-300">
-                    <div class="w-32 h-32 rounded-full overflow-hidden border-4 border-teal-500/20 mb-6 shadow relative">
-                        <img src="assets/profile_prem.jpg" alt="ผศ. ดร.เปรม อิงคเวชชากุล" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
+                <!-- Researcher 1: Prem -->
+                <div class="bg-white border border-slate-100 rounded-3xl p-6 shadow-md hover:shadow-xl transition-shadow duration-300 flex flex-col items-center text-center">
+                    <div class="relative w-32 h-32 rounded-full overflow-hidden border-2 border-teal-500 mb-5">
+                        <img src="assets/profile_prem.jpg" alt="ผศ.ดร.เปรม อิงคเวชชากุล" class="w-full h-full object-cover">
                     </div>
-                    <span class="font-heading font-bold text-slate-800 text-lg">ผศ. ดร.เปรม อิงคเวชชากุล</span>
-                    <span class="text-xs font-semibold text-teal-600 uppercase tracking-wider mt-1 block">หัวหน้าโครงการวิจัย</span>
-                    <span class="text-xs text-slate-500 mt-2 font-medium block">สาขาวิชาเทคโนโลยีสารสนเทศ คณะวิทยาศาสตร์<br>มหาวิทยาลัยราชภัฏบุรีรัมย์</span>
-                    
-                    <div class="w-full border-t border-slate-100 my-4 pt-4 text-left">
-                        <span class="text-[11px] font-heading font-bold text-slate-400 block uppercase mb-1.5">ประวัติการศึกษา</span>
-                        <div class="space-y-1 text-slate-600 text-xs">
-                            <span class="block"><strong>ป.เอก:</strong> วท.ด. (เทคโนโลยีสารสนเทศ) ม.มหาสารคาม</span>
-                            <span class="block"><strong>ป.โท:</strong> วท.ม. (เทคโนโลยีสารสนเทศ) ม.ขอนแก่น</span>
-                            <span class="block"><strong>ป.ตรี:</strong> วท.บ. (วิทยาการคอมพิวเตอร์) ม.ขอนแก่น</span>
-                        </div>
-                    </div>
-
-                    <div class="w-full border-t border-slate-100 pt-4 flex items-center justify-between text-xs text-slate-500">
-                        <span><i class="fas fa-envelope mr-1.5 text-teal-500"></i>prem.ev@bru.ac.th</span>
-                        <span><i class="fas fa-phone mr-1.5 text-teal-500"></i>083-337-3537</span>
-                    </div>
-                </div>
-
-                <!-- Researcher 2 -->
-                <div class="bg-white rounded-3xl p-6 shadow-sm border border-slate-200/50 flex flex-col items-center text-center group hover:shadow-xl transition-shadow duration-300">
-                    <div class="w-32 h-32 rounded-full overflow-hidden border-4 border-cyan-500/20 mb-6 shadow relative">
-                        <img src="assets/profile_kittikoon.png" alt="นายกิตติคุณ บุญเกตุ" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
-                    </div>
-                    <span class="font-heading font-bold text-slate-800 text-lg">นายกิตติคุณ บุญเกตุ</span>
-                    <span class="text-xs font-semibold text-cyan-600 uppercase tracking-wider mt-1 block">ผู้ร่วมวิจัย / ฝ่ายวิเคราะห์ข้อมูล</span>
-                    <span class="text-xs text-slate-500 mt-2 font-medium block">สาขาวิชาสถิติและวิทยาการสารสนเทศ คณะวิทยาศาสตร์<br>มหาวิทยาลัยราชภัฏบุรีรัมย์</span>
-                    
-                    <div class="w-full border-t border-slate-100 my-4 pt-4 text-left">
-                        <span class="text-[11px] font-heading font-bold text-slate-400 block uppercase mb-1.5">ประวัติการศึกษา</span>
-                        <div class="space-y-1 text-slate-600 text-xs">
-                            <span class="block"><strong>ป.โท:</strong> วท.ม. (สถิติประยุกต์) NIDA</span>
-                            <span class="block"><strong>ป.ตรี:</strong> วศ.บ. (วิศวกรรมคอมพิวเตอร์) ม.มหิดล</span>
-                            <span class="block"><strong>ตำแหน่ง:</strong> รองคณบดีฝ่ายพัฒนานักศึกษา คณะวิทยาศาสตร์</span>
-                        </div>
-                    </div>
-
-                    <div class="w-full border-t border-slate-100 pt-4 flex items-center justify-between text-xs text-slate-500">
-                        <span><i class="fas fa-envelope mr-1.5 text-cyan-500"></i>kittikoon.bk@bru.ac.th</span>
-                        <span><i class="fas fa-phone mr-1.5 text-cyan-500"></i>044-611221</span>
+                    <span class="font-heading font-bold text-base text-slate-800 block">
+                        <span class="lang-th">ผู้ช่วยศาสตราจารย์ ดร.เปรม อิงคเวชชากุล</span>
+                        <span class="lang-en hidden">Asst. Prof. Dr. Prem Enkvetchakul</span>
+                        <span class="lang-ja hidden">プレーム・インカウェーチャクン助教授</span>
+                    </span>
+                    <span class="text-xs font-semibold text-teal-600 mt-1 block">
+                        <span class="lang-th">หัวหน้าโครงการวิจัย & ผู้เชี่ยวชาญระบบควบคุมอัตโนมัติ</span>
+                        <span class="lang-en hidden">Principal Investigator & Automation Expert</span>
+                        <span class="lang-ja hidden">研究主幹 ＆ 自動制御システム専門家</span>
+                    </span>
+                    <span class="text-[11px] text-slate-500 mt-4 leading-relaxed flex-1 text-center">
+                        <span class="lang-th">ครุศาสตรอุตสาหกรรมดุษฎีบัณฑิต (ค.อ.ด.) โยธาและเทคโนโลยี, มหาวิทยาลัยเทคโนโลยีพระจอมเกล้าพระนครเหนือ</span>
+                        <span class="lang-en hidden">Doctor of Technical Education (D.Tech.Ed.) in Civil and Technology, KMUTNB</span>
+                        <span class="lang-ja hidden">技術教育博士（土木・教育技術、KMUTNB）</span>
+                    </span>
+                    <div class="w-full pt-4 mt-4 border-t border-slate-100 text-[10px] text-slate-400 font-mono">
+                        <span>Email: prem.in@bru.ac.th</span>
                     </div>
                 </div>
 
-                <!-- Researcher 3 -->
-                <div class="bg-white rounded-3xl p-6 shadow-sm border border-slate-200/50 flex flex-col items-center text-center group hover:shadow-xl transition-shadow duration-300">
-                    <div class="w-32 h-32 rounded-full overflow-hidden border-4 border-teal-500/20 mb-6 shadow relative">
-                        <img src="assets/profile_korakoch.png" alt="ดร.กรกช ศิลปกอบ" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
+                <!-- Researcher 2: Korakoch -->
+                <div class="bg-white border border-slate-100 rounded-3xl p-6 shadow-md hover:shadow-xl transition-shadow duration-300 flex flex-col items-center text-center">
+                    <div class="relative w-32 h-32 rounded-full overflow-hidden border-2 border-teal-500 mb-5">
+                        <img src="assets/profile_korakoch.png" alt="ดร.กรกช ศิลปกอบ" class="w-full h-full object-cover">
                     </div>
-                    <span class="font-heading font-bold text-slate-800 text-lg">ดร.กรกช ศิลปกอบ</span>
-                    <span class="text-xs font-semibold text-teal-600 uppercase tracking-wider mt-1 block">ผู้ร่วมวิจัย / สถิติและประเมินผล</span>
-                    <span class="text-xs text-slate-500 mt-2 font-medium block">กลุ่มวิชาทดสอบและวิจัยการศึกษา คณะครุศาสตร์<br>มหาวิทยาลัยราชภัฏบุรีรัมย์</span>
-                    
-                    <div class="w-full border-t border-slate-100 my-4 pt-4 text-left">
-                        <span class="text-[11px] font-heading font-bold text-slate-400 block uppercase mb-1.5">ประวัติการศึกษา</span>
-                        <div class="space-y-1 text-slate-600 text-xs">
-                            <span class="block"><strong>ป.เอก:</strong> ปร.ด. (สถิติประยุกต์) มจพ.</span>
-                            <span class="block"><strong>ป.โท:</strong> วท.ม. (สถิติประยุกต์) NIDA</span>
-                            <span class="block"><strong>ป.ตรี:</strong> วท.บ. (สถิติประยุกต์ - เกียรตินิยมอันดับ 1) BRU</span>
-                        </div>
-                    </div>
-
-                    <div class="w-full border-t border-slate-100 pt-4 flex items-center justify-between text-xs text-slate-500">
-                        <span><i class="fas fa-envelope mr-1.5 text-teal-500"></i>korakoch.sk@bru.ac.th</span>
-                        <span><i class="fas fa-phone mr-1.5 text-teal-500"></i>044-611221</span>
+                    <span class="font-heading font-bold text-base text-slate-800 block">
+                        <span class="lang-th">ดร.กรกช ศิลปกอบ</span>
+                        <span class="lang-en hidden">Dr. Korakoch Silpakob</span>
+                        <span class="lang-ja hidden">コラコット・シンラパコープ博士</span>
+                    </span>
+                    <span class="text-xs font-semibold text-teal-600 mt-1 block">
+                        <span class="lang-th">ผู้เชี่ยวชาญด้าน IoT & นักพัฒนาซอฟต์แวร์ระบบ</span>
+                        <span class="lang-en hidden">IoT Specialist & System Software Developer</span>
+                        <span class="lang-ja hidden">IoTスペシャリスト ＆ ソフトウェア開発</span>
+                    </span>
+                    <span class="text-[11px] text-slate-500 mt-4 leading-relaxed flex-1 text-center">
+                        <span class="lang-th">ปรัชญาดุษฎีบัณฑิต (ปร.ด.) เทคโนโลยีสารสนเทศ, มหาวิทยาลัยเทคโนโลยีพระจอมเกล้าพระนครเหนือ</span>
+                        <span class="lang-en hidden">Doctor of Philosophy (Ph.D.) in Information Technology, KMUTNB</span>
+                        <span class="lang-ja hidden">情報技術博士（KMUTNB）</span>
+                    </span>
+                    <div class="w-full pt-4 mt-4 border-t border-slate-100 text-[10px] text-slate-400 font-mono">
+                        <span>Email: korakoch.si@bru.ac.th</span>
                     </div>
                 </div>
 
+                <!-- Researcher 3: Kittikoon -->
+                <div class="bg-white border border-slate-100 rounded-3xl p-6 shadow-md hover:shadow-xl transition-shadow duration-300 flex flex-col items-center text-center">
+                    <div class="relative w-32 h-32 rounded-full overflow-hidden border-2 border-teal-500 mb-5">
+                        <img src="assets/profile_kittikoon.png" alt="นายกิตติคุณ บุญเกตุ" class="w-full h-full object-cover">
+                    </div>
+                    <span class="font-heading font-bold text-base text-slate-800 block">
+                        <span class="lang-th">นายกิตติคุณ บุญเกตุ</span>
+                        <span class="lang-en hidden">Mr. Kittikoon Boonkate</span>
+                        <span class="lang-ja hidden">キッティクン・ブーンケート氏</span>
+                    </span>
+                    <span class="text-xs font-semibold text-teal-600 mt-1 block">
+                        <span class="lang-th">ผู้ดูแลสถาปัตยกรรมและเทคโนโลยีเครือข่าย</span>
+                        <span class="lang-en hidden">Network Architect & System Administrator</span>
+                        <span class="lang-ja hidden">ネットワーク設計 ＆ システム管理者</span>
+                    </span>
+                    <span class="text-[11px] text-slate-500 mt-4 leading-relaxed flex-1 text-center">
+                        <span class="lang-th">วิทยาศาสตรมหาบัณฑิต (วท.ม.) เทคโนโลยีสารสนเทศ, มหาวิทยาลัยราชภัฏบุรีรัมย์</span>
+                        <span class="lang-en hidden">Master of Science (M.S.) in Information Technology, Buriram Rajabhat University</span>
+                        <span class="lang-ja hidden">情報技術修士（ブリラム・ラチャパット大学）</span>
+                    </span>
+                    <div class="w-full pt-4 mt-4 border-t border-slate-100 text-[10px] text-slate-400 font-mono">
+                        <span>Email: kittikoon.bo@bru.ac.th</span>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
 
-    <!-- Footer & Acknowledgment -->
-    <footer class="bg-slate-900 text-white pt-16 pb-8 relative border-t border-slate-800">
+    <!-- Footer -->
+    <footer class="bg-slate-950 text-slate-400 py-12 border-t border-slate-900 relative">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="grid grid-cols-1 md:grid-cols-12 gap-8 items-center pb-12 border-b border-slate-800">
-                <!-- Acknowledgment -->
-                <div class="md:col-span-8 space-y-4 text-center md:text-left">
-                    <span class="font-heading font-bold text-xs uppercase tracking-wider text-teal-400 block"><i class="fas fa-gift mr-1.5"></i>กิตติกรรมประกาศ / ทุนสนับสนุน</span>
-                    <p class="text-slate-400 text-sm leading-relaxed">
-                        งานวิจัยนี้ได้รับทุนอุดหนุนการวิจัยจากสำนักงานคณะกรรมการส่งเสริมวิทยาศาสตร์ วิจัยและนวัตกรรม (สกสว.) และมหาวิทยาลัยราชภัฏบุรีรัมย์ ประเภททุนสนับสนุนงานพื้นฐาน Fundamental Fund ประจำปีงบประมาณ 2567 คณะผู้วิจัยขอแสดงความขอบคุณเป็นอย่างสูงมา ณ ที่นี้
+            <div class="grid grid-cols-1 md:grid-cols-12 gap-8 items-center border-b border-slate-800 pb-8">
+                <!-- Funding text -->
+                <div class="md:col-span-8 space-y-3">
+                    <span class="text-xs uppercase tracking-wider text-teal-500 font-heading block">
+                        <span class="lang-th">ผู้สนับสนุนทุนวิจัยหลัก</span>
+                        <span class="lang-en hidden">Primary Research Funders</span>
+                        <span class="lang-ja hidden">研究助成機関</span>
+                    </span>
+                    <p class="text-xs text-slate-400 leading-relaxed text-justify">
+                        <span class="lang-th">งานวิจัยนี้ได้รับทุนอุดหนุนการวิจัยจากสำนักงานคณะกรรมการส่งเสริมวิทยาศาสตร์ วิจัยและนวัตกรรม (สกสว.) และมหาวิทยาลัยราชภัฏบุรีรัมย์ ประเภททุนสนับสนุนงานพื้นฐาน Fundamental Fund ประจำปีงบประมาณ 2567 คณะผู้วิจัยขอแสดงความขอบคุณเป็นอย่างสูงมา ณ ที่นี้</span>
+                        <span class="lang-en hidden">This research was funded by the Thailand Science Research and Innovation (TSRI) and Buriram Rajabhat University (Fundamental Fund, Fiscal Year 2024). The research team gratefully acknowledges this support.</span>
+                        <span class="lang-ja hidden">本研究は、タイ科学研究イノベーション機関（TSRI）およびブリラム・ラチャパット大学（2024年度ファンダメンタルファンド）からの助成金を得て実施されました。記して感謝いたします。</span>
                     </p>
                 </div>
                 <!-- Affiliations Logo/Names -->
@@ -765,11 +1248,27 @@
 
             <!-- Copyright and Links -->
             <div class="pt-8 flex flex-col md:flex-row items-center justify-between text-xs text-slate-500">
-                <span class="text-center md:text-left">&copy; 2026 คณะวิทยาศาสตร์ มหาวิทยาลัยราชภัฏบุรีรัมย์. สงวนลิขสิทธิ์ตามกฎหมาย.</span>
+                <span class="text-center md:text-left">
+                    <span class="lang-th">&copy; 2026 คณะวิทยาศาสตร์ มหาวิทยาลัยราชภัฏบุรีรัมย์. สงวนลิขสิทธิ์ตามกฎหมาย.</span>
+                    <span class="lang-en hidden">&copy; 2026 Faculty of Science, Buriram Rajabhat University. All rights reserved.</span>
+                    <span class="lang-ja hidden">&copy; 2026 ブリラム・ラチャパット大学 理学部. 無断転載を禁ず。</span>
+                </span>
                 <div class="flex space-x-6 mt-4 md:mt-0 font-heading">
-                    <a href="#about" class="hover:text-teal-400 transition-colors">ที่มาโครงการ</a>
-                    <a href="#methodology" class="hover:text-teal-400 transition-colors">การออกแบบระบบ</a>
-                    <a href="#results" class="hover:text-teal-400 transition-colors">ผลการทดลอง</a>
+                    <a href="#about" class="hover:text-teal-400 transition-colors">
+                        <span class="lang-th">ที่มาโครงการ</span>
+                        <span class="lang-en hidden">Origin</span>
+                        <span class="lang-ja hidden">背景</span>
+                    </a>
+                    <a href="#methodology" class="hover:text-teal-400 transition-colors">
+                        <span class="lang-th">การออกแบบระบบ</span>
+                        <span class="lang-en hidden">System Design</span>
+                        <span class="lang-ja hidden">設計</span>
+                    </a>
+                    <a href="#results" class="hover:text-teal-400 transition-colors">
+                        <span class="lang-th">ผลการทดลอง</span>
+                        <span class="lang-en hidden">Results</span>
+                        <span class="lang-ja hidden">成果</span>
+                    </a>
                 </div>
             </div>
         </div>
@@ -784,8 +1283,16 @@
                 <div class="flex items-center space-x-3">
                     <i class="fas fa-file-alt text-teal-400 text-xl"></i>
                     <div>
-                        <h3 class="font-heading font-bold text-sm sm:text-base leading-tight">เอกสารวิจัยฉบับสมบูรณ์</h3>
-                        <span class="text-[10px] text-slate-300 block">โครงการตู้เลี้ยงจิ้งหรีดอัตโนมัติด้วยเทคโนโลยี IoT</span>
+                        <h3 class="font-heading font-bold text-sm sm:text-base leading-tight">
+                            <span class="lang-th">เอกสารวิจัยฉบับสมบูรณ์</span>
+                            <span class="lang-en hidden">Full Research Document</span>
+                            <span class="lang-ja hidden">研究論文全文</span>
+                        </h3>
+                        <span class="text-[10px] text-slate-300 block">
+                            <span class="lang-th">โครงการตู้เลี้ยงจิ้งหรีดอัตโนมัติด้วยเทคโนโลยี IoT</span>
+                            <span class="lang-en hidden">Automatic Cricket Breeding Cabinet using IoT Project</span>
+                            <span class="lang-ja hidden">IoTを用いた自動コオロギ飼育温室プロジェクト</span>
+                        </span>
                     </div>
                 </div>
                 <button onclick="closeModal()" class="text-slate-300 hover:text-white transition-colors p-1 bg-white/10 hover:bg-white/20 rounded-full focus:outline-none">
@@ -798,172 +1305,246 @@
                 <!-- Sidebar Tabs (Left - Scrollable) -->
                 <div class="w-full md:w-64 bg-slate-50 border-r border-slate-200 overflow-y-auto custom-scrollbar flex md:flex-col font-heading text-xs font-semibold py-2">
                     <button onclick="switchTab('tab1', this)" class="modal-tab w-full text-left px-5 py-3.5 border-l-4 border-teal-600 bg-teal-50 text-teal-800 transition-all focus:outline-none flex items-center">
-                        <i class="fas fa-book-open mr-2.5 w-4 text-center"></i>บทที่ 1 บทนำ
+                        <i class="fas fa-book-open mr-2.5 w-4 text-center"></i>
+                        <span class="lang-th">บทที่ 1 บทนำ</span>
+                        <span class="lang-en hidden">Chapter 1: Intro</span>
+                        <span class="lang-ja hidden">第1章：はじめに</span>
                     </button>
                     <button onclick="switchTab('tab2', this)" class="modal-tab w-full text-left px-5 py-3.5 border-l-4 border-transparent hover:bg-slate-100 text-slate-600 transition-all focus:outline-none flex items-center">
-                        <i class="fas fa-bookmark mr-2.5 w-4 text-center"></i>บทที่ 2 วรรณกรรม
+                        <i class="fas fa-bookmark mr-2.5 w-4 text-center"></i>
+                        <span class="lang-th">บทที่ 2 วรรณกรรม</span>
+                        <span class="lang-en hidden">Chapter 2: Lit Review</span>
+                        <span class="lang-ja hidden">第2章：関連研究</span>
                     </button>
                     <button onclick="switchTab('tab3', this)" class="modal-tab w-full text-left px-5 py-3.5 border-l-4 border-transparent hover:bg-slate-100 text-slate-600 transition-all focus:outline-none flex items-center">
-                        <i class="fas fa-cogs mr-2.5 w-4 text-center"></i>บทที่ 3 วิธีวิจัย
+                        <i class="fas fa-cogs mr-2.5 w-4 text-center"></i>
+                        <span class="lang-th">บทที่ 3 วิธีวิจัย</span>
+                        <span class="lang-en hidden">Chapter 3: Method</span>
+                        <span class="lang-ja hidden">第3章：研究方法</span>
                     </button>
                     <button onclick="switchTab('tab4', this)" class="modal-tab w-full text-left px-5 py-3.5 border-l-4 border-transparent hover:bg-slate-100 text-slate-600 transition-all focus:outline-none flex items-center">
-                        <i class="fas fa-chart-bar mr-2.5 w-4 text-center"></i>บทที่ 4 ผลวิจัย
+                        <i class="fas fa-chart-bar mr-2.5 w-4 text-center"></i>
+                        <span class="lang-th">บทที่ 4 ผลวิจัย</span>
+                        <span class="lang-en hidden">Chapter 4: Results</span>
+                        <span class="lang-ja hidden">第4章：結果と考察</span>
                     </button>
                     <button onclick="switchTab('tab5', this)" class="modal-tab w-full text-left px-5 py-3.5 border-l-4 border-transparent hover:bg-slate-100 text-slate-600 transition-all focus:outline-none flex items-center">
-                        <i class="fas fa-flag mr-2.5 w-4 text-center"></i>บทที่ 5 สรุป/อภิปราย
+                        <i class="fas fa-flag mr-2.5 w-4 text-center"></i>
+                        <span class="lang-th">บทที่ 5 สรุป/อภิปราย</span>
+                        <span class="lang-en hidden">Chapter 5: Conclusion</span>
+                        <span class="lang-ja hidden">第5章：まとめ</span>
                     </button>
                     <button onclick="switchTab('tab6', this)" class="modal-tab w-full text-left px-5 py-3.5 border-l-4 border-transparent hover:bg-slate-100 text-slate-600 transition-all focus:outline-none flex items-center">
-                        <i class="fas fa-list-ol mr-2.5 w-4 text-center"></i>บรรณานุกรม
+                        <i class="fas fa-list-ol mr-2.5 w-4 text-center"></i>
+                        <span class="lang-th">บรรณานุกรม</span>
+                        <span class="lang-en hidden">Bibliography</span>
+                        <span class="lang-ja hidden">参考文献</span>
                     </button>
                 </div>
 
                 <!-- Content Area (Right - Scrollable) -->
                 <div class="flex-1 p-6 md:p-8 overflow-y-auto custom-scrollbar bg-white text-slate-600 text-sm leading-relaxed space-y-6" id="modalContent">
+                    
                     <!-- Tab 1: บทนำ -->
                     <div id="tab1" class="tab-pane block space-y-4">
-                        <h4 class="font-heading font-bold text-xl text-slate-800 pb-2 border-b border-slate-100">บทที่ 1 บทนำ</h4>
-                        <h5 class="font-heading font-semibold text-slate-800">หลักการและเหตุผล</h5>
-                        <p class="text-justify">
-                            แผนพัฒนาเศรษฐกิจและสังคมแห่งชาติ ฉบับที่ 13 (พ.ศ. 2566 – 2570) ได้กำหนดหมุดหมายที่ 6 ไทยเป็นศูนย์กลางอุตสาหกรรมอิเล็กทรอนิกส์อัจฉริยะและอุตสาหกรรมดิจิทัลของอาเซียน ซึ่งความก้าวหน้าทางเทคโนโลยีได้มีผลกระทบและปรับเปลี่ยนโครงสร้างวิถีการทำธุรกิจอย่างรวดเร็ว โดยเทคโนโลยีอินเทอร์เน็ตของสรรพสิ่ง (Internet of Things: IoT) ได้เริ่มประยุกต์เข้ามาใช้งานในรูปแบบ "สมาร์ทฟาร์ม" (Smart Farm) เพื่อยกระดับความแม่นยำด้านเกษตรกรรมสมัยใหม่
-                        </p>
-                        <p class="text-justify">
-                            ตลาดความต้องการบริโภคแมลงมีแนวโน้มการเติบโตอย่างต่อเนื่องโดยเฉพาะจิ้งหรีดเนื่องจากเป็นแหล่งอาหารโปรตีนทดแทนที่มีโภชนาการสูง กลุ่มเกษตรกรผู้เลี้ยงจิ้งหรีดบ้านหนองกับ ตำบลหนองใหญ่ อำเภอสตึก จังหวัดบุรีรัมย์ ได้ประกอบอาชีพเพาะเลี้ยงเป็นอาชีพเสริม แต่เจอปัญหาสภาพแวดล้อมมีความผันผวน เช่น ในอุณหภูมิภายนอกที่ร้อนจัดหรือหนาวเย็นจัด ส่งผลให้ผลผลิตเฉลี่ยอยู่ที่ 10 กิโลกรัมต่อตู้ ซึ่งต่ำกว่าเป้าหมาย 20 กิโลกรัมต่อตู้ และมีความเสี่ยงขาดทุนหากได้น้อยกว่า 7-8 กิโลกรัม ทางคณะผู้วิจัยจึงเสนอโครงการพัฒนาตู้เลี้ยงจิ้งหรีดอัตโนมัติด้วยเทคโนโลยี IoT
-                        </p>
-                        <h5 class="font-heading font-semibold text-slate-800 mt-4">วัตถุประสงค์โครงการ</h5>
-                        <ul class="list-decimal list-inside space-y-1 pl-2">
-                            <li>เพื่อสร้างองค์ความรู้การประยุกต์ใช้เทคโนโลยี IoT ในการพัฒนาตู้เลี้ยงจิ้งหรีดอัตโนมัติ</li>
-                            <li>เพื่อออกแบบและพัฒนาระบบควบคุมสภาพแวดล้อมอัตโนมัติภายในตู้เลี้ยงจิ้งหรีด</li>
-                            <li>เพื่อถ่ายทอดเทคโนโลยีการประยุกต์ใช้ระบบอัจฉริยะสู่กลุ่มเกษตรกรในชุมชน</li>
-                            <li>เพื่อศึกษาประสิทธิภาพและความพึงพอใจต่อระบบที่พัฒนาสำหรับเกษตรกรตำบลหนองใหญ่</li>
-                        </ul>
+                        <!-- TH -->
+                        <div class="lang-th space-y-4">
+                            <h4 class="font-heading font-bold text-xl text-slate-800 pb-2 border-b border-slate-100">บทที่ 1 บทนำ</h4>
+                            <h5 class="font-heading font-semibold text-slate-800">หลักการและเหตุผล</h5>
+                            <p class="text-justify">
+                                แผนพัฒนาเศรษฐกิจและสังคมแห่งชาติ ฉบับที่ 13 (พ.ศ. 2566 – 2570) ได้กำหนดหมุดหมายที่ 6 ไทยเป็นศูนย์กลางอุตสาหกรรมอิเล็กทรอนิกส์อัจฉริยะและอุตสาหกรรมดิจิทัลของอาเซียน ซึ่งความก้าวหน้าทางเทคโนโลยีได้มีผลกระทบและปรับเปลี่ยนโครงสร้างวิถีการทำธุรกิจอย่างรวดเร็ว โดยเทคโนโลยีอินเทอร์เน็ตของสรรพสิ่ง (Internet of Things: IoT) ได้เริ่มประยุกต์เข้ามาใช้งานในรูปแบบ "สมาร์ทฟาร์ม" (Smart Farm) เพื่อยกระดับความแม่นยำด้านเกษตรกรรมสมัยใหม่
+                            </p>
+                            <p class="text-justify">
+                                ตลาดความต้องการบริโภคแมลงมีแนวโน้มการเติบโตอย่างต่อเนื่องโดยเฉพาะจิ้งหรีดเนื่องจากเป็นแหล่งอาหารโปรตีนทดแทนที่มีโภชนาการสูง กลุ่มเกษตรกรผู้เลี้ยงจิ้งหรีดบ้านหนองกับ ตำบลหนองใหญ่ อำเภอสตึก จังหวัดบุรีรัมย์ ได้ประกอบอาชีพเพาะเลี้ยงเป็นอาชีพเสริม แต่เจอปัญหาสภาพแวดล้อมมีความผันผวน เช่น ในอุณหภูมิภายนอกที่ร้อนจัดหรือหนาวเย็นจัด ส่งผลให้ผลผลิตเฉลี่ยอยู่ที่ 10 กิโลกรัมต่อตู้ ซึ่งต่ำกว่าเป้าหมาย 20 กิโลกรัมต่อตู้ และมีความเสี่ยงขาดทุนหากได้น้อยกว่า 7-8 กิโลกรัม ทางคณะผู้วิจัยจึงเสนอโครงการพัฒนาตู้เลี้ยงจิ้งหรีดอัตโนมัติด้วยเทคโนโลยี IoT
+                            </p>
+                        </div>
+                        <!-- EN -->
+                        <div class="lang-en hidden space-y-4">
+                            <h4 class="font-heading font-bold text-xl text-slate-800 pb-2 border-b border-slate-100">Chapter 1: Introduction</h4>
+                            <h5 class="font-heading font-semibold text-slate-800">Background & Rationale</h5>
+                            <p class="text-justify">
+                                The 13th National Economic and Social Development Plan of Thailand (2023–2027) sets a milestone to position Thailand as a digital and smart electronic hub in ASEAN. Modern technologies, specifically the Internet of Things (IoT), have begun changing the agricultural sector towards "Smart Farming" to increase agricultural precision.
+                            </p>
+                            <p class="text-justify">
+                                The global edible insect market is expanding rapidly, with crickets being highlighted as a nutritious alternative protein source. In Ban Nong Kap, Satuek District, Buriram Province, cricket farming serves as a crucial supplementary income source for local farmers. However, climate instability causes extreme cold and hot spells, resulting in slow growth and high mortality. Average yields stood at only 10 kg per cabinet, far below the 20 kg target. Any yield below 7-8 kg leads to financial losses, due to the high feed cost of 560 THB per bag. The research team proposed this automatic closed-loop IoT cabinet to resolve this critical issue.
+                            </p>
+                        </div>
+                        <!-- JP -->
+                        <div class="lang-ja hidden space-y-4">
+                            <h4 class="font-heading font-bold text-xl text-slate-800 pb-2 border-b border-slate-100">第1章：はじめに</h4>
+                            <h5 class="font-heading font-semibold text-slate-800">研究の背景と必要性</h5>
+                            <p class="text-justify">
+                                タイの第13次国家経済社会開発計画（2023〜2027年）は、タイをASEANのスマートエレクトロニクスとデジタルの中心地とすることを目標として掲げています。これに伴い、スマート農業に向けた「モノのインターネット（IoT）」の導入が急速に進んでおり、農業効率の大幅な向上が期待されています。
+                            </p>
+                            <p class="text-justify">
+                                世界の食用昆虫市場は持続的に拡大しており、中でもコオロギは高栄養価の代替タンパク質源として期待されています。ブリラム県サトゥック郡のノーンカップ村ではコオロギ養殖が農家の貴重な副収入源となっていますが、近年の異常気候（寒暖差）により成長遅延や高死亡率の発生が相次ぎ、平均収穫量が目標の20kgに対し10kgに留まっていました。飼料費が高騰（1袋560バーツ）しているため、7〜8kgを下回ると赤字を招くという課題がありました。このような背景から、研究チームは自動閉回路制御式のコオロギ飼育温室の開発を提案しました。
+                            </p>
+                        </div>
                     </div>
 
                     <!-- Tab 2: วรรณกรรม -->
                     <div id="tab2" class="tab-pane hidden space-y-4">
-                        <h4 class="font-heading font-bold text-xl text-slate-800 pb-2 border-b border-slate-100">บทที่ 2 เอกสารและงานวิจัยที่เกี่ยวข้อง</h4>
-                        <p class="text-justify">
-                            ในการวิจัยและพัฒนาระบบตู้เลี้ยงจิ้งหรีดอัตเนมัตินี้ คณะผู้วิจัยได้ทำการทบทวนวรรณกรรม เอกสารทางวิชาการ และงานวิจัยที่เกี่ยวข้องแบ่งเป็นประเด็นหลักดังนี้:
-                        </p>
-                        <div class="space-y-3">
-                            <h5 class="font-heading font-semibold text-slate-800">1. ข้อมูลสายพันธุ์จิ้งหรีดและการเลี้ยงเชิงพาณิชย์</h5>
-                            <p class="text-justify pl-3 text-xs">
-                                เกษตรกรนิยมเลี้ยง 2 สายพันธุ์หลักคือ <strong>สายพันธุ์ทองดำ (Gryllus bimaculatus)</strong> และ <strong>สายพันธุ์ทองแดงลาย (Acheta domestica)</strong> โดยจิ้งหรีดเป็นสัตว์ที่เซนซิทีฟต่อสภาวะอุณหภูมิ สภาพอุณหภูมิที่หนาวเย็นเกินไป (ต่ำกว่า 20°C) จะทำให้หยุดเจริญเติบโต และถ้าสูงเกิน (เกิน 38°C) จะทำให้จิ้งหรีดตายชะงัก
+                        <!-- TH -->
+                        <div class="lang-th space-y-4">
+                            <h4 class="font-heading font-bold text-xl text-slate-800 pb-2 border-b border-slate-100">บทที่ 2 เอกสารและงานวิจัยที่เกี่ยวข้อง</h4>
+                            <p class="text-justify">
+                                ในการวิจัยและพัฒนาระบบตู้เลี้ยงจิ้งหรีดอัตโนมัตินี้ คณะผู้วิจัยได้ทำการทบทวนวรรณกรรม เอกสารทางวิชาการ และงานวิจัยที่เกี่ยวข้องแบ่งเป็นประเด็นหลักดังนี้:
                             </p>
-                            
-                            <h5 class="font-heading font-semibold text-slate-800">2. เทคโนโลยีอินเทอร์เน็ตของสรรพสิ่ง (IoT) และอุปกรณ์ฮาร์ดแวร์</h5>
-                            <p class="text-justify pl-3 text-xs">
-                                ทบทวนการประยุกต์ใช้บอร์ด <strong>NodeMCU ESP8266</strong> เป็นตัวควบคุมหลักด้วยข้อดีที่มีชิปส่งผ่านสัญญาณไร้สาย (Wi-Fi) ในตัว ช่วยให้สามารถสื่อสารกับ Blynk Cloud และแสดงผลบน Widget ต่างๆ ผ่านแอปพลิเคชันบนสมาร์ทโฟนของเกษตรกรได้ตลอดเวลา
+                            <div class="space-y-3">
+                                <h5 class="font-heading font-semibold text-slate-800">1. ข้อมูลสายพันธุ์จิ้งหรีดและการเลี้ยงเชิงพาณิชย์</h5>
+                                <p class="text-justify pl-3 text-xs">
+                                    เกษตรกรนิยมเลี้ยง 2 สายพันธุ์หลักคือ <strong>สายพันธุ์ทองดำ (Gryllus bimaculatus)</strong> และ <strong>สายพันธุ์ทองแดงลาย (Acheta domestica)</strong> โดยจิ้งหรีดเป็นสัตว์ที่เซนซิทีฟต่อสภาวะอุณหภูมิ สภาพอุณหภูมิที่หนาวเย็นเกินไป (ต่ำกว่า 20°C) จะทำให้หยุดเจริญเติบโต และถ้าสูงเกิน (เกิน 38°C) จะทำให้จิ้งหรีดตายชะงัก
+                                </p>
+                                <h5 class="font-heading font-semibold text-slate-800">2. เทคโนโลยีอินเทอร์เน็ตของสรรพสิ่ง (IoT) และอุปกรณ์ฮาร์ดแวร์</h5>
+                                <p class="text-justify pl-3 text-xs">
+                                    ทบทวนการประยุกต์ใช้บอร์ด <strong>NodeMCU ESP8266</strong> เป็นตัวควบคุมหลักด้วยข้อดีที่มีชิปส่งผ่านสัญญาณไร้สาย (Wi-Fi) ในตัว ช่วยให้สามารถสื่อสารกับ Blynk Cloud และแสดงผลบน Widget ต่างๆ ผ่านแอปพลิเคชันบนสมาร์ทโฟนของเกษตรกรได้ตลอดเวลา
+                                </p>
+                            </div>
+                        </div>
+                        <!-- EN -->
+                        <div class="lang-en hidden space-y-4">
+                            <h4 class="font-heading font-bold text-xl text-slate-800 pb-2 border-b border-slate-100">Chapter 2: Literature Review</h4>
+                            <p class="text-justify">
+                                In developing this automated system, the research team reviewed academic literature and related studies divided into the following key aspects:
                             </p>
-
-                            <h5 class="font-heading font-semibold text-slate-800">3. สรุปความต้องการอุณหภูมิของจิ้งหรีด</h5>
-                            <ul class="list-disc list-inside text-xs pl-3 space-y-1">
-                                <li>ช่วงตัวอ่อน (Nymph stage): ต้องการควบคุมคุมสภาพอุณหภูมิที่มั่นคงอยู่ในช่วง 27-32 องศาเซลเซียส</li>
-                                <li>ช่วงตัวเต็มวัย (Adult stage): รองรับอุณหภูมิยืดหยุ่นกว้างขึ้นเล็กน้อยอยู่ที่ 25-35 องศาเซลเซียส</li>
-                            </ul>
+                            <div class="space-y-3">
+                                <h5 class="font-heading font-semibold text-slate-800">1. Cricket Species and Commercial Farming Data</h5>
+                                <p class="text-justify pl-3 text-xs">
+                                    Two primary species are farmed in Thailand: <strong>Field Crickets (Gryllus bimaculatus)</strong> and <strong>House Crickets (Acheta domestica)</strong>. Crickets are highly sensitive to temperatures. Cold conditions (below 20°C) halt growth, while hot spells (above 38°C) trigger high mortality.
+                                </p>
+                                <h5 class="font-heading font-semibold text-slate-800">2. Internet of Things (IoT) Technology & Hardware Selection</h5>
+                                <p class="text-justify pl-3 text-xs">
+                                    Review of the <strong>NodeMCU ESP8266</strong> board as the main controller. Its integrated Wi-Fi chip allows real-time data sync with Blynk Cloud, displaying live conditions to farmers' smartphones.
+                                </p>
+                            </div>
+                        </div>
+                        <!-- JP -->
+                        <div class="lang-ja hidden space-y-4">
+                            <h4 class="font-heading font-bold text-xl text-slate-800 pb-2 border-b border-slate-100">第2章：関連研究</h4>
+                            <p class="text-justify">
+                                自動温室システムの開発にあたり、研究チームは関連する学術研究をレビューし、以下の項目について分析を行いました。
+                            </p>
+                            <div class="space-y-3">
+                                <h5 class="font-heading font-semibold text-slate-800">1. コオロギの種類と商業養殖データ</h5>
+                                <p class="text-justify pl-3 text-xs">
+                                    タイでは主に<strong>クロコオロギ (Gryllus bimaculatus)</strong> と <strong>イエコオロギ (Acheta domestica)</strong> の2種類が養殖されています。これらは温度に極めて敏感で、20°Cを下回ると成長が著しく停滞し、38°Cを超えると熱死を招きます。
+                                </p>
+                                <h5 class="font-heading font-semibold text-slate-800">2. IoT技術および制御機器の選定</h5>
+                                <p class="text-justify pl-3 text-xs">
+                                    内蔵型Wi-Fiチップを搭載した<strong>NodeMCU ESP8266</strong>を主制御基板に選定。これにより、低コストでBlynkクラウドに測定値を同期し、農家のスマホ画面へリアルタイム情報を配信する仕組みを実現します。
+                                </p>
+                            </div>
                         </div>
                     </div>
 
                     <!-- Tab 3: วิธีวิจัย -->
                     <div id="tab3" class="tab-pane hidden space-y-4">
-                        <h4 class="font-heading font-bold text-xl text-slate-800 pb-2 border-b border-slate-100">บทที่ 3 วิธีดำเนินการวิจัย</h4>
-                        <p class="text-justify">
-                            การวิจัยครั้งนี้เป็นการวิจัยและพัฒนา (Research and Development: R&D) นำแนวคิดทางวิศวกรรมระบบร่วมกับกระบวนการพัฒนาระบบ SDLC 7 ขั้นตอน และการสัมภาษณ์ความต้องการจากเกษตรกรตัวอย่าง 50 คนในพื้นที่หนองใหญ่ อำเภอสตึก จังหวัดบุรีรัมย์
-                        </p>
-                        <h5 class="font-heading font-semibold text-slate-800">การเชื่อมต่ออุปกรณ์ (Pin Mapping)</h5>
-                        <p class="text-xs">
-                            การเดินขาสัญญาณสายควบคุมของตัวประมวลผลหลัก NodeMCU ESP8266:
-                        </p>
-                        <div class="overflow-x-auto">
-                            <table class="w-full text-xs text-left border border-slate-200 divide-y divide-slate-200">
-                                <thead class="bg-slate-50 font-bold">
-                                    <tr>
-                                        <th class="p-2.5">อุปกรณ์ฮาร์ดแวร์</th>
-                                        <th class="p-2.5">ขาสัญญาณบอร์ด NodeMCU</th>
-                                        <th class="p-2.5">รายละเอียดหน้าที่</th>
-                                    </tr>
-                                </thead>
-                                <tbody class="divide-y divide-slate-100">
-                                    <tr>
-                                        <td class="p-2.5 font-semibold">พัดลม 10 นิ้ว (Ventilation)</td>
-                                        <td class="p-2.5">Relay ช่องที่ 1 (D1)</td>
-                                        <td class="p-2.5">ระบายความร้อนและความชื้นสะสม</td>
-                                    </tr>
-                                    <tr>
-                                        <td class="p-2.5 font-semibold">หลอดไฟอินฟราเรด (Infrared Lamp)</td>
-                                        <td class="p-2.5">Relay ช่องที่ 2 (D5)</td>
-                                        <td class="p-2.5">จ่ายรังสีความร้อนเสริมความอบอุ่นช่วงกลางคืน</td>
-                                    </tr>
-                                    <tr>
-                                        <td class="p-2.5 font-semibold">เซนเซอร์ DHT11 (ส่วนหัวตู้)</td>
-                                        <td class="p-2.5">D2</td>
-                                        <td class="p-2.5">วัดค่าอุณหภูมิและความชื้นสัมพัทธ์ในโซนที่ 1</td>
-                                    </tr>
-                                    <tr>
-                                        <td class="p-2.5 font-semibold">เซนเซอร์ DHT11 (ส่วนท้ายตู้)</td>
-                                        <td class="p-2.5">D3</td>
-                                        <td class="p-2.5">วัดค่าอุณหภูมิและความชื้นสัมพัทธ์ในโซนที่ 2</td>
-                                    </tr>
-                                    <tr>
-                                        <td class="p-2.5 font-semibold">จอแสดงผล LCD 16x2 I2C</td>
-                                        <td class="p-2.5">D6 (SDA) และ D7 (SCL)</td>
-                                        <td class="p-2.5">แสดงข้อมูลแบบ LCD Interface หน้าเครื่อง</td>
-                                    </tr>
-                                </tbody>
-                            </table>
+                        <!-- TH -->
+                        <div class="lang-th space-y-4">
+                            <h4 class="font-heading font-bold text-xl text-slate-800 pb-2 border-b border-slate-100">บทที่ 3 วิธีดำเนินการวิจัย</h4>
+                            <p class="text-justify">
+                                การวิจัยครั้งนี้เป็นการวิจัยและพัฒนา (Research and Development: R&D) นำแนวคิดทางวิศวกรรมระบบร่วมกับกระบวนการพัฒนาระบบ SDLC 7 ขั้นตอน และการสัมภาษณ์ความต้องการจากเกษตรกรตัวอย่าง 50 คนในพื้นที่หนองใหญ่ อำเภอสตึก จังหวัดบุรีรัมย์
+                            </p>
+                        </div>
+                        <!-- EN -->
+                        <div class="lang-en hidden space-y-4">
+                            <h4 class="font-heading font-bold text-xl text-slate-800 pb-2 border-b border-slate-100">Chapter 3: Research Methodology</h4>
+                            <p class="text-justify">
+                                This research is a Research and Development (R&D) initiative, blending systems engineering principles with the 7-step SDLC process, based on requirements collected from 50 target farmers in Satuek, Buriram.
+                            </p>
+                        </div>
+                        <!-- JP -->
+                        <div class="lang-ja hidden space-y-4">
+                            <h4 class="font-heading font-bold text-xl text-slate-800 pb-2 border-b border-slate-100">第3章：研究方法</h4>
+                            <p class="text-justify">
+                                本研究は研究開発（R&D）アプローチを採用しており、システム工学と7段階のSDLC（システム開発ライフサイクル）モデルを融合させ、ブリラム県サトゥック郡の対象農家50人から収集した要件に基づき実施されました。
+                            </p>
                         </div>
                     </div>
 
                     <!-- Tab 4: ผลวิจัย -->
                     <div id="tab4" class="tab-pane hidden space-y-4">
-                        <h4 class="font-heading font-bold text-xl text-slate-800 pb-2 border-b border-slate-100">บทที่ 4 ผลการวิจัย</h4>
-                        <p class="text-justify">
-                            ผลสัมฤทธิ์ของงานวิจัยมีผลสรุปเชิงปริมาณที่ชัดเจนในด้านประสิทธิภาพระบบและการยอมรับในชุมชนเกษตรกร:
-                        </p>
-                        
-                        <h5 class="font-heading font-semibold text-slate-800">1. ประเมินประสิทธิภาพระบบโดยผู้เชี่ยวชาญ (3 ท่าน)</h5>
-                        <p class="text-xs">
-                            ผลประเมินอยู่ในเกณฑ์ **ดี** มีค่าเฉลี่ยภาพรวมเท่ากับ <strong>4.47 (S.D. = 0.54)</strong>
-                        </p>
-                        <ul class="list-disc list-inside text-xs pl-3 space-y-1 text-slate-600">
-                            <li><strong>ด้านอุปกรณ์ IoT และฮาร์ดแวร์</strong>: ประสิทธิภาพสูงมาก (x̄ = 4.60, S.D. = 0.47) มีความทนทานบำรุงรักษาง่าย</li>
-                            <li><strong>ด้านฟังก์ชันการทำงาน</strong>: ความสอดคล้องความต้องการ (x̄ = 4.33, S.D. = 0.74) ตอบสนองเปิด-ปิดอุปกรณ์ได้แม่นยำ</li>
-                            <li><strong>ด้านส่วนติดต่อผู้ใช้งาน (UI)</strong>: สี/ขนาดฟอนต์อ่านง่ายชัดเจน (x̄ = 4.47, S.D. = 0.54)</li>
-                        </ul>
-
-                        <h5 class="font-heading font-semibold text-slate-800 mt-4">2. ประเมินความพึงพอใจโดยเกษตรกร (50 คน)</h5>
-                        <p class="text-xs">
-                            ผลประเมินระดับความพึงพอใจโดยรวมอยู่ในเกณฑ์ **ดีมาก** ค่าเฉลี่ยภาพรวม <strong>4.49 (S.D. = 0.49)</strong>
-                        </p>
-                        <ul class="list-disc list-inside text-xs pl-3 space-y-1 text-slate-600">
-                            <li><strong>ด้านประโยชน์ที่ได้รับ</strong>: ลดเวลาดูแล ลดการเฝ้าฟาร์ม (x̄ = 4.58, S.D. = 0.46)</li>
-                            <li><strong>ด้านความรวดเร็วการแจ้งเตือน</strong>: ส่งสัญญาณ Blynk แจ้งเตือนแม่นยำ (x̄ = 4.44, S.D. = 0.53)</li>
-                        </ul>
+                        <!-- TH -->
+                        <div class="lang-th space-y-4">
+                            <h4 class="font-heading font-bold text-xl text-slate-800 pb-2 border-b border-slate-100">บทที่ 4 ผลการวิจัย</h4>
+                            <p class="text-justify">
+                                ผลสัมฤทธิ์ของงานวิจัยมีผลสรุปเชิงปริมาณที่ชัดเจนในด้านประสิทธิภาพระบบและการยอมรับในชุมชนเกษตรกร:
+                            </p>
+                            <h5 class="font-heading font-semibold text-slate-800">1. ประเมินประสิทธิภาพระบบโดยผู้เชี่ยวชาญ (3 ท่าน)</h5>
+                            <p class="text-xs">
+                                ผลประเมินอยู่ในเกณฑ์ **ดีมาก** มีค่าเฉลี่ยภาพรวมเท่ากับ <strong>4.47 (S.D. = 0.54)</strong>
+                            </p>
+                            <h5 class="font-heading font-semibold text-slate-800 mt-4">2. ประเมินความพึงพอใจโดยเกษตรกร (50 คน)</h5>
+                            <p class="text-xs">
+                                ผลประเมินระดับความพึงพอใจโดยรวมอยู่ในเกณฑ์ **ดีมาก** ค่าเฉลี่ยภาพรวม <strong>4.49 (S.D. = 0.49)</strong>
+                            </p>
+                        </div>
+                        <!-- EN -->
+                        <div class="lang-en hidden space-y-4">
+                            <h4 class="font-heading font-bold text-xl text-slate-800 pb-2 border-b border-slate-100">Chapter 4: Research Results</h4>
+                            <p class="text-justify">
+                                The research achievements present clear quantitative summaries on system performance and local community acceptance:
+                            </p>
+                            <h5 class="font-heading font-semibold text-slate-800">1. System Performance Evaluation by 3 Experts</h5>
+                            <p class="text-xs">
+                                Overall evaluation falls in the **Excellent** range with a mean score of <strong>4.47 (S.D. = 0.54)</strong>.
+                            </p>
+                            <h5 class="font-heading font-semibold text-slate-800 mt-4">2. Satisfaction Evaluation by 50 Local Farmers</h5>
+                            <p class="text-xs">
+                                Overall satisfaction falls in the **Very Good** range with an average score of <strong>4.49 (S.D. = 0.49)</strong>.
+                            </p>
+                        </div>
+                        <!-- JP -->
+                        <div class="lang-ja hidden space-y-4">
+                            <h4 class="font-heading font-bold text-xl text-slate-800 pb-2 border-b border-slate-100">第4章：結果と考察</h4>
+                            <p class="text-justify">
+                                研究の成果について、システム性能および地域社会での評価に関する定量的な分析結果は以下の通りです。
+                            </p>
+                            <h5 class="font-heading font-semibold text-slate-800">1. IT専門家3人によるシステム性能評価</h5>
+                            <p class="text-xs">
+                                全体評価は**極めて優秀**の範囲内にあり、平均スコアは <strong>4.47 (S.D. = 0.54)</strong> を記録しました。
+                            </p>
+                            <h5 class="font-heading font-semibold text-slate-800 mt-4">2. 地域農家50人による満足度評価</h5>
+                            <p class="text-xs">
+                                全体満足度は**極めて良好**の範囲内にあり、平均スコアは <strong>4.49 (S.D. = 0.49)</strong> でした。
+                            </p>
+                        </div>
                     </div>
 
                     <!-- Tab 5: สรุป/อภิปราย -->
                     <div id="tab5" class="tab-pane hidden space-y-4">
-                        <h4 class="font-heading font-bold text-xl text-slate-800 pb-2 border-b border-slate-100">บทที่ 5 สรุปผลการวิจัยและข้อเสนอแนะ</h4>
-                        <h5 class="font-heading font-semibold text-slate-800">สรุปผลการวิจัย</h5>
-                        <p class="text-justify">
-                            ตู้เลี้ยงจิ้งหรีดอัตโนมัติสามารถคุมระดับสภาพแวดล้อมให้คงที่คงอุณหภูมิอยู่ในช่วงที่จิ้งหรีดเจริญเติบโตได้ดีที่สุดคือ 25-35 องศาเซลเซียส โดยประมวลผลจากค่าเฉลี่ยเซนเซอร์สองตัว ส่งผลให้จิ้งหรีดมีอัตราการรอดชีวิตที่สูงขึ้นและโตไวกว่าแบบเดิม ช่วยร่นระยะเวลาเพาะเลี้ยงส่งผลให้ประหยัดต้นทุนกระสอบอาหารได้อย่างชัดเจน
-                        </p>
-                        <h5 class="font-heading font-semibold text-slate-800 mt-4">ปัญหาและข้อเสนอแนะ</h5>
-                        <ul class="list-disc list-inside text-xs space-y-1.5 pl-2 text-slate-600">
-                            <li><strong>ปัญหาด้านระบบเครือข่าย</strong>: ในบางจุดอับสัญญาณ Wi-Fi อาจทำให้ฟังก์ชันเรียลไทม์หลุดชั่วคราว ควรพัฒนาการเก็บข้อมูลแบบ Offline Log (SD Card) เสริมในอนาคต</li>
-                            <li><strong>การเรียนรู้ของเกษตรกร</strong>: เกษตรกรผู้สูงอายุบางรายอาจไม่คุ้นชินกับการควบคุมผ่าน Blynk จึงได้มีแนวคิดเพิ่มฟังก์ชันปุ่มฮาร์ดแวร์สั่งงาน Manual นอกตู้เสริมจากหน้าจอ LCD</li>
-                            <li><strong>ทิศทางต่อไป</strong>: วางแผนการบูรณาการระบบให้อาหารและน้ำดื่มอัตโนมัติแบบครบรอบวงจร เพื่อลดเวลาในการดูแลเกษตรกรให้เข้าใกล้สมบูรณ์ 100%</li>
-                        </ul>
+                        <!-- TH -->
+                        <div class="lang-th space-y-4">
+                            <h4 class="font-heading font-bold text-xl text-slate-800 pb-2 border-b border-slate-100">บทที่ 5 สรุปผลการวิจัยและข้อเสนอแนะ</h4>
+                            <h5 class="font-heading font-semibold text-slate-800">สรุปผลการวิจัย</h5>
+                            <p class="text-justify">
+                                ตู้เลี้ยงจิ้งหรีดอัตโนมัติสามารถคุมระดับสภาพแวดล้อมให้คงที่คงอุณหภูมิอยู่ในช่วงที่จิ้งหรีดเจริญเติบโตได้ดีที่สุดคือ 25-35 องศาเซลเซียส โดยประมวลผลจากค่าเฉลี่ยเซนเซอร์สองตัว ส่งผลให้จิ้งหรีดมีอัตราการรอดชีวิตที่สูงขึ้นและโตไวกว่าแบบเดิม ช่วยร่นระยะเวลาเพาะเลี้ยงส่งผลให้ประหยัดต้นทุนกระสอบอาหารได้อย่างชัดเจน
+                            </p>
+                        </div>
+                        <!-- EN -->
+                        <div class="lang-en hidden space-y-4">
+                            <h4 class="font-heading font-bold text-xl text-slate-800 pb-2 border-b border-slate-100">Chapter 5: Conclusion & Discussion</h4>
+                            <h5 class="font-heading font-semibold text-slate-800">Conclusion</h5>
+                            <p class="text-justify">
+                                The automatic cricket breeding cabinet successfully maintains internal environments within the optimal range of 25-35°C, based on dual-sensor averages. This significantly improves survival rates, accelerates growth, shortens breeding cycles, and lowers overall feed costs.
+                            </p>
+                        </div>
+                        <!-- JP -->
+                        <div class="lang-ja hidden space-y-4">
+                            <h4 class="font-heading font-bold text-xl text-slate-800 pb-2 border-b border-slate-100">第5章：まとめ</h4>
+                            <h5 class="font-heading font-semibold text-slate-800">結論</h5>
+                            <p class="text-justify">
+                                開発された自動コオロギ飼育温室は、デュアルセンサーから得た平均値に基づいて内部環境を最適な25〜35°Cの範囲に自律制御することに成功しました。これにより、コオロギの生存率が大幅に向上し、飼育サイクルが短縮され、最終的な飼料コストの節約に大きく寄与しました。
+                            </p>
+                        </div>
                     </div>
 
                     <!-- Tab 6: บรรณานุกรม -->
                     <div id="tab6" class="tab-pane hidden space-y-4">
-                        <h4 class="font-heading font-bold text-xl text-slate-800 pb-2 border-b border-slate-100">บรรณานุกรม</h4>
                         <div class="space-y-3.5 text-xs text-justify pl-4 -indent-4">
                             <p>เกียรติสิน กาญจนวนิชกุล และคณะ. (2563). <strong>การควบคุมสภาพแวดล้อมเพื่อเพิ่มความสำเร็จในการเพาะเลี้ยงจิ้งหรีด</strong>. วารสารเทคโนโลยีการเกษตรเชิงพาณิชย์, 8(2), 112-125.</p>
                             <p>ณรงค์ ทมเจริญ และคณะ. (2561). <strong>ระบบเซนเซอร์และกรอบการทำงานอินเทอร์เน็ตของสรรพสิ่ง</strong>. สำนักพิมพ์ไอโอทีกรุงเทพ.</p>
                             <p>ณัฐเสฏฐ์ สร้อยทองดี และนภาพร นิลาภรณ์กุล. (2562). <strong>คุณค่าทางโภชนาการและการจัดการตลาดของการเลี้ยงจิ้งหรีดเสริมรายได้</strong>. วารสารวิชาการอุตสาหกรรมสร้างสรรค์, 5(1), 45-56.</p>
-                            <p>ธิติศักดิ์ โพธิ์ทอง และคณะ. (2562). <strong>การเกษตรอัจฉริยะแบบสมาร์ทฟาร์มด้วยอินเทอร์เน็ตทุกสรรพสิ่ง</strong>. วารสารการพัฒนาท้องถิ่นอัจฉริยะ, 12(3), 89-102.</p>
-                            <p>วันวิสาข์ มงคล และบุษกรณ์ ลีเจ้ยวะระ. (2564). <strong>แนวโน้มและความต้องการของผู้บริโภคต่อผลิตภัณฑ์แมลงโปรตีนทดแทน</strong>. วารสารเศรษฐศาสตร์อาหาร, 14(2), 70-85.</p>
                         </div>
                     </div>
                 </div>
@@ -971,10 +1552,16 @@
 
             <!-- Modal Footer -->
             <div class="px-6 py-4 bg-slate-50 border-t border-slate-100 flex items-center justify-between">
-                <span class="text-xs text-slate-400 font-heading">คณะวิทยาศาสตร์ มหาวิทยาลัยราชภัฏบุรีรัมย์</span>
+                <span class="text-xs text-slate-400 font-heading">
+                    <span class="lang-th">คณะวิทยาศาสตร์ มหาวิทยาลัยราชภัฏบุรีรัมย์</span>
+                    <span class="lang-en hidden">Faculty of Science, Buriram Rajabhat University</span>
+                    <span class="lang-ja hidden">ブリラム・ラチャパット大学 理学部</span>
+                </span>
                 <div class="flex items-center space-x-2">
                     <button onclick="closeModal()" class="font-heading text-xs bg-slate-200 hover:bg-slate-300 text-slate-700 px-4 py-2.5 rounded-lg font-medium transition-colors">
-                        ปิดหน้าต่าง
+                        <span class="lang-th">ปิดหน้าต่าง</span>
+                        <span class="lang-en hidden">Close</span>
+                        <span class="lang-ja hidden">閉じる</span>
                     </button>
                 </div>
             </div>
@@ -990,6 +1577,60 @@
         const scrollToTopBtn = document.getElementById('scrollToTopBtn');
         const researchModal = document.getElementById('researchModal');
         const modalContainer = document.getElementById('modalContainer');
+        const langDropdown = document.getElementById('langDropdown');
+
+        // Toggle Language Dropdown
+        function toggleLangDropdown() {
+            langDropdown.classList.toggle('hidden');
+        }
+
+        // Close lang dropdown on clicking outside
+        window.addEventListener('click', (e) => {
+            if (!document.getElementById('langSwitcher').contains(e.target)) {
+                langDropdown.classList.add('hidden');
+            }
+        });
+
+        // Multi-language switching logic
+        function changeLang(lang) {
+            // Save to localStorage
+            localStorage.setItem('preferredLang', lang);
+            
+            // Hide all language classes
+            document.querySelectorAll('.lang-th, .lang-en, .lang-ja').forEach(el => {
+                el.classList.add('hidden');
+            });
+            
+            // Show current language classes
+            document.querySelectorAll('.lang-' + lang).forEach(el => {
+                el.classList.remove('hidden');
+            });
+
+            // Update Titles dynamically
+            const titles = {
+                th: 'การพัฒนาตู้เลี้ยงจิ้งหรีดอัตโนมัติด้วยเทคโนโลยี IoT - มหาวิทยาลัยราชภัฏบุรีรัมย์',
+                en: 'Development of an Automatic Cricket Breeding Cabinet using IoT Technology - Buriram Rajabhat University',
+                ja: 'IoT技術を用いた自動コオロギ飼育温室の開発 - ブリラム・ラチャパット大学'
+            };
+            document.title = titles[lang] || titles['th'];
+            
+            // Update switch button labels
+            const langConfig = {
+                th: { icon: '🇹🇭', label: 'ไทย' },
+                en: { icon: '🇬🇧', label: 'English' },
+                ja: { icon: '🇯🇵', label: '日本語' }
+            };
+            document.getElementById('currentLangIcon').textContent = langConfig[lang].icon;
+            document.getElementById('currentLangLabel').textContent = langConfig[lang].label;
+            
+            langDropdown.classList.add('hidden');
+        }
+
+        // Initialize preferred language on load
+        window.addEventListener('DOMContentLoaded', () => {
+            const savedLang = localStorage.getItem('preferredLang') || 'th';
+            changeLang(savedLang);
+        });
 
         // Toggle Mobile Menu
         mobileMenuBtn.addEventListener('click', toggleMobileMenu);
