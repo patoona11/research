@@ -1,0 +1,92 @@
+ประวัติคณะผู้วิจัย
+ชื่อ - สกุล (ภาษาไทย)ผู้ช่วยศาสตราจารย์ ดร.เปรม อิงคเวชชากุล
+ชื่อ - สกุล (ภาษาอังกฤษ) Asst. Prof. Dr. Prem Enkvetchakul
+เลขบัตรประจำตัวประชาชน3-3199-00222-82-4
+ตำแหน่งปัจจุบันอาจารย์ประจำสาขาวิชาเทคโนโลยีสารสนเทศ คณะวิทยาศาสตร์ มหาวิทยาลัยราชภัฏบุรีรัมย์
+หน่วยงานที่สังกัดสาขาวิชาเทคโนโลยีสารสนเทศ คณะวิทยาศาสตร์ มหาวิทยาลัยราชภัฏบุรีรัมย์
+วุฒิการศึกษาปีการศึกษา 2566 วิทยาศาสตรดุษฎีบัณฑิต สาขาวิชาเทคโนโลยีสารสนเทศ มหาวิทยาลัยมหาสารคาม
+ปีการศึกษา 2550 วิทยาศาสตรมหาบัณทิต สาขาวิชาเทคโนโลยีสารสนเทศ มหาวิทยาลัยขอนแก่น
+ปีการศึกษา 2548 วิทยาศาสตรบัณฑิต สาขาวิชาวิทยาการคอมพิวเตอร์ มหาวิทยาลัยขอนแก่น
+สถานที่ที่ติดต่อได้สะดวกสาขาวิชาเทคโนโลยีสารสนเทศ คณะวิทยาศาสตร์ มหาวิทยาลัยราชภัฏบุรีรัมย์
+รายละเอียดติดต่อเบอร์โทร 083-337-3537    อีเมล : prem.ev@bru.ac.th
+ผลงานทางวิชาการ/ผลงานวิจัย
+Sriprateep, K., Pitakaso, R., Khonjun, S., Enkvetchakul, P., Jirasirilerd, G., & Gonwirat, S. (2025). Sustainable and resilient semiconductor supply chain optimization via hybrid deep reinforcement and generative learning. Computers & Industrial Engineering, 211, 111583. https://doi.org/10.1016/j.cie.2025.111583
+Pitakaso, R., Khonjun, S., Nanthasamroeng, N., Boonmee, C., Kaewta, C., Enkvetchakul, P., Gonwirat, S., Chokanat, P., Jirasirilerd, G., & Srichok, T. (2023). Gamification design using tourist-generated pictures to enhance visitor engagement at intercity tourist sites. Annals of Operations Research, 350(3), 1109–1141. https://doi.org/10.1007/s10479-023-05590-1
+Enkvetchakul, P., Khonjun, S., Pitakaso, R., Srichok, T., Luesak, P., Kaewta, C., Gonwirat, S., Boonmee, C., Noowattana, M., & Srisuwandee, T. (2025). Advanced AI techniques for root disease classification in dental X-rays using deep learning and metaheuristic approach. Intelligent Systems With Applications, 26, 200526. https://doi.org/10.1016/j.iswa.2025.200526
+Pitakaso, R., Srichok, T., Khonjun, S., Luesak, P., Kaewta, C., Gonwirat, S., Enkvetchakul, P., & Srivoramas, R. (2025). Fuzzy Logic-Enhanced Sustainable and Resilient EV public transit systems for rural tourism. IEEE Open Journal of Intelligent Transportation Systems, 6, 407–432. https://doi.org/10.1109/ojits.2025.3554204
+Kaewta, C., Pitakaso, R., Khonjun, S., Srichok, T., Luesak, P., Gonwirat, S., Enkvetchakul, P., Jutagate, A., & Jutagate, T. (2024). Application of AMIS-optimized vision transformer in identifying disease in Nile Tilapia. Computers and Electronics in Agriculture, 227, 109676. https://doi.org/10.1016/j.compag.2024.109676
+Jutagate, A., Pitakaso, R., Khonjun, S., Srichok, T., Kaewta, C., Luesak, P., Gonwirat, S., Enkvetchakul, P., & Jutagate, T. (2024). Adaptive artificial multiple intelligence fusion system (A-AMIFS) for enhanced disease detection in Nile Tilapia. Aquaculture Reports, 39, 102418. https://doi.org/10.1016/j.aqrep.2024.102418
+Sriprateep, K., Pitakaso, R., Khonjun, S., Srichok, T., Luesak, P., Gonwirat, S., Kaewta, C., Kosacka-Olejnik, M., & Enkvetchakul, P. (2024). Multi-Objective optimization of resilient, sustainable, and safe urban bus routes for tourism promotion using a hybrid reinforcement learning algorithm. Mathematics, 12(14), 2283. https://doi.org/10.3390/math12142283
+Sethanan, K., Pitakaso, R., Srichok, T., Khonjun, S., Thannipat, P., Wanram, S., Boonmee, C., Gonwirat, S., Enkvetchakul, P., Kaewta, C., & Nanthasamroeng, N. (2023). Double AMIS-ensemble deep learning for skin cancer classification. Expert Systems With Applications, 234, 121047. https://doi.org/10.1016/j.eswa.2023.121047
+Sethanan, K., Pitakaso, R., Srichok, T., Khonjun, S., Weerayuth, N., Prasitpuriprecha, C., Preeprem, T., Jantama, S. S., Gonwirat, S., Enkvetchakul, P., Kaewta, C., & Nanthasamroeng, N. (2023). Computer-aided diagnosis using embedded ensemble deep learning for multiclass drug-resistant tuberculosis classification. Frontiers in Medicine, 10, 1122222. https://doi.org/10.3389/fmed.2023.1122222
+Prasitpuriprecha, C., Jantama, S. S., Preeprem, T., Pitakaso, R., Srichok, T., Khonjun, S., Weerayuth, N., Gonwirat, S., Enkvetchakul, P., Kaewta, C., & Nanthasamroeng, N. (2022). Drug-Resistant Tuberculosis Treatment Recommendation, and Multi-Class Tuberculosis Detection and Classification using Ensemble Deep Learning-Based System. Pharmaceuticals, 16(1), 13. https://doi.org/10.3390/ph16010013
+Prasitpuriprecha, C., Pitakaso, R., Gonwirat, S., Enkvetchakul, P., Preeprem, T., Jantama, S. S., Kaewta, C., Weerayuth, N., Srichok, T., Khonjun, S., & Nanthasamroeng, N. (2022). Embedded AMIS-Deep Learning with Dialog-Based Object Query System for Multi-Class Tuberculosis Drug Response Classification. Diagnostics, 12(12), 2980. https://doi.org/10.3390/diagnostics12122980
+Enkvetchakul, P., Surinta, O., & Noppitak, S. (2022). Effective Data Resampling and Meta-learning Convolutional Neural Networks for Diabetic Retinopathy recognition. ICIC Express Letters, Part B: Applications. 13. 939-948. 10.24507/icicelb.13.09.939
+Enkvetchakul, P., & Surinta, O. (2021). Effective data augmentation and training techniques for improving deep learning in plant leaf disease recognition. Applied Science and Engineering Progress. https://doi.org/10.14416/j.asep.2021.01.003
+เอกสารประกอบการสอน/ตำรา
+เปรม อิงคเวชชากุล. (2567). เทคโนโลยีอินเทอร์เน็ตของสรรพสิ่ง. มหาวิทยาลัยราชภัฏบุรีรัมย์.
+ชื่อ - สกุล (ภาษาไทย)นายกิตติคุณ บุญเกตุ
+ชื่อ - สกุล (ภาษาอังกฤษ)Mr.Kittikoon Boonkate
+เลขบัตรประชาชน1-3199-00023-47-7
+ตำแหน่งปัจจุบันรองคณบดีฝ่ายพัฒนานักศึกษา คณะวิทยาศาสตร์
+หน่วยงานที่สังกัดสาขาวิชาสถิติและวิทยาการสารสนเทศ คณะวิทยาศาสตร์ มหาวิทยาลัยราชภัฏบุรีรัมย์
+วุฒิการศึกษาวิทยาศาสตรมหาบัณฑิต สาขาวิชาสถิติประยุกต์ สถาบันบัณฑิตพัฒนบริหารศาสตร์
+ปีวิศวกรรมศาสตรบัณฑิต สาขาวิชาวิศวกรรมคอมพิวเตอร์มหาวิทยาลัยมหิดล
+สถานที่ที่ติดต่อได้สะดวกสาขาวิชาสถิติและวิทยาการสารสนเทศ คณะวิทยาศาสตร์ มหาวิทยาลัยราชภัฏบุรีรัมย์
+รายละเอียดติดต่อเบอร์โทร 044611221  อีเมล : kittikoon.bk@bru.ac.th
+ผลงานทางวิชาการ/ผลงานวิจัย
+ผลงานวิชาการ
+ก. ผลงานวิจัยที่ตีพิมพ์ในวารสารระดับชาติและนานาชาติ
+1) Jiravadee Yoyram, Prem Enkvetchakul, Jongkol Janruang and Kittikoon Boonkate. (2025). Spatial clustering of dormitory density in Mueang district, Buriram province using the DBSCAN algorithm. ASEAN Journal of Scientific and Technological Reports, 28(3), e258177-e258177.
+2) Jiravadee Yoyram, Jongkol Janruang, Sanun Karnka,  Drusawin Vongpramate and Kittikoon Boonkate. (2025). Clustering of Tourist Zones and Facilities Using
+the DBSCAN Algorithm. 10th International Conference on Business and Industrial Research (ICBIR2025), 22 – 23 May 2025, 306 – 311.
+3) Suteera Suntararak and Kittikoon Boonkate. (2025), Development of Biodegradable Films from Carrot, Guava, and Banana Peel Fibers for Environmental Packaging Applications. Journal of Environmental & Earth Sciences, 7(1), January 2025.
+4) Jiravadee Yoyram, Prem Enkvetchakul and Kittikoon Boonkate. (2023) Deep Learning With Convolutional Neural Networks For Cassava Leaf Diseases Via Line Bot:  A Case Study Of Buriram Privincial Protection Service Group, Buriram Provincial Agriculture Office. Journal of Harbin Engineering University. July 2023, 44(7), 1907-1913.
+5) Wareerat kokittipong Pruchaya Chumvangvapee Piyawat Luesopha  Cherdsak Kaewkamada Widsarut Sekaew and Kittikoon Boonkate. Effects of Walking Combined with Arms and Legs Weight Loading Exercise on Physical Performance in Elderly Women. The International Research Conference 2022 NIRC V2022 (14 Feb 2022), 46-54.
+6) The Level of Study Physical Fitness for Physical Education Students and Sport Science students before Professional Experience at Buriram Rajabhat University. The 11th International conference of sports and exercise science (ICSES 2021) (2-4 September 2021)
+7) เปรม อิงคเวชชากุล และ กิตติคุณ บุญเกตุ. (2023). ระบบจอดรถอัจฉริยะโดยใช้เทคโนโลยี อินเทอร์เน็ตของสรรพสิ่ง. วารสารเกษตรศาสตร์และเทคโนโลยี, 4(1), 14-28. 1-7.
+8) เปรม อิงคเวชชากุล จิรวดี โยยรัมย์ และกิตติคุณ บุญเกตุ. (2566). การพัฒนาระบบแนะนำที่จอดรถโดยใช้เทคโนโลยีอินเทอร์เน็ตของสรรพสิ่ง. วารสารวิศวกรรมและเทคโนโลยีอุตสาหกรรม มหาวิทยาลัยกาฬสินธุ์. 1(4), กรกฎาคม – สิงหาคม 2566
+ข. ผลงานวิจัยที่สามารถนำไปใช้ประโยชน์ได้
+1) นวัตกรรมการยกระดับแพลตฟอร์มขจัดความยากจนและดความเหลื่อมล้ำทางสังคมแบบเบ็ดเสร็จและแม่นยำ จังหวัดบุรีรัมย์ (ผู้ร่วมวิจัย) (หน่วยบริหารและจัดการทุนด้านพัฒนาระดับพื้นที่ 2565 – 2568)
+2) การพัฒนารูปแบบการส่งเสริมคุณภาพชีวิตให้กับกลุ่มผู้สูงอายุในพื้นที่ชุมชนรอบมหาวิทยาลัยราชภัฏบุรีรัมย์ จังหวัดบุรีรัมย์ (สำนักงานคณะกรรมการวิจัยแห่งชาติ 2567)
+3) การวิจัยและพัฒนากลไกการปฏิบัติงานและการบูรณาการการลดความเสี่ยงภัยแล้งในระดับพื้นที่ (กรมป้องกันและบรรเทาสาธารณภัย 2566)
+4) การบริหารจัดการข้อมูลและความเสี่ยงทั้งระบบเพื่อเพิ่มประสิทธิภาพของธุรกิจข้าวเม่านางรอง (หน่วยบริหารและจัดการทุนด้านพัฒนาระดับพื้นที่ 2564)
+5) การพัฒนาผลิตภัณฑ์การท่องเที่ยวเชิงสร้างสรรค์ในเขตชีวมณฑล ภูเขาไฟ 6 ลูก เพื่อรองรับการท่องเที่ยวเชิงกีฬา จังหวัดบุรีรัมย์ ภายใต้แผนการวิจัย การเพิ่มคุณค่าและมูลค่าเพิ่มให้เขตชีวมณฑลภูเขาไฟ 6 ลูก จังหวัดบุรีรัมย์เพื่อการท่องเที่ยวเชิงสร้างสรรค์ต่อยอดจากการท่องเที่ยวเชิงกีฬาโดยการมีส่วนร่วมของภาครัฐ ภาคเอกชนและชุมชน (หน่วยบริหารและจัดการทุนด้านการเพิ่มความสามารถในการแข่งขนของประเทศ 2563)
+ค. ผลงานอื่น ๆ เช่น ตำรา บทความ สิทธิบัตร ฯลฯ
+1) การประชุมวิชาการทางด้านวิศวกรรมศาสตร์ วิทยาศาสตร์ เทคโนโลยีและสถาปัตยกรรมศาสตร์ (ESTACON) ครั้งที่ 14 ประจำปี 2566 (25 – 26 สิงหาคม 2566 หน้า 700 - 706)
+ชื่อเรื่อง : การเรียนรู้เชิงลึกในการรู้จำนกเพื่อป้องกันการทำลายนาข้าวในประเทศไทย
+2)งานประชุมวิชาการและนำเสนอผลงานวิจัยระดับชาติราชมงคลสุรินทร์ ครั้งที่ 13 “วิจัยและนวัตกรรมเพื่อพัฒนาเศรษฐกิจ BCG” (17 – 18 พฤศจิกายน 2565)
+ชื่อเรื่อง : การพัฒนาระบบคัดแยกยานพาหนะเพื่อออกแบบสถานที่จอดรถให้เหมาะสมด้วยแบบจำลองการเรียนรู้เชิงลึก
+3)งานประชุมวิชาการระดับชาติ ครั้งที่ 6 “การท่องเที่ยววิถีปกติใหม่ (New Normal) สู่การขับเคลื่อนเศรษฐกิจฐานราก” (10 ตุลาคม 2563 หน้า 856-868)
+ชื่อเรื่อง : การศึกษาพฤติกรรมของนักท่องเที่ยวชาวไทยที่มีต่อการท่องเที่ยวเมืองกีฬาในจังหวัดบุรีรัมย์
+4)งานประชุมวิชาการระดับชาติ “ราชมงคลสุรินทร์ ครั้งที่ 11 วิจัยและนวัตกรรมวิถีใหม่” ณ มหาวิทยาลัยเทคโนโลยีราชมงคลอีสาน วิทยาเขตสุรินทร์ (17 กันยายน 2563 หน้า H85 – H96)
+ชื่อเรื่อง : พฤติกรรมการใช้เครือข่ายสังคมออนไลน์ ประเภทเฟซบุ๊กของประชาชนในจังหวัดบุรีรัมย์
+5)งานประชุมวิชาการรัฐประศาสนศาสตร์ระดับชาติ ครั้งที่ 7 “รัฐประศาสนศาสตร์ไทย 4.0 : ประชารัฐ นวัตกรรม และความท้าทาย” มหาวิทยาลัยราชภัฏบุรีรัมย์ (26 ตุลาคม 2561 หน้า J207-222)
+ชื่อเรื่อง : การพัฒนาสื่ออิเล็กทรอนิกส์เพื่อการจัดการขยะ กรณีศึกษา : ชุมชนลำดวนใต้เทศบาลเมืองบุรีรัมย์ อำเภอเมือง จังหวัดบุรีรัมย์
+6)งานประชุมวิชาการระดับชาติการจัดการเทคโนโลยีและนวัตกรรม ครั้งที่ 4.  (5 – 6  มีนาคม  2561 หน้า 1302 – 1309)
+ชื่อเรื่อง : ระบบบริหารจัดการการเรียนการสอน โรงเรียนกวดวิชากรณีศึกษาโรงเรียนโกลบอลอาร์ต สาขาบุรีรัมย์
+7)งานประชุมวิชาการระดับชาติการจัดการเทคโนโลยีและนวัตกรรม ครั้งที่ 4.  (5 – 6  มีนาคม  2561 หน้า 1478 – 1484). 
+ชื่อเรื่อง : ระบบบริหารจัดการเช่าเครื่องดนตรีและจองห้องซ้อมดนตรี กรณีศึกษา: ร้านบุรีรัมย์มิวสิคช๊อป
+ง. สาขาวิชาที่เชี่ยวชาญ (สามารถตอบได้มากว่า 1 สาขา)
+สถิติและวิทยาการสารสนเทศ, สถิติประยุกต์, คอมพิวเตอร์, เทคโนโลยีสารสนเทศ
+ชื่อ-สกุลอาจารย์ ดร.กรกช ศิลปกอบ
+ตำแหน่งในโครงการผู้ร่วมวิจัย
+หน่วยงานที่สังกัดอาจารย์ประจำกลุ่มวิชาทดสอบและวิจัยการศึกษา คณะครุศาสตร์ มหาวิทยาลัยราชภัฏบุรีรัมย์
+วุฒิการศึกษาปริญญาเอก ปรัชญาดุษฎีบัณฑิต สาขาวิชาสถิติประยุกต์                                    คณะวิทยาศาสตร์ประยุกต์ มหาวิทยาลัยเทคโนโลยีพระจอมเกล้าพระนครเหนือ พ.ศ. 2566
+ปริญญาโท วิทยาศาสตรมหาบัณฑิต สาขาวิชาสถิติประยุกต์
+คณะสถิติประยุกต์ สถาบันบัณฑิตพัฒนบริหารศาสตร์ พ.ศ. 2560ปริญญาตรี วิทยาศาสตรบัณฑิต (เกียรตินิยมอันดับ 1) สาขาวิชาสถิติประยุกต์ คณะวิทยาศาสตร์ มหาวิทยาลัยราชภัฏบุรีรัมย์ พ.ศ. 2556
+รายละเอียดติดต่อเบอร์โทร 044-611221Email : korakoch.sk@bru.ac.th
+ประสบการณ์วิจัยที่ได้รับทุนสนับสนุน
+1. ผู้ร่วมวิจัย โครงการวิจัยได้รับงบประมาณสนับสนุนจากสำนักงานการวิจัยแห่งชาติ (วช.) (ทุนพัฒนาศักยภาพในการทำงานวิจัยของอาจารย์รุ่นใหม่ ประจำปี 2567) เรื่อง “การเพิ่มประสิทธิภาพการควบคุมกระบวนการทางสถิติสำหรับการตรวจสอบและการพยากรณ์ข้อมูลอนุกรมเวลาของอุณหภูมิโลก”
+2. ผู้ร่วมวิจัย โครงการวิจัยได้รับทุนอุดหนุนการวิจัยจากสำนักงานคณะกรรมการส่งเสริมวิทยาศาสตร์ วิจัยและนวัตกรรม (สกสว.) และ มหาวิทยาลัยราชภัฏบุรีรัมย์ ประเภททุนสนับสนุนงานพื้นฐาน Fundamental fund ประจำปีงบประมาณ 2567
+โครงการวิจัยย่อยที่ 1 การพัฒนาระบบฟาร์มอัจฉริยะสำหรับเกษตรกรผู้ผลิตอาหารปลอดภัยด้วยซอฟต์แวร์รหัสเปิด (นักวิจัย)
+ภายใต้ ชุดโครงการวิจัย : การพัฒนาและยกระดับผลิตภัณฑ์อาหารปลอดภัยด้วยการจัดการห่วงโซ่อุปทานสู่เศรษฐกิจสร้างสรรค์มูลค่าสูง อำเภอหนองหงส์ จังหวัดบุรีรัมย์
+3. ผู้ร่วมวิจัย โครงการวิจัยได้รับทุนอุดหนุนการวิจัยจากสำนักงานคณะกรรมการส่งเสริมวิทยาศาสตร์ วิจัยและนวัตกรรม (สกสว.) และ มหาวิทยาลัยราชภัฏบุรีรัมย์ ประเภททุนสนับสนุนงานพื้นฐาน Fundamental fund ประจำปีงบประมาณ 2567
+โครงการวิจัยเดี่ยว นวัตกรรมการพัฒนาและเพิ่มมูลค่าผลิตภัณฑ์ผักตบชวาที่เป็นมิตรกับสิ่งแวดล้อมเพื่อยกระดับความสามารถในการแข่งขันและวางรากฐานทางเศรษฐกิจ จังหวัดบุรีรัมย์
+4. ผู้ร่วมวิจัย โครงการนวัตกรรมการแปรรูปและยกระดับมาตรฐานผลิตภัณฑ์หอมแดง ตำบลไทยสามัคคี อำเภอหนองหงส์ จังหวัดบุรีรัมย์ได้รับทุนอุดหนุนการวิจัยและบริการวิชาการ ภายใต้แผนงานยุทธศาสตร์มหาวิทยาลัยราชภัฏเพื่อการพัฒนาท้องถิ่น ประจำปีงบประมาณ 2567 มหาวิทยาลัยราชภัฏบุรีรัมย์ 
+5. ผู้ร่วมวิจัย โครงการการส่งเสริมการแปรรูปและสร้างมูลค่าเพิ่มผลิตภัณฑ์จากหอมแดง ตำบลไทยสามัคคี อำเภอหนองหงส์ จังหวัดบุรีรัมย์ ได้รับทุนอุดหนุนการวิจัยและบริการวิชาการ ภายใต้แผนงานยุทธศาสตร์มหาวิทยาลัยราชภัฏเพื่อการพัฒนาท้องถิ่น ประจำปีงบประมาณ 2566 มหาวิทยาลัยราชภัฏบุรีรัมย์
+การเผยแพร่งานวิจัย / บทความวิจัย / งานสร้างสรรค์
+1. บทความวิจัยอยู่ระหว่างการขอตีพิมพ์ในวารสารวิชาการ เรื่อง “การพัฒนาทักษะการคิดวิเคราะห์ประยุกต์ใช้ทฤษฎีพหุปัญญา โดยใช้กลยุทธ์การสร้างบรรยากาศเสริมพลังบวก 5E ร่วมกับสื่อดิจิทัล รายวิชาภาษาไทยพื้นฐาน สำหรับนักเรียนชั้นมัธยมศึกษาปีที่ 3”
+2. บทความวิจัยอยู่ระหว่างการขอตีพิมพ์ในวารสารวิชาการ เรื่อง “การศึกษาผลการใช้ Digital Book ตามแนวคิดทฤษฎีพหุปัญญา หน่วยการเรียนรู้ทักษะกระบวนการวิทยาศาสตร์ขั้นพื้นฐาน วิชาทักษะกระบวนการวิทยาศาสตร์ ระดับชั้นมัธยมศึกษาปีที่ 1”
+ศฐาน์ภัฏ นพตลุง และกรกช ศิลปกอบ. (2567). การพยากรณ์ราคาหัวมันสำปะหลังสดของประเทศไทยด้วยวิธีบอกซ์-เจนกินส์. ใน การประชุมวิชาการระดับชาติ ด้านสถิติ วิทยาศาสตร์ข้อมูล และการประกันภัย ครั้งที่ 1 วันที่ 5 เมษายน 2567 (หน้า 171). กรุงเทพมหานคร : มหาวิทยาลัยเทคโนโลยีพระจอมเกล้าพระนครเหนือ.
+Supharakonsakun, Y., Areepong, Y. and Silpakob, k. (2025). Explicit ARL computational for a modified EWMA control chart in autocorrelated statistical process control models. Computer Modeling in Engineering & Sciences 2025, 145(1), 699-720.

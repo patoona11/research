@@ -1,0 +1,49 @@
+แบบฟอร์มประวัติผู้วิจัย
+ชื่อ-สกุล หัวหน้าโครงการวิจัย ผู้ช่วยศาสตราจารย์ ดร.เปรม อิงคเวชชากุล
+สถานที่ปฏิบัติงานปัจจุบัน คณะวิทยาศาสตร์ มหาวิทยาลัยราชภัฏบุรีรัมย์
+สถานที่ติดต่อได้สะดวก สาขาวิชาเทคโนโลยีสารสนเทศ คณะวิทยาศาสตร์ 
+มหาวิทยาลัยราชภัฏบุรีรัมย์
+หมายเลขโทรศัพท์ 0853373537
+E-mail  prem.ev@bru.ac.th
+ประวัติการศึกษา (ตั้งแต่ปริญญาตรี จนถึงการศึกษาขั้นสูงสุด ระบุสาขาที่จบ สำหรับนักศึกษาให้ระบุ ชั้นปีปัจจุบัน)
+สถาบันการศึกษา
+ชื่อปริญญา
+สาขา
+ปีที่จบการศึกษา
+มหาวิทยาลัยมหาสารคาม
+วิทยาศาสตรดุษฎีบัณฑิต
+สาขาวิชาเทคโนโลยีสารสนเทศ
+2566
+มหาวิทยาลัยขอนแก่น
+วิทยาศาสตรมหาบัณทิต
+สาขาวิชาเทคโนโลยีสารสนเทศ
+2550
+มหาวิทยาลัยขอนแก่น
+วิทยาศาสตรบัณฑิต
+สาขาวิชาวิทยาการคอมพิวเตอร์
+2548
+ประวัติการอบรมจริยธรรมการวิจัยในมนุษย์
+หลักสูตรอบรม
+วันที่อบรม
+วันที่หมดอายุ
+หลักสูตร GCP& HSP online training (Computer-based)
+“ICH-GCP E6(R3) and Human Subject Protection Course”
+17 มีนาคม 2569
+17 มีนาคม 2571
+ประวัติการเผยแพร่ผลงานวิจัย (ระบุแหล่ง/ปีที่เผยแพร่)
+Sriprateep, K., Pitakaso, R., Khonjun, S., Enkvetchakul, P., Jirasirilerd, G., & Gonwirat, S. (2025). Sustainable and resilient semiconductor supply chain optimization via hybrid deep reinforcement and generative learning. Computers & Industrial Engineering, 211, 111583. https://doi.org/10.1016/j.cie.2025.111583
+Pitakaso, R., Khonjun, S., Nanthasamroeng, N., Boonmee, C., Kaewta, C., Enkvetchakul, P., Gonwirat, S., Chokanat, P., Jirasirilerd, G., & Srichok, T. (2023). Gamification design using tourist-generated pictures to enhance visitor engagement at intercity tourist sites. Annals of Operations Research, 350(3), 1109–1141. https://doi.org/10.1007/s10479-023-05590-1
+Enkvetchakul, P., Khonjun, S., Pitakaso, R., Srichok, T., Luesak, P., Kaewta, C., Gonwirat, S., Boonmee, C., Noowattana, M., & Srisuwandee, T. (2025). Advanced AI techniques for root disease classification in dental X-rays using deep learning and metaheuristic approach. Intelligent Systems With Applications, 26, 200526. https://doi.org/10.1016/j.iswa.2025.200526
+Pitakaso, R., Srichok, T., Khonjun, S., Luesak, P., Kaewta, C., Gonwirat, S., Enkvetchakul, P., & Srivoramas, R. (2025). Fuzzy Logic-Enhanced Sustainable and Resilient EV public transit systems for rural tourism. IEEE Open Journal of Intelligent Transportation Systems, 6, 407–432. https://doi.org/10.1109/ojits.2025.3554204
+Kaewta, C., Pitakaso, R., Khonjun, S., Srichok, T., Luesak, P., Gonwirat, S., Enkvetchakul, P., Jutagate, A., & Jutagate, T. (2024). Application of AMIS-optimized vision transformer in identifying disease in Nile Tilapia. Computers and Electronics in Agriculture, 227, 109676. https://doi.org/10.1016/j.compag.2024.109676
+Jutagate, A., Pitakaso, R., Khonjun, S., Srichok, T., Kaewta, C., Luesak, P., Gonwirat, S., Enkvetchakul, P., & Jutagate, T. (2024). Adaptive artificial multiple intelligence fusion system (A-AMIFS) for enhanced disease detection in Nile Tilapia. Aquaculture Reports, 39, 102418. https://doi.org/10.1016/j.aqrep.2024.102418
+Sriprateep, K., Pitakaso, R., Khonjun, S., Srichok, T., Luesak, P., Gonwirat, S., Kaewta, C., Kosacka-Olejnik, M., & Enkvetchakul, P. (2024). Multi-Objective optimization of resilient, sustainable, and safe urban bus routes for tourism promotion using a hybrid reinforcement learning algorithm. Mathematics, 12(14), 2283. https://doi.org/10.3390/math12142283
+Sethanan, K., Pitakaso, R., Srichok, T., Khonjun, S., Thannipat, P., Wanram, S., Boonmee, C., Gonwirat, S., Enkvetchakul, P., Kaewta, C., & Nanthasamroeng, N. (2023). Double AMIS-ensemble deep learning for skin cancer classification. Expert Systems With Applications, 234, 121047. https://doi.org/10.1016/j.eswa.2023.121047
+Sethanan, K., Pitakaso, R., Srichok, T., Khonjun, S., Weerayuth, N., Prasitpuriprecha, C., Preeprem, T., Jantama, S. S., Gonwirat, S., Enkvetchakul, P., Kaewta, C., & Nanthasamroeng, N. (2023). Computer-aided diagnosis using embedded ensemble deep learning for multiclass drug-resistant tuberculosis classification. Frontiers in Medicine, 10, 1122222. https://doi.org/10.3389/fmed.2023.1122222
+Prasitpuriprecha, C., Jantama, S. S., Preeprem, T., Pitakaso, R., Srichok, T., Khonjun, S., Weerayuth, N., Gonwirat, S., Enkvetchakul, P., Kaewta, C., & Nanthasamroeng, N. (2022). Drug-Resistant Tuberculosis Treatment Recommendation, and Multi-Class Tuberculosis Detection and Classification using Ensemble Deep Learning-Based System. Pharmaceuticals, 16(1), 13. https://doi.org/10.3390/ph16010013
+Prasitpuriprecha, C., Pitakaso, R., Gonwirat, S., Enkvetchakul, P., Preeprem, T., Jantama, S. S., Kaewta, C., Weerayuth, N., Srichok, T., Khonjun, S., & Nanthasamroeng, N. (2022). Embedded AMIS-Deep Learning with Dialog-Based Object Query System for Multi-Class Tuberculosis Drug Response Classification. Diagnostics, 12(12), 2980. https://doi.org/10.3390/diagnostics12122980
+Enkvetchakul, P., Surinta, O., & Noppitak, S. (2022). Effective Data Resampling and Meta-learning Convolutional Neural Networks for Diabetic Retinopathy recognition. ICIC Express Letters, Part B: Applications. 13. 939-948. 10.24507/icicelb.13.09.939
+Enkvetchakul, P., & Surinta, O. (2021). Effective data augmentation and training techniques for improving deep learning in plant leaf disease recognition. Applied Science and Engineering Progress. https://doi.org/10.14416/j.asep.2021.01.003
+ลงชื่อ.............................................
+   (ผู้ช่วยศาสตราจารย์ ดร.เปรม อิงคเวชชากุล)
+วันที่    18 มี.ค. 2569
