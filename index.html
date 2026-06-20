@@ -20,17 +20,17 @@
                 extend: {
                     colors: {
                         agritech: {
-                            50: '#f0fdf4',
-                            100: '#dcfce7',
-                            200: '#bbf7d0',
-                            300: '#86efac',
-                            400: '#4ade80',
-                            500: '#22c55e',
-                            600: '#16a34a',
-                            700: '#15803d',
-                            800: '#166534',
-                            900: '#14532d',
-                            950: '#052e16',
+                            50: '#f0fdfa',
+                            100: '#ccfbf1',
+                            200: '#99f6e4',
+                            300: '#5eead4',
+                            400: '#2dd4bf',
+                            500: '#14b8a6',
+                            600: '#0d9488',
+                            700: '#0f766e',
+                            800: '#115e59',
+                            900: '#134e4a',
+                            950: '#042f2e',
                         },
                         iot: {
                             50: '#ecfeff',
@@ -68,15 +68,15 @@
             border: 1px solid rgba(255, 255, 255, 0.6);
         }
         .text-gradient {
-            background: linear-gradient(135deg, #15803d 0%, #0891b2 100%);
+            background: linear-gradient(135deg, #0f766e 0%, #0891b2 100%);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
         }
         .hero-gradient {
-            background: linear-gradient(135deg, #052e16 0%, #083344 100%);
+            background: linear-gradient(135deg, #042f2e 0%, #083344 100%);
         }
         .section-gradient-light {
-            background: linear-gradient(180deg, #f0fdf4 0%, #ffffff 100%);
+            background: linear-gradient(180deg, #f0fdfa 0%, #ffffff 100%);
         }
         .custom-scrollbar::-webkit-scrollbar {
             width: 8px;
@@ -108,7 +108,7 @@
             <div class="flex items-center justify-between h-20">
                 <!-- Logo -->
                 <div class="flex items-center space-x-3">
-                    <div class="bg-gradient-to-br from-emerald-500 to-cyan-500 p-2.5 rounded-xl shadow-md">
+                    <div class="bg-gradient-to-br from-teal-500 to-cyan-500 p-2.5 rounded-xl shadow-md">
                         <i class="fas fa-bug text-white text-xl"></i>
                     </div>
                     <div>
@@ -128,7 +128,7 @@
 
                 <!-- Action Button -->
                 <div class="hidden md:flex items-center">
-                    <button onclick="openModal()" class="font-heading text-sm bg-gradient-to-r from-emerald-600 to-cyan-600 hover:from-emerald-700 hover:to-cyan-700 text-white px-5.5 py-2.5 rounded-full font-medium shadow-md transition-all duration-300 hover:shadow-lg transform hover:-translate-y-0.5">
+                    <button onclick="openModal()" class="font-heading text-sm bg-gradient-to-r from-teal-600 to-cyan-600 hover:from-teal-700 hover:to-cyan-700 text-white px-5.5 py-2.5 rounded-full font-medium shadow-md transition-all duration-300 hover:shadow-lg transform hover:-translate-y-0.5">
                         <i class="fas fa-file-alt mr-2"></i>อ่านวิจัยฉบับเต็ม
                     </button>
                 </div>
@@ -150,7 +150,7 @@
                 <a href="#methodology" onclick="toggleMobileMenu()" class="text-slate-600 hover:text-agritech-600 py-2">วิธีการดำเนินงาน</a>
                 <a href="#results" onclick="toggleMobileMenu()" class="text-slate-600 hover:text-agritech-600 py-2">ผลการทดลอง</a>
                 <a href="#researchers" onclick="toggleMobileMenu()" class="text-slate-600 hover:text-agritech-600 py-2">คณะผู้วิจัย</a>
-                <button onclick="openModal(); toggleMobileMenu();" class="text-center font-heading text-sm bg-gradient-to-r from-emerald-600 to-cyan-600 hover:from-emerald-700 hover:to-cyan-700 text-white py-3 rounded-full font-medium shadow-md">
+                <button onclick="openModal(); toggleMobileMenu();" class="text-center font-heading text-sm bg-gradient-to-r from-teal-600 to-cyan-600 hover:from-teal-700 hover:to-cyan-700 text-white py-3 rounded-full font-medium shadow-md">
                     <i class="fas fa-file-alt mr-2"></i>อ่านวิจัยฉบับเต็ม
                 </button>
             </nav>
@@ -161,19 +161,19 @@
     <section class="relative pt-32 pb-24 md:pt-40 md:pb-32 hero-gradient text-white overflow-hidden">
         <!-- Background Decorative Elements -->
         <div class="absolute inset-0 opacity-10 bg-[radial-gradient(#22c55e_1px,transparent_1px)] [background-size:24px_24px] pointer-events-none"></div>
-        <div class="absolute -top-40 -right-40 w-96 h-96 bg-emerald-500 rounded-full blur-[120px] opacity-25 pointer-events-none"></div>
+        <div class="absolute -top-40 -right-40 w-96 h-96 bg-teal-500 rounded-full blur-[120px] opacity-25 pointer-events-none"></div>
         <div class="absolute -bottom-40 -left-40 w-96 h-96 bg-cyan-500 rounded-full blur-[120px] opacity-20 pointer-events-none"></div>
 
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
             <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
                 <!-- Text Area (7 cols) -->
                 <div class="lg:col-span-7 space-y-6 text-center lg:text-left">
-                    <span class="inline-flex items-center px-4 py-1.5 rounded-full bg-emerald-500/10 border border-emerald-500/25 text-emerald-400 text-xs sm:text-sm font-heading font-medium tracking-wide">
+                    <span class="inline-flex items-center px-4 py-1.5 rounded-full bg-teal-500/10 border border-teal-500/25 text-teal-400 text-xs sm:text-sm font-heading font-medium tracking-wide">
                         <i class="fas fa-microchip mr-2"></i>เทคโนโลยีเกษตรอัจฉริยะ (Smart Agriculture IoT)
                     </span>
                     <h1 class="font-heading text-3xl sm:text-4xl lg:text-5xl font-bold leading-tight tracking-tight">
                         การประยุกต์ใช้เทคโนโลยีอินเทอร์เน็ตของสรรพสิ่ง<br class="hidden sm:inline">
-                        <span class="text-transparent bg-clip-text bg-gradient-to-r from-emerald-400 to-cyan-400">
+                        <span class="text-transparent bg-clip-text bg-gradient-to-r from-teal-400 to-cyan-400">
                             ในการพัฒนาตู้เลี้ยงจิ้งหรีดอัตโนมัติ
                         </span>
                     </h1>
@@ -181,10 +181,10 @@
                         ยกระดับประสิทธิภาพการเพาะเลี้ยงจิ้งหรีดเชิงพาณิชย์ ด้วยการควบคุมอุณหภูมิและความชื้นสัมพัทธ์ในตู้ปิดแบบเรียลไทม์ 24 ชั่วโมง ลดอัตรารอดตายและประหยัดอาหาร พัฒนาจริงเพื่อกลุ่มเกษตรกรบ้านหนองกับ จังหวัดบุรีรัมย์
                     </p>
                     <div class="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4 pt-4">
-                        <button onclick="openModal()" class="w-full sm:w-auto font-heading bg-gradient-to-r from-emerald-500 to-cyan-500 hover:from-emerald-600 hover:to-cyan-600 text-white font-semibold px-8 py-4 rounded-full shadow-lg shadow-emerald-950/30 hover:shadow-xl hover:shadow-emerald-900/40 transition-all duration-300 transform hover:-translate-y-0.5">
+                        <button onclick="openModal()" class="w-full sm:w-auto font-heading bg-gradient-to-r from-teal-500 to-cyan-500 hover:from-teal-600 hover:to-cyan-600 text-white font-semibold px-8 py-4 rounded-full shadow-lg shadow-teal-950/30 hover:shadow-xl hover:shadow-teal-900/40 transition-all duration-300 transform hover:-translate-y-0.5">
                             <i class="fas fa-book-open mr-2"></i>อ่านงานวิจัยฉบับเต็ม
                         </button>
-                        <a href="#results" class="w-full sm:w-auto text-center font-heading border border-slate-500 hover:border-emerald-400 text-slate-300 hover:text-emerald-400 font-semibold px-8 py-4 rounded-full transition-all duration-300">
+                        <a href="#results" class="w-full sm:w-auto text-center font-heading border border-slate-500 hover:border-teal-400 text-slate-300 hover:text-teal-400 font-semibold px-8 py-4 rounded-full transition-all duration-300">
                             <i class="fas fa-chart-line mr-2"></i>ดูผลการทดลองจริง
                         </a>
                     </div>
@@ -194,13 +194,13 @@
                 <div class="lg:col-span-5 relative">
                     <!-- Image Card Mockup -->
                     <div class="relative mx-auto max-w-md lg:max-w-none group">
-                        <div class="absolute inset-0 bg-gradient-to-r from-emerald-500 to-cyan-500 rounded-2xl blur-xl opacity-30 group-hover:opacity-40 transition-opacity duration-500"></div>
+                        <div class="absolute inset-0 bg-gradient-to-r from-teal-500 to-cyan-500 rounded-2xl blur-xl opacity-30 group-hover:opacity-40 transition-opacity duration-500"></div>
                         <div class="relative bg-slate-950/40 border border-white/10 rounded-2xl p-3 shadow-2xl overflow-hidden backdrop-blur-sm">
                             <img src="assets/cricket_cabinet.jpg" alt="ตู้เลี้ยงจิ้งหรีดอัตโนมัติจริง" class="rounded-xl w-full h-[320px] object-cover group-hover:scale-[1.02] transition-transform duration-500">
                             
                             <!-- Floating Data Badge 1 -->
                             <div class="absolute bottom-6 left-6 bg-slate-900/90 border border-slate-700/50 rounded-xl p-3 backdrop-blur shadow-lg flex items-center space-x-3">
-                                <div class="bg-emerald-500/20 p-2 rounded-lg text-emerald-400">
+                                <div class="bg-teal-500/20 p-2 rounded-lg text-teal-400">
                                     <i class="fas fa-temperature-high"></i>
                                 </div>
                                 <div>
@@ -234,7 +234,7 @@
                 <h2 class="font-heading text-3xl sm:text-4xl font-bold text-slate-800 leading-tight">
                     เบื้องหลังนวัตกรรมตู้เลี้ยงจิ้งหรีดอัจฉริยะ
                 </h2>
-                <div class="w-16 h-1 bg-gradient-to-r from-emerald-500 to-cyan-500 mx-auto mt-4"></div>
+                <div class="w-16 h-1 bg-gradient-to-r from-teal-500 to-cyan-500 mx-auto mt-4"></div>
             </div>
 
             <!-- Problem Grid -->
@@ -261,9 +261,9 @@
                             <span class="text-2xl font-bold text-amber-600 block">7-8 kg</span>
                             <span class="text-xs text-amber-800 font-heading">จุดคุ้มทุนต่อหนึ่งตู้เลี้ยง</span>
                         </div>
-                        <div class="bg-emerald-50 border-l-4 border-emerald-500 p-4 rounded-r-xl">
-                            <span class="text-2xl font-bold text-emerald-600 block">25-35°C</span>
-                            <span class="text-xs text-emerald-800 font-heading">ช่วงอุณหภูมิโตดีที่สุด</span>
+                        <div class="bg-teal-50 border-l-4 border-teal-500 p-4 rounded-r-xl">
+                            <span class="text-2xl font-bold text-teal-600 block">25-35°C</span>
+                            <span class="text-xs text-teal-800 font-heading">ช่วงอุณหภูมิโตดีที่สุด</span>
                         </div>
                     </div>
                 </div>
@@ -273,7 +273,7 @@
                     <h4 class="font-heading text-lg font-bold text-slate-800 uppercase tracking-wider mb-2">วัตถุประสงค์งานวิจัย</h4>
                     
                     <div class="flex items-start space-x-4 bg-slate-50 hover:bg-slate-100/80 p-4 rounded-xl transition-all duration-300 border border-slate-100 hover:shadow-sm">
-                        <div class="bg-emerald-500/10 text-emerald-600 p-3 rounded-lg mt-0.5">
+                        <div class="bg-teal-500/10 text-teal-600 p-3 rounded-lg mt-0.5">
                             <i class="fas fa-brain text-lg"></i>
                         </div>
                         <div>
@@ -326,7 +326,7 @@
                 <h2 class="font-heading text-3xl sm:text-4xl font-bold leading-tight">
                     กระบวนการพัฒนาระบบและสถาปัตยกรรม IoT
                 </h2>
-                <div class="w-16 h-1 bg-gradient-to-r from-emerald-400 to-cyan-400 mx-auto mt-4"></div>
+                <div class="w-16 h-1 bg-gradient-to-r from-teal-400 to-cyan-400 mx-auto mt-4"></div>
             </div>
 
             <!-- R&D Process Timeline -->
@@ -334,38 +334,38 @@
                 <h3 class="font-heading text-xl font-bold mb-10 text-center text-slate-200">7 ขั้นตอนตามวงจรพัฒนาระบบ (SDLC)</h3>
                 
                 <div class="grid grid-cols-1 md:grid-cols-7 gap-4">
-                    <div class="bg-slate-800/80 border border-slate-700/50 p-5 rounded-2xl text-center relative group hover:border-emerald-500 transition-colors duration-300">
-                        <div class="w-10 h-10 bg-emerald-500/20 text-emerald-400 rounded-full flex items-center justify-center mx-auto mb-3 font-heading font-bold text-sm">1</div>
+                    <div class="bg-slate-800/80 border border-slate-700/50 p-5 rounded-2xl text-center relative group hover:border-teal-500 transition-colors duration-300">
+                        <div class="w-10 h-10 bg-teal-500/20 text-teal-400 rounded-full flex items-center justify-center mx-auto mb-3 font-heading font-bold text-sm">1</div>
                         <span class="font-heading font-semibold text-sm block mb-1 text-slate-100">กำหนดปัญหา</span>
                         <span class="text-[11px] text-slate-400 block">สำรวจบริบทและความเจ็บปวดในฟาร์มจริง</span>
                     </div>
-                    <div class="bg-slate-800/80 border border-slate-700/50 p-5 rounded-2xl text-center relative group hover:border-emerald-500 transition-colors duration-300">
-                        <div class="w-10 h-10 bg-emerald-500/20 text-emerald-400 rounded-full flex items-center justify-center mx-auto mb-3 font-heading font-bold text-sm">2</div>
+                    <div class="bg-slate-800/80 border border-slate-700/50 p-5 rounded-2xl text-center relative group hover:border-teal-500 transition-colors duration-300">
+                        <div class="w-10 h-10 bg-teal-500/20 text-teal-400 rounded-full flex items-center justify-center mx-auto mb-3 font-heading font-bold text-sm">2</div>
                         <span class="font-heading font-semibold text-sm block mb-1 text-slate-100">การวิเคราะห์</span>
                         <span class="text-[11px] text-slate-400 block">วิเคราะห์ความต้องการและการตั้งระดับอุณหภูมิ</span>
                     </div>
-                    <div class="bg-slate-800/80 border border-slate-700/50 p-5 rounded-2xl text-center relative group hover:border-emerald-500 transition-colors duration-300">
-                        <div class="w-10 h-10 bg-emerald-500/20 text-emerald-400 rounded-full flex items-center justify-center mx-auto mb-3 font-heading font-bold text-sm">3</div>
+                    <div class="bg-slate-800/80 border border-slate-700/50 p-5 rounded-2xl text-center relative group hover:border-teal-500 transition-colors duration-300">
+                        <div class="w-10 h-10 bg-teal-500/20 text-teal-400 rounded-full flex items-center justify-center mx-auto mb-3 font-heading font-bold text-sm">3</div>
                         <span class="font-heading font-semibold text-sm block mb-1 text-slate-100">การออกแบบ</span>
                         <span class="text-[11px] text-slate-400 block">ออกแบบตู้ ขนาด 60x120x60 ซม. และผังวงจร</span>
                     </div>
-                    <div class="bg-slate-800/80 border border-slate-700/50 p-5 rounded-2xl text-center relative group hover:border-emerald-500 transition-colors duration-300">
-                        <div class="w-10 h-10 bg-emerald-500/20 text-emerald-400 rounded-full flex items-center justify-center mx-auto mb-3 font-heading font-bold text-sm">4</div>
+                    <div class="bg-slate-800/80 border border-slate-700/50 p-5 rounded-2xl text-center relative group hover:border-teal-500 transition-colors duration-300">
+                        <div class="w-10 h-10 bg-teal-500/20 text-teal-400 rounded-full flex items-center justify-center mx-auto mb-3 font-heading font-bold text-sm">4</div>
                         <span class="font-heading font-semibold text-sm block mb-1 text-slate-100">การพัฒนา</span>
                         <span class="text-[11px] text-slate-400 block">เขียนโค้ดด้วยภาษา C บน Arduino IDE & Blynk</span>
                     </div>
-                    <div class="bg-slate-800/80 border border-slate-700/50 p-5 rounded-2xl text-center relative group hover:border-emerald-500 transition-colors duration-300">
-                        <div class="w-10 h-10 bg-emerald-500/20 text-emerald-400 rounded-full flex items-center justify-center mx-auto mb-3 font-heading font-bold text-sm">5</div>
+                    <div class="bg-slate-800/80 border border-slate-700/50 p-5 rounded-2xl text-center relative group hover:border-teal-500 transition-colors duration-300">
+                        <div class="w-10 h-10 bg-teal-500/20 text-teal-400 rounded-full flex items-center justify-center mx-auto mb-3 font-heading font-bold text-sm">5</div>
                         <span class="font-heading font-semibold text-sm block mb-1 text-slate-100">การทดสอบ</span>
                         <span class="text-[11px] text-slate-400 block">ทดสอบระบบอัตโนมัติผ่าน Blynk ในสถานการณ์จริง</span>
                     </div>
-                    <div class="bg-slate-800/80 border border-slate-700/50 p-5 rounded-2xl text-center relative group hover:border-emerald-500 transition-colors duration-300">
-                        <div class="w-10 h-10 bg-emerald-500/20 text-emerald-400 rounded-full flex items-center justify-center mx-auto mb-3 font-heading font-bold text-sm">6</div>
+                    <div class="bg-slate-800/80 border border-slate-700/50 p-5 rounded-2xl text-center relative group hover:border-teal-500 transition-colors duration-300">
+                        <div class="w-10 h-10 bg-teal-500/20 text-teal-400 rounded-full flex items-center justify-center mx-auto mb-3 font-heading font-bold text-sm">6</div>
                         <span class="font-heading font-semibold text-sm block mb-1 text-slate-100">การติดตั้ง</span>
                         <span class="text-[11px] text-slate-400 block">ติดตั้งอุปกรณ์ในฟาร์มต้นแบบบ้านคุณสำรวย</span>
                     </div>
-                    <div class="bg-slate-800/80 border border-slate-700/50 p-5 rounded-2xl text-center relative group hover:border-emerald-500 transition-colors duration-300">
-                        <div class="w-10 h-10 bg-emerald-500/20 text-emerald-400 rounded-full flex items-center justify-center mx-auto mb-3 font-heading font-bold text-sm">7</div>
+                    <div class="bg-slate-800/80 border border-slate-700/50 p-5 rounded-2xl text-center relative group hover:border-teal-500 transition-colors duration-300">
+                        <div class="w-10 h-10 bg-teal-500/20 text-teal-400 rounded-full flex items-center justify-center mx-auto mb-3 font-heading font-bold text-sm">7</div>
                         <span class="font-heading font-semibold text-sm block mb-1 text-slate-100">บำรุงรักษา</span>
                         <span class="text-[11px] text-slate-400 block">ตรวจสภาพอุปกรณ์ไฟฟ้าและสายต่อทุกๆ 3 เดือน</span>
                     </div>
@@ -384,19 +384,19 @@
                     </p>
                     <ul class="space-y-3 text-slate-300 text-sm">
                         <li class="flex items-center">
-                            <i class="fas fa-check text-emerald-400 mr-3"></i>
+                            <i class="fas fa-check text-teal-400 mr-3"></i>
                             <span>บอร์ดหลัก NodeMCU ESP8266 ทำการส่งข้อมูลผ่าน WiFi</span>
                         </li>
                         <li class="flex items-center">
-                            <i class="fas fa-check text-emerald-400 mr-3"></i>
+                            <i class="fas fa-check text-teal-400 mr-3"></i>
                             <span>รีเลย์ (Relay) ช่อง 1-2 คอยเปิด-ปิด พัดลม 10 นิ้วระบายอากาศ</span>
                         </li>
                         <li class="flex items-center">
-                            <i class="fas fa-check text-emerald-400 mr-3"></i>
+                            <i class="fas fa-check text-teal-400 mr-3"></i>
                             <span>รีเลย์ (Relay) ช่อง 3-4 คอยเปิด-ปิด หลอดไฟอินฟราเรดแผ่ความร้อน</span>
                         </li>
                         <li class="flex items-center">
-                            <i class="fas fa-check text-emerald-400 mr-3"></i>
+                            <i class="fas fa-check text-teal-400 mr-3"></i>
                             <span>จอ LCD หน้าตู้แสดงค่าอุณหภูมิและความชื้นแบบเรียลไทม์</span>
                         </li>
                     </ul>
@@ -456,44 +456,44 @@
                 <h2 class="font-heading text-3xl sm:text-4xl font-bold text-slate-800 leading-tight">
                     ประสิทธิภาพและการยอมรับจากชุมชน
                 </h2>
-                <div class="w-16 h-1 bg-gradient-to-r from-emerald-500 to-cyan-500 mx-auto mt-4"></div>
+                <div class="w-16 h-1 bg-gradient-to-r from-teal-500 to-cyan-500 mx-auto mt-4"></div>
             </div>
 
             <!-- Score Stats Grid -->
             <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mb-16">
                 <div class="bg-slate-50 border border-slate-100 p-6 rounded-2xl hover:shadow-lg transition-shadow duration-300">
-                    <span class="text-4xl font-bold text-emerald-600 block mb-1">4.60 <span class="text-sm text-slate-400 font-normal">/ 5.00</span></span>
+                    <span class="text-4xl font-bold text-teal-600 block mb-1">4.60 <span class="text-sm text-slate-400 font-normal">/ 5.00</span></span>
                     <span class="font-heading font-semibold text-slate-800 text-sm block">ประสิทธิภาพ IoT ฮาร์ดแวร์</span>
                     <span class="text-xs text-slate-500 block mt-1">ประเมินโดยผู้เชี่ยวชาญด้าน IT/IoT: คะแนนในระดับดีมาก</span>
                     <div class="w-full bg-slate-200 h-1.5 rounded-full mt-3">
-                        <div class="bg-emerald-500 h-1.5 rounded-full" style="width: 92%"></div>
+                        <div class="bg-teal-500 h-1.5 rounded-full" style="width: 92%"></div>
                     </div>
                 </div>
 
                 <div class="bg-slate-50 border border-slate-100 p-6 rounded-2xl hover:shadow-lg transition-shadow duration-300">
-                    <span class="text-4xl font-bold text-emerald-600 block mb-1">4.47 <span class="text-sm text-slate-400 font-normal">/ 5.00</span></span>
+                    <span class="text-4xl font-bold text-teal-600 block mb-1">4.47 <span class="text-sm text-slate-400 font-normal">/ 5.00</span></span>
                     <span class="font-heading font-semibold text-slate-800 text-sm block">ส่วนต่อประสานและการใช้งาน</span>
                     <span class="text-xs text-slate-500 block mt-1">การออกแบบ Interface Blynk และความชัดเจนของฟอนต์: ดี</span>
                     <div class="w-full bg-slate-200 h-1.5 rounded-full mt-3">
-                        <div class="bg-emerald-500 h-1.5 rounded-full" style="width: 89.4%"></div>
+                        <div class="bg-teal-500 h-1.5 rounded-full" style="width: 89.4%"></div>
                     </div>
                 </div>
 
                 <div class="bg-slate-50 border border-slate-100 p-6 rounded-2xl hover:shadow-lg transition-shadow duration-300">
-                    <span class="text-4xl font-bold text-emerald-600 block mb-1">4.58 <span class="text-sm text-slate-400 font-normal">/ 5.00</span></span>
+                    <span class="text-4xl font-bold text-teal-600 block mb-1">4.58 <span class="text-sm text-slate-400 font-normal">/ 5.00</span></span>
                     <span class="font-heading font-semibold text-slate-800 text-sm block">ด้านการลดเวลาและภาระงาน</span>
                     <span class="text-xs text-slate-500 block mt-1">ประเมินความพึงพอใจของเกษตรกรในการเฝ้าฟาร์ม: ดีมาก</span>
                     <div class="w-full bg-slate-200 h-1.5 rounded-full mt-3">
-                        <div class="bg-emerald-500 h-1.5 rounded-full" style="width: 91.6%"></div>
+                        <div class="bg-teal-500 h-1.5 rounded-full" style="width: 91.6%"></div>
                     </div>
                 </div>
 
                 <div class="bg-slate-50 border border-slate-100 p-6 rounded-2xl hover:shadow-lg transition-shadow duration-300">
-                    <span class="text-4xl font-bold text-emerald-600 block mb-1">4.49 <span class="text-sm text-slate-400 font-normal">/ 5.00</span></span>
+                    <span class="text-4xl font-bold text-teal-600 block mb-1">4.49 <span class="text-sm text-slate-400 font-normal">/ 5.00</span></span>
                     <span class="font-heading font-semibold text-slate-800 text-sm block">ความพึงพอใจโดยรวม</span>
                     <span class="text-xs text-slate-500 block mt-1">จากการประเมินของเกษตรกรกลุ่มตัวอย่าง 50 คน: ดี</span>
                     <div class="w-full bg-slate-200 h-1.5 rounded-full mt-3">
-                        <div class="bg-emerald-500 h-1.5 rounded-full" style="width: 89.8%"></div>
+                        <div class="bg-teal-500 h-1.5 rounded-full" style="width: 89.8%"></div>
                     </div>
                 </div>
             </div>
@@ -508,7 +508,7 @@
                         <thead>
                             <tr class="bg-slate-100 text-slate-700 font-heading font-bold border-b border-slate-200">
                                 <th class="p-4">ประเด็นเปรียบเทียบ</th>
-                                <th class="p-4 bg-emerald-50/55 text-emerald-800">ระบบของคณะผู้วิจัย (BRU)</th>
+                                <th class="p-4 bg-teal-50/55 text-teal-800">ระบบของคณะผู้วิจัย (BRU)</th>
                                 <th class="p-4">ระบบของเกียรติสิน (2563)</th>
                                 <th class="p-4">ระบบของพีระยุทธ (2568)</th>
                             </tr>
@@ -516,31 +516,31 @@
                         <tbody class="divide-y divide-slate-100 text-slate-600">
                             <tr>
                                 <td class="p-4 font-semibold text-slate-800">วัตถุประสงค์หลัก</td>
-                                <td class="p-4 bg-emerald-50/20 text-slate-800">ควบคุมอุณหภูมิความชื้นปิดวงจร เพิ่มผลผลิตและลดแรงงาน</td>
+                                <td class="p-4 bg-teal-50/20 text-slate-800">ควบคุมอุณหภูมิความชื้นปิดวงจร เพิ่มผลผลิตและลดแรงงาน</td>
                                 <td class="p-4">ควบคุมการให้อาหารและน้ำอัตโนมัติ ลดแรงงาน</td>
                                 <td class="p-4">ตรวจวัดและส่งข้อความแจ้งเตือนผ่าน Line</td>
                             </tr>
                             <tr>
                                 <td class="p-4 font-semibold text-slate-800">เทคโนโลยีที่ใช้</td>
-                                <td class="p-4 bg-emerald-50/20 text-slate-800 font-mono text-xs">ESP8266, DHT11, พัดลม, หลอดไฟอินฟราเรด, Blynk</td>
+                                <td class="p-4 bg-teal-50/20 text-slate-800 font-mono text-xs">ESP8266, DHT11, พัดลม, หลอดไฟอินฟราเรด, Blynk</td>
                                 <td class="p-4 font-mono text-xs">RH Sensor, ท่อหมุนให้อาหาร, NETPIE IOT</td>
                                 <td class="p-4 font-mono text-xs">ESP32, DHT11, PM2.5 Sensor, Line Notify</td>
                             </tr>
                             <tr>
                                 <td class="p-4 font-semibold text-slate-800">การควบคุมสิ่งแวดล้อม</td>
-                                <td class="p-4 bg-emerald-50/20 text-emerald-700 font-bold"><i class="fas fa-check-circle mr-1.5"></i>ควบคุมอุณหภูมิคงที่แบบ Real-time</td>
+                                <td class="p-4 bg-teal-50/20 text-teal-700 font-bold"><i class="fas fa-check-circle mr-1.5"></i>ควบคุมอุณหภูมิคงที่แบบ Real-time</td>
                                 <td class="p-4 text-rose-500"><i class="fas fa-times-circle mr-1.5"></i>ตรวจวัดได้อย่างเดียว ไม่มีพัดลม/ไฟตู้</td>
                                 <td class="p-4 text-rose-500"><i class="fas fa-times-circle mr-1.5"></i>ไม่มีระบบควบคุมอุปกรณ์อัตโนมัติ</td>
                             </tr>
                             <tr>
                                 <td class="p-4 font-semibold text-slate-800">ผลลัพธ์ประสิทธิภาพ</td>
-                                <td class="p-4 bg-emerald-50/20 text-slate-800 font-semibold">อัตรารอดเพิ่มขึ้น ลดเวลาเลี้ยง อุณหภูมินิ่งกว่าปกติ</td>
+                                <td class="p-4 bg-teal-50/20 text-slate-800 font-semibold">อัตรารอดเพิ่มขึ้น ลดเวลาเลี้ยง อุณหภูมินิ่งกว่าปกติ</td>
                                 <td class="p-4">อัตรารอดของจิ้งหรีดขยับจาก 450 เป็น 530 ตัว</td>
                                 <td class="p-4">อัตรารอด 94.56% ประสิทธิภาพ 4.76/5.00</td>
                             </tr>
                             <tr class="bg-slate-50/50">
                                 <td class="p-4 font-semibold text-slate-800">ข้อดีเด่น</td>
-                                <td class="p-4 bg-emerald-50/30 text-emerald-800 font-semibold">ควบคุมสภาวะนิ่งเสถียร ส่งผลผลผลิตตรงที่สุด</td>
+                                <td class="p-4 bg-teal-50/30 text-teal-800 font-semibold">ควบคุมสภาวะนิ่งเสถียร ส่งผลผลผลิตตรงที่สุด</td>
                                 <td class="p-4">เด่นในระบบให้อาหาร/น้ำแบบท่อหมุน</td>
                                 <td class="p-4">เด่นในส่วนแจ้งเตือนฝุ่นละออง PM2.5</td>
                             </tr>
@@ -579,7 +579,7 @@
                         <div class="flex items-center space-x-1.5 px-2 pb-2">
                             <span class="w-2.5 h-2.5 rounded-full bg-rose-500 block"></span>
                             <span class="w-2.5 h-2.5 rounded-full bg-amber-500 block"></span>
-                            <span class="w-2.5 h-2.5 rounded-full bg-emerald-500 block"></span>
+                            <span class="w-2.5 h-2.5 rounded-full bg-teal-500 block"></span>
                             <span class="text-[10px] text-slate-400 font-mono ml-4 block overflow-hidden truncate">blynk.cloud/dashboard/cric_cab</span>
                         </div>
                         <img src="assets/blynk_web.jpg" alt="Blynk Web Dashboard" class="rounded-xl w-full h-[200px] object-cover">
@@ -602,7 +602,7 @@
                     <div class="lg:col-span-6 grid grid-cols-2 gap-4">
                         <img src="assets/workshop_1.jpg" alt="การอบรมเกษตรกร" class="rounded-2xl shadow w-full h-[200px] object-cover hover:scale-[1.01] transition-transform duration-300">
                         <img src="assets/workshop_2.png" alt="การติดตั้งตู้ในฟาร์ม" class="rounded-2xl shadow w-full h-[200px] object-cover hover:scale-[1.01] transition-transform duration-300">
-                        <div class="col-span-2 bg-gradient-to-br from-emerald-50 to-cyan-50 border border-slate-100 rounded-2xl p-5 text-center">
+                        <div class="col-span-2 bg-gradient-to-br from-teal-50 to-cyan-50 border border-slate-100 rounded-2xl p-5 text-center">
                             <span class="font-heading font-bold text-slate-800 block text-lg">อบรมชาวบ้าน 16 หมู่บ้าน กว่า 50 คน</span>
                             <span class="text-xs text-slate-500 block mt-1">สาธิตวิธีการจัดเซนเซอร์และแอปพลิเคชัน Blynk ให้ทดลองใช้จนชำนาญ</span>
                         </div>
@@ -614,12 +614,12 @@
 
                         <!-- Testimonial 1 -->
                         <div class="bg-slate-50 border border-slate-100 p-5 rounded-2xl shadow-sm relative">
-                            <i class="fas fa-quote-right absolute top-4 right-4 text-emerald-200/50 text-3xl pointer-events-none"></i>
+                            <i class="fas fa-quote-right absolute top-4 right-4 text-teal-200/50 text-3xl pointer-events-none"></i>
                             <p class="text-slate-600 text-sm leading-relaxed italic pr-8">
                                 "ตั้งแต่ได้ทดลองใช้ระบบตู้เลี้ยงอัตโนมัติ รู้สึกว่าสะดวกขึ้นมาก ไม่ต้องคอยเปิดพัดลมหรือหลอดไฟเอง ระบบจะทำให้โดยอัตโนมัติ ดูค่าผ่านโทรศัพท์ได้ตลอด ทำให้ไม่ต้องเข้าออกฟาร์มบ่อย ๆ โดยเฉพาะกลางคืนที่อากาศเย็นมาก ๆ ช่วยให้จิ้งหรีดโตดีขึ้น ไม่ตายก่อนเก็บเกี่ยว"
                             </p>
                             <div class="flex items-center space-x-3 mt-4">
-                                <div class="w-9 h-9 rounded-full bg-emerald-600 text-white flex items-center justify-center font-heading font-bold text-sm">ส</div>
+                                <div class="w-9 h-9 rounded-full bg-teal-600 text-white flex items-center justify-center font-heading font-bold text-sm">ส</div>
                                 <div>
                                     <span class="font-heading font-bold text-slate-800 text-xs block">นางสำรวย โยงรัมย์</span>
                                     <span class="text-[10px] text-slate-500 block">ประธานกลุ่มผู้เลี้ยงจิ้งหรีดบ้านหนองกับ</span>
@@ -629,7 +629,7 @@
 
                         <!-- Testimonial 2 -->
                         <div class="bg-slate-50 border border-slate-100 p-5 rounded-2xl shadow-sm relative">
-                            <i class="fas fa-quote-right absolute top-4 right-4 text-emerald-200/50 text-3xl pointer-events-none"></i>
+                            <i class="fas fa-quote-right absolute top-4 right-4 text-teal-200/50 text-3xl pointer-events-none"></i>
                             <p class="text-slate-600 text-sm leading-relaxed italic pr-8">
                                 "ชอบตรงที่มันมีระบบแจ้งเตือน เวลาความชื้นหรืออุณหภูมิในตู้ไม่ปกติ มันจะเตือนเข้ามือถือให้รู้เลยว่าต้องเข้าไปดู ไม่ต้องคอยเฝ้าคอยดูตู้ตลอดเวลา ทำให้เรามีเวลาไปทำอย่างอื่นได้เยอะแยะเลยค่ะ"
                             </p>
@@ -657,7 +657,7 @@
                 <h2 class="font-heading text-3xl sm:text-4xl font-bold text-slate-800 leading-tight">
                     ทีมงานเบื้องหลังงานวิจัย
                 </h2>
-                <div class="w-16 h-1 bg-gradient-to-r from-emerald-500 to-cyan-500 mx-auto mt-4"></div>
+                <div class="w-16 h-1 bg-gradient-to-r from-teal-500 to-cyan-500 mx-auto mt-4"></div>
             </div>
 
             <!-- Profile Grid -->
@@ -665,11 +665,11 @@
                 
                 <!-- Researcher 1 -->
                 <div class="bg-white rounded-3xl p-6 shadow-sm border border-slate-200/50 flex flex-col items-center text-center group hover:shadow-xl transition-shadow duration-300">
-                    <div class="w-32 h-32 rounded-full overflow-hidden border-4 border-emerald-500/20 mb-6 shadow relative">
+                    <div class="w-32 h-32 rounded-full overflow-hidden border-4 border-teal-500/20 mb-6 shadow relative">
                         <img src="assets/profile_prem.jpg" alt="ผศ. ดร.เปรม อิงคเวชชากุล" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
                     </div>
                     <span class="font-heading font-bold text-slate-800 text-lg">ผศ. ดร.เปรม อิงคเวชชากุล</span>
-                    <span class="text-xs font-semibold text-emerald-600 uppercase tracking-wider mt-1 block">หัวหน้าโครงการวิจัย</span>
+                    <span class="text-xs font-semibold text-teal-600 uppercase tracking-wider mt-1 block">หัวหน้าโครงการวิจัย</span>
                     <span class="text-xs text-slate-500 mt-2 font-medium block">สาขาวิชาเทคโนโลยีสารสนเทศ คณะวิทยาศาสตร์<br>มหาวิทยาลัยราชภัฏบุรีรัมย์</span>
                     
                     <div class="w-full border-t border-slate-100 my-4 pt-4 text-left">
@@ -682,8 +682,8 @@
                     </div>
 
                     <div class="w-full border-t border-slate-100 pt-4 flex items-center justify-between text-xs text-slate-500">
-                        <span><i class="fas fa-envelope mr-1.5 text-emerald-500"></i>prem.ev@bru.ac.th</span>
-                        <span><i class="fas fa-phone mr-1.5 text-emerald-500"></i>083-337-3537</span>
+                        <span><i class="fas fa-envelope mr-1.5 text-teal-500"></i>prem.ev@bru.ac.th</span>
+                        <span><i class="fas fa-phone mr-1.5 text-teal-500"></i>083-337-3537</span>
                     </div>
                 </div>
 
@@ -713,11 +713,11 @@
 
                 <!-- Researcher 3 -->
                 <div class="bg-white rounded-3xl p-6 shadow-sm border border-slate-200/50 flex flex-col items-center text-center group hover:shadow-xl transition-shadow duration-300">
-                    <div class="w-32 h-32 rounded-full overflow-hidden border-4 border-emerald-500/20 mb-6 shadow relative">
+                    <div class="w-32 h-32 rounded-full overflow-hidden border-4 border-teal-500/20 mb-6 shadow relative">
                         <img src="assets/profile_korakoch.png" alt="ดร.กรกช ศิลปกอบ" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
                     </div>
                     <span class="font-heading font-bold text-slate-800 text-lg">ดร.กรกช ศิลปกอบ</span>
-                    <span class="text-xs font-semibold text-emerald-600 uppercase tracking-wider mt-1 block">ผู้ร่วมวิจัย / สถิติและประเมินผล</span>
+                    <span class="text-xs font-semibold text-teal-600 uppercase tracking-wider mt-1 block">ผู้ร่วมวิจัย / สถิติและประเมินผล</span>
                     <span class="text-xs text-slate-500 mt-2 font-medium block">กลุ่มวิชาทดสอบและวิจัยการศึกษา คณะครุศาสตร์<br>มหาวิทยาลัยราชภัฏบุรีรัมย์</span>
                     
                     <div class="w-full border-t border-slate-100 my-4 pt-4 text-left">
@@ -730,8 +730,8 @@
                     </div>
 
                     <div class="w-full border-t border-slate-100 pt-4 flex items-center justify-between text-xs text-slate-500">
-                        <span><i class="fas fa-envelope mr-1.5 text-emerald-500"></i>korakoch.sk@bru.ac.th</span>
-                        <span><i class="fas fa-phone mr-1.5 text-emerald-500"></i>044-611221</span>
+                        <span><i class="fas fa-envelope mr-1.5 text-teal-500"></i>korakoch.sk@bru.ac.th</span>
+                        <span><i class="fas fa-phone mr-1.5 text-teal-500"></i>044-611221</span>
                     </div>
                 </div>
 
@@ -745,7 +745,7 @@
             <div class="grid grid-cols-1 md:grid-cols-12 gap-8 items-center pb-12 border-b border-slate-800">
                 <!-- Acknowledgment -->
                 <div class="md:col-span-8 space-y-4 text-center md:text-left">
-                    <span class="font-heading font-bold text-xs uppercase tracking-wider text-emerald-400 block"><i class="fas fa-gift mr-1.5"></i>กิตติกรรมประกาศ / ทุนสนับสนุน</span>
+                    <span class="font-heading font-bold text-xs uppercase tracking-wider text-teal-400 block"><i class="fas fa-gift mr-1.5"></i>กิตติกรรมประกาศ / ทุนสนับสนุน</span>
                     <p class="text-slate-400 text-sm leading-relaxed">
                         งานวิจัยนี้ได้รับทุนอุดหนุนการวิจัยจากสำนักงานคณะกรรมการส่งเสริมวิทยาศาสตร์ วิจัยและนวัตกรรม (สกสว.) และมหาวิทยาลัยราชภัฏบุรีรัมย์ ประเภททุนสนับสนุนงานพื้นฐาน Fundamental Fund ประจำปีงบประมาณ 2567 คณะผู้วิจัยขอแสดงความขอบคุณเป็นอย่างสูงมา ณ ที่นี้
                     </p>
@@ -753,7 +753,7 @@
                 <!-- Affiliations Logo/Names -->
                 <div class="md:col-span-4 flex justify-center md:justify-end space-x-6">
                     <div class="bg-white/5 border border-white/10 rounded-2xl px-6 py-4 text-center backdrop-blur-sm">
-                        <span class="text-xl font-heading font-bold text-emerald-400 block">FF2567</span>
+                        <span class="text-xl font-heading font-bold text-teal-400 block">FF2567</span>
                         <span class="text-[9px] text-slate-400 block uppercase tracking-wider mt-0.5">Fundamental Fund BRU</span>
                     </div>
                     <div class="bg-white/5 border border-white/10 rounded-2xl px-6 py-4 text-center backdrop-blur-sm">
@@ -767,9 +767,9 @@
             <div class="pt-8 flex flex-col md:flex-row items-center justify-between text-xs text-slate-500">
                 <span class="text-center md:text-left">&copy; 2026 คณะวิทยาศาสตร์ มหาวิทยาลัยราชภัฏบุรีรัมย์. สงวนลิขสิทธิ์ตามกฎหมาย.</span>
                 <div class="flex space-x-6 mt-4 md:mt-0 font-heading">
-                    <a href="#about" class="hover:text-emerald-400 transition-colors">ที่มาโครงการ</a>
-                    <a href="#methodology" class="hover:text-emerald-400 transition-colors">การออกแบบระบบ</a>
-                    <a href="#results" class="hover:text-emerald-400 transition-colors">ผลการทดลอง</a>
+                    <a href="#about" class="hover:text-teal-400 transition-colors">ที่มาโครงการ</a>
+                    <a href="#methodology" class="hover:text-teal-400 transition-colors">การออกแบบระบบ</a>
+                    <a href="#results" class="hover:text-teal-400 transition-colors">ผลการทดลอง</a>
                 </div>
             </div>
         </div>
@@ -780,9 +780,9 @@
         <div class="bg-white rounded-2xl max-w-5xl w-full max-h-[90vh] overflow-hidden flex flex-col shadow-2xl border border-slate-100 transform scale-95 opacity-0 transition-all duration-300" id="modalContainer">
             
             <!-- Modal Header -->
-            <div class="px-6 py-4.5 bg-gradient-to-r from-emerald-900 to-slate-900 text-white flex items-center justify-between shadow-md">
+            <div class="px-6 py-4.5 bg-gradient-to-r from-teal-900 to-slate-900 text-white flex items-center justify-between shadow-md">
                 <div class="flex items-center space-x-3">
-                    <i class="fas fa-file-alt text-emerald-400 text-xl"></i>
+                    <i class="fas fa-file-alt text-teal-400 text-xl"></i>
                     <div>
                         <h3 class="font-heading font-bold text-sm sm:text-base leading-tight">เอกสารวิจัยฉบับสมบูรณ์</h3>
                         <span class="text-[10px] text-slate-300 block">โครงการตู้เลี้ยงจิ้งหรีดอัตโนมัติด้วยเทคโนโลยี IoT</span>
@@ -797,7 +797,7 @@
             <div class="flex-1 overflow-hidden flex flex-col md:flex-row">
                 <!-- Sidebar Tabs (Left - Scrollable) -->
                 <div class="w-full md:w-64 bg-slate-50 border-r border-slate-200 overflow-y-auto custom-scrollbar flex md:flex-col font-heading text-xs font-semibold py-2">
-                    <button onclick="switchTab('tab1', this)" class="modal-tab w-full text-left px-5 py-3.5 border-l-4 border-emerald-600 bg-emerald-50 text-emerald-800 transition-all focus:outline-none flex items-center">
+                    <button onclick="switchTab('tab1', this)" class="modal-tab w-full text-left px-5 py-3.5 border-l-4 border-teal-600 bg-teal-50 text-teal-800 transition-all focus:outline-none flex items-center">
                         <i class="fas fa-book-open mr-2.5 w-4 text-center"></i>บทที่ 1 บทนำ
                     </button>
                     <button onclick="switchTab('tab2', this)" class="modal-tab w-full text-left px-5 py-3.5 border-l-4 border-transparent hover:bg-slate-100 text-slate-600 transition-all focus:outline-none flex items-center">
@@ -1066,13 +1066,13 @@
             // Remove active classes from all tabs
             const tabs = document.querySelectorAll('.modal-tab');
             tabs.forEach(tab => {
-                tab.classList.remove('border-emerald-600', 'bg-emerald-50', 'text-emerald-800');
+                tab.classList.remove('border-teal-600', 'bg-teal-50', 'text-teal-800');
                 tab.classList.add('border-transparent', 'text-slate-600');
             });
 
             // Add active classes to current tab
             buttonElement.classList.remove('border-transparent', 'text-slate-600');
-            buttonElement.classList.add('border-emerald-600', 'bg-emerald-50', 'text-emerald-800');
+            buttonElement.classList.add('border-teal-600', 'bg-teal-50', 'text-teal-800');
         }
     </script>
 </body>
